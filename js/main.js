@@ -1,6 +1,6 @@
 jQuery(document).ready(function( $ ) {
 
-  // Back to top button
+  // Boton para subir
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
@@ -13,7 +13,7 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
-  // Header fixed on scroll
+  // Fijar el nav menu al hacer scrolling
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
@@ -26,22 +26,22 @@ jQuery(document).ready(function( $ ) {
     $('#header').addClass('header-scrolled');
   }
 
-  // Real view height for mobile devices
+  // Altura responsiva para celulares
   if (window.matchMedia("(max-width: 767px)").matches) {
     $('#intro').css({ height: $(window).height() });
   }
 
-  // Initiate the wowjs animation library
+  // Inicia Wow.js
   new WOW().init();
 
-  // Initialize Venobox
+  // Inicia Venobox
   $('.venobox').venobox({
     overlayColor: 'rgba(6, 12, 34, 0.85)',
     closeBackground: '',
     closeColor: '#fff'
   });
 
-  // Initiate superfish on nav menu
+  // Inicia superfish en el nav menu
   $('.nav-menu').superfish({
     animation: {
       opacity: 'show'
@@ -49,7 +49,7 @@ jQuery(document).ready(function( $ ) {
     speed: 400
   });
 
-  // Mobile Navigation
+  // Navegacion en celular
   if ($('#nav-menu-container').length) {
     var $mobile_nav = $('#nav-menu-container').clone().prop({
       id: 'mobile-nav'
@@ -89,7 +89,7 @@ jQuery(document).ready(function( $ ) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Smooth scroll for the menu and links with .scrollto classes
+  // Scrolling suave para el menu y enlace con .scrollto
   $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -123,7 +123,7 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // Gallery carousel (uses the Owl Carousel library)
+  // Carrusel de fotos con .owlCarousel
   $(".gallery-carousel").owlCarousel({
     autoplay: true,
     dots: true,
@@ -133,12 +133,29 @@ jQuery(document).ready(function( $ ) {
     }
   });
 
-  // Buy tickets select the ticket type on click
-  $('#buy-ticket-modal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget);
-    var ticketType = button.data('ticket-type');
-    var modal = $(this);
-    modal.find('#ticket-type').val(ticketType);
-  })
+});
 
+// Redireccionar a TLS
+if (window.location.host.indexOf('github.io') > -1 && window.location.protocol != "https:"){
+    window.location.protocol = "https";
+}
+
+// DOM HTML Back-end
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.sendFile('./index.html', { root: __dirname });
+});
+
+app.get('/organizers/', (req, res) => {
+  res.sendFile('./organizers.html', { root: __dirname });
+});
+
+app.get('/faq/', (req, res) => {
+  res.sendFile('./faq.html', { root: __dirname });
+});
+
+app.get('/code-of-conduct/', (req, res) => {
+  res.sendFile('./code-of-conduct.html', { root: __dirname });
 });
