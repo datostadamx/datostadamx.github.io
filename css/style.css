@@ -1385,7 +1385,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-#footer .footer-top .social-links a {
+.social-links a {
   font-size: 18px;
   display: inline-block;
   background: #222636;
@@ -1400,7 +1400,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.3s;
 }
 
-#footer .footer-top .social-links a:hover {
+.social-links a:hover {
   background: #e07761;
   color: #fff;
 }
