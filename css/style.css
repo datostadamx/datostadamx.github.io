@@ -952,71 +952,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*--------------------------------------------------------------
-# Hotels Section
---------------------------------------------------------------*/
-
-#hotels {
-  padding: 60px 0;
-}
-
-#hotels .hotel {
-  border: 1px solid #e0e5fa;
-  background: #fff;
-  margin-bottom: 30px;
-}
-
-#hotels .hotel:hover .hotel-img img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#hotels .hotel-img {
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-
-#hotels .hotel-img img {
-  transition: 0.3s ease-in-out;
-}
-
-#hotels h3 {
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding: 0 20px;
-}
-
-#hotels a {
-  color: #152b79;
-}
-
-#hotels a:hover {
-  color: #e07761;
-}
-
-#hotels .stars {
-  padding: 0 20px;
-  margin-bottom: 5px;
-}
-
-#hotels .stars i {
-  color: #ffc31d;
-}
-
-#hotels p {
-  padding: 0 20px;
-  margin-bottom: 20px;
-  color: #b81f54;
-  font-style: italic;
-  font-size: 15px;
-}
-
-/*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
 
 #gallery {
-  padding: 60px;
+  padding: 60px 0 10px 0;
   overflow: hidden;
 }
 
@@ -1041,7 +981,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .owl-dot.active {
-  background-color: #e07761;
+  background-color: #d29e02;
 }
 
 #gallery .gallery-carousel .owl-stage-outer {
@@ -1049,7 +989,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #e07761;
+  border: 6px solid #d29e02;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
@@ -1403,6 +1343,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 .social-links a:hover {
   background: #e07761;
   color: #fff;
+}
+
+.disclaimer a {
+  color: #222636;
+  transition: 0.5s;
+}
+
+.disclaimer a:hover {
+  color: #e07761;
+}
+
+.elementor {
+  hyphens: manual;
+  color: #e07761;
+  font-size: 16px;
 }
 
 #footer .footer-top h4 {
