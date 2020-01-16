@@ -9,7 +9,7 @@ TODO:
 - [x] Back-end para redirecciones de DOM-HTML
 - [x] Crear Modal presentable de los Speakers Details
 - [ ] Corregir bug del Modal para poder cerrarlo
-- [ ] Incluir navegación entre Modals dentro de un Modal dado
+- [ ] Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)
 - [ ] Poner las respuestas del FAQ
 - [ ] Poner el Código de Conducta
 - [ ] Poner el Código de Conducta
