@@ -8,8 +8,10 @@ TODO:
 - [x] Slideshow Galery de la sección de Speakers
 - [x] Back-end para redirecciones de DOM-HTML
 - [x] Crear Modal presentable de los Speakers Details
+- [ ] Corregir bug del Nav-Menu en Mobile (el logo se overlapea con el Nav-Menu)
 - [ ] Corregir bug del Modal para poder cerrarlo
 - [ ] Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)
+- [ ] Verificar funcionamiento de los Modals en Mobile
 - [ ] Poner las respuestas del FAQ
 - [ ] Poner el Código de Conducta
 - [ ] Poner el Código de Conducta
