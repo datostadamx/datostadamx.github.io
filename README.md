@@ -12,7 +12,6 @@ TODO:
 - [ ] Corregir bug del Modal para poder cerrarlo
 - [ ] Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)
 - [ ] Verificar funcionamiento de los Modals en Mobile
+- [ ] Incluir `href` al enlace del EventBrite al botón de Registro
 - [ ] Poner las respuestas del FAQ
 - [ ] Poner el Código de Conducta
-- [ ] Poner el Código de Conducta
-- [ ] Incluir `href` al enlace del EventBrite al botón de Registro
