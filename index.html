@@ -32,7 +32,7 @@
 
       <div id="logo" class="pull-left">
         <h1>
-			<a href="#intro">
+			<a href="/">
 				<span>datos</span>tada
 			</a>
 		</h1>
@@ -40,7 +40,6 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="#intro">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#speakers">Speakers</a></li>
           <li><a href="#sponsors">Sponsors</a></li>
@@ -71,7 +70,8 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>About <span>Datostada</span></h2>
-            <p>It is free event for society, academia, government and industry, about the role of data in several high-impact topics, and how people can take advantage from it.</p>
+            <p>It is a free international meeting for society, academia, government and industry, about the role of data in several high-impact topics, and how people can take advantage from it,
+            in order to prosecute and disrupt the scientific and technological potential in the southeast of the country and the neighboring regions.</p>
           </div>
           <div class="col-lg-3">
             <h3>Where?</h3>
@@ -98,9 +98,11 @@
         <div class="owl-carousel gallery-carousel">
 			
 			<div class="speaker">
-			  <a href="img/speakers/benjas.png" class="venobox" data-gall="gallery-carousel"><img src="img/speakers/benjas.png" alt="Benjamín Sánchez-Lengeling" class="img-fluid"></a>
+			  <a href="img/speakers/benjas.png" class="venobox" data-gall="gallery-carousel">
+				  <img src="img/speakers/benjas.png" alt="Benjamín Sánchez-Lengeling" class="img-fluid">
+			  </a>
 			  <div class="details">
-				<h3><a href="#">Benjamín Sánchez-Lengeling</a></h3>
+				<h3><a data-toggle="modal" data-target="#benjas">Benjamín Sánchez-Lengeling</a></h3>
 				<p>Google Research, Brain Team</p>
 				<div class="social">
 				  <a href="https://beangoben.github.io/"><i class="fas fa-globe-americas"></i></a>&nbsp;
@@ -122,13 +124,6 @@
 			</div>
         
         </div>
-        
-        <div class="owl-dots">
-			<div class="owl-dot">
-			</div>
-			<div class="owl-dot">
-			</div>
-        </div>
     </section>
 
     <!--Sponsors Section-->
@@ -138,24 +133,28 @@
           <h2>Sponsors</h2>
         </div>
         <center>
-			<h3>Diamond</h3>
-			<div class="wow fadeIn">
+			
+			<div class="wow fadeInUp">
+				<h3>Diamond</h3>
 				<a href="https://google.com">
 					<img src="img/sponsors/google.png" class="img-fluid" alt="Google"
 					style="max-width: 100%; height: auto;"width="276" height="90">
 				</a>
 			</div>
 			<br><br>
-			<h3>Platinum</h3>
+			
 			<div class="wow fadeIn">
+				<h3>Platinum</h3>
 				<a href="https://ibm.com">
 					<img src="img/sponsors/ibm.png" class="img-fluid" alt="IBM"
 					style="max-width: 100%; height: auto;"width="224" height="90">
 				</a>
 			</div>
 			<br><br>
-			<h3>Strategic Partners</h3>
-			<div class="wow fadeIn">
+			
+			<div class="wow fadeInUp">
+				<h3>Strategic Partners</h3>
+				
 				<a href="https://ai.google">
 					<img src="img/partners/googleai.png" class="img-fluid" alt="Google AI"
 					style="max-width: 100%; height: auto;" width="386" height="90">
@@ -182,8 +181,9 @@
 				</a>
 			</div>
 			<br><br>
-			<h3>Organizing Communities</h3>
-			<div class="wow fadeIn">
+			
+			<div class="wow fadeInUp">
+				<h3>Organizing Communities</h3>
 				<a href="https://futurelab.mx">
 					<img src="img/partners/futurelab.png" class="img-fluid" alt="Future Lab"
 					style="max-width: 100%; height: auto;">
@@ -199,6 +199,7 @@
 					style="max-width: 100%; height: auto;" width="78" height="90">
 				</a>
 			</div>
+			
         </center>
       </div><br><br>
       
@@ -336,6 +337,34 @@
   <br>
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  
+  <!--Modals-->
+  <div class="modal fade" id="benjas" tabindex="-1" role="dialog" aria-labelledby="Benjamín Sánchez-Lengeling" aria-hidden="true">
+	  <div class="container modal-content">
+        <h2>Benjamín Sánchez-Lengeling</h2>
+        <p>Meet our guest international speaker!</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/speakers/benjas.png" alt="Speaker 1" class="img-fluid">
+          </div>
+
+          <div class="col-md-6">
+            <div class="details">
+              <h2>About Him</h2>
+              <div class="social">
+                <a href="https://beangoben.github.io/"><i class="fas fa-globe-americas"></i></a>
+                <a href="https://www.linkedin.com/in/alejandro-noriega-campero-40305637/"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <p>Benjamín earned his PhD at Harvard University under the supervision of Professor Alán Aspuru-Guzik, and currently he works at Google Brain as a Research Scientist. His research centers around using machine learning techniques to build data-driven models for prediction of molecular properties and generation of new molecules and materials via generative models. Applications include solar cells, solubility, drug-design, and smelly molecules.</p>
+              
+              <p>For him, education has been truly a transformative experience. He dedicates part of his time to two projects of which he is a contributor and also founding member: Clubes de Ciencia México and RIIAA Conference, a summer school and ML conference in Mexico.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
 
   <!--JavaScript Dependencies-->
   <script src="lib/jquery/jquery.min.js"></script>
