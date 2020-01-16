@@ -15,5 +15,4 @@ TODO:
 - [ ] Poner las respuestas del FAQ
 - [ ] Poner el Código de Conducta
 - [ ] Poner el Código de Conducta
-- [ ] Hacerle una que otra mejora al UI/UX
 - [ ] Incluir `href` al enlace del EventBrite al botón de Registro
