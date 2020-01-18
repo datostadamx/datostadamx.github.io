@@ -13,5 +13,6 @@ TODO:
 - [ ] Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)
 - [ ] Verificar funcionamiento de los Modals en Mobile
 - [ ] Incluir `href` al enlace del EventBrite al botón de Registro
+- [ ] Integrar Jekyll
 - [ ] Poner las respuestas del FAQ
 - [ ] Poner el Código de Conducta
