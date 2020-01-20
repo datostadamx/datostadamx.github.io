@@ -9,8 +9,8 @@ TODO:
 - [x] Back-end para redirecciones de DOM-HTML
 - [x] Crear Modal presentable de los Speakers Details
 - [x] Corregir bug del Nav-Menu en Mobile (el logo se overlapea con el Nav-Menu)
-- [ ] Corregir bug del Modal para poder cerrarlo
-- [ ] Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)
+- [x] Corregir bug del Modal para poder cerrarlo
+- [x] Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)
 - [ ] Verificar funcionamiento de los Modals en Mobile
 - [ ] Incluir `href` al enlace del EventBrite al botón de Registro
 - ~Integrar Jekyll~

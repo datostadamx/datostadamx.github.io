@@ -125,11 +125,23 @@ jQuery(document).ready(function( $ ) {
 
   // Carrusel de fotos con .owlCarousel
   $(".gallery-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
     loop: true,
-    center:true,
-    responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
+    nav: true,
+    dots: true,
+    autoplay: true,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive: { 
+      0: { 
+        items: 1
+      }, 
+      768: { 
+        items: 2
+      }, 
+      992: { 
+        items: 4,
+        loop:false
+      }
     }
   });
 
