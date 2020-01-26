@@ -47,7 +47,7 @@
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    width: 50%; }
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }
@@ -130,7 +130,7 @@
  */
 .owl-carousel .owl-video-wrapper {
   position: relative;
-  height: 100%;
+  height: 50%;
   background: #000; }
 
 .owl-carousel .owl-video-play-icon {
@@ -166,5 +166,5 @@
 .owl-carousel .owl-video-frame {
   position: relative;
   z-index: 1;
-  height: 100%;
-  width: 100%; }
+  height: 50%;
+  width: 50%; }

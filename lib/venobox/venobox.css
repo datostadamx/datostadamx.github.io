@@ -31,7 +31,7 @@
 
 /* ----- navigation ----- */
 .vbox-title{
-    width: 100%;
+    width: 50%;
     height: 40px;
     float: left;
     text-align: center;
@@ -117,8 +117,8 @@
 /* ------- inline window ------ */
 .vbox-inline{
     width: 420px;
-    height: 315px;
-    height: 70vh;
+    height: 100px;
+    height: 25vh;
     padding: 10px;
     background: #fff;
     margin: 0 auto;
@@ -127,24 +127,24 @@
 }
 /* ------- Video & iFrames window ------ */
 .venoframe{
-    max-width: 100%;
-    width: 100%;
+    max-width: 60%;
+    width: 50%;
     border: none;
-    width: 100%;
-    height: 260px;
-    height: 70vh;
+    width: 50%;
+    height: 100px;
+    height: 25vh;
 }
 .venoframe.vbvid{
-    height: 260px;
+    height: 100px;
 }
 @media (min-width: 768px) {
     .venoframe, .vbox-inline{
         width: 90%;
-        height: 360px;
-        height: 70vh;
+        height: 100px;
+        height: 25vh;
     }
     .venoframe.vbvid{
-        width: 640px;
+        width: 480px;
         height: 360px;
     }
 }

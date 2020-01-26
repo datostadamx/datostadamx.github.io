@@ -164,10 +164,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  font-weight: bold;
   letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 #header #logo h1 span {
@@ -465,7 +464,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
+  background: url(../img/intro-bg.png) top center;
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -651,7 +650,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #about {
-  background: url("../img/about-bg.jpg");
+  background: url("../img/about-bg.png");
   background-size: cover;
   overflow: hidden;
   position: relative;
@@ -783,7 +782,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers-details .details p {
   color: #112363;
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
