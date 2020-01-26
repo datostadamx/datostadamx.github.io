@@ -173,18 +173,18 @@ app.get('/code-of-conduct/', (req, res) => {
 });
 
 // Speakers-Pointers
-app.get('/speakers/benjamin/', (req, res) => {
+app.get('/speakers/benjamin', (req, res) => {
   res.sendFile('./speakers-benjamin.html', { root: __dirname });
 });
 
-app.get('/speakers/alejandro/', (req, res) => {
+app.get('/speakers/alejandro', (req, res) => {
   res.sendFile('./speakers-alejandro.html', { root: __dirname });
 });
 
-app.get('/speakers/gustavo/', (req, res) => {
+app.get('/speakers/gustavo', (req, res) => {
   res.sendFile('./speakers-gustavo.html', { root: __dirname });
 });
 
-app.get('/speakers/andres/', (req, res) => {
+app.get('/speakers/andres', (req, res) => {
   res.sendFile('./speakers-andres.html', { root: __dirname });
 });
