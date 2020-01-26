@@ -15,5 +15,5 @@ TODO:
 - ~Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)~
 - ~Verificar funcionamiento de los Modals en Mobile~
 - ~Integrar Jekyll~
-- [ ] Poner las respuestas del FAQ
 - [ ] Arreglar bug de los html de los speakers (`main.js`)
+- [ ] Poner las respuestas del FAQ
