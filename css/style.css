@@ -1530,6 +1530,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs a {
     padding: 8px 60px;
   }
+
+  .owl-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
 }
 
 @media (max-width: 768px) {

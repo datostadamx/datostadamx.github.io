@@ -126,8 +126,9 @@ jQuery(document).ready(function( $ ) {
   // Carrusel de fotos con .owlCarousel
   $(".gallery-carousel").owlCarousel({
     loop: true,
-    nav: true,
+    nav: true,    
     dots: true,
+    navText: ["Anterior", "Siguiente"],
     autoplay: true,
     autoplayHoverPause:true,
     responsiveClass:true,
