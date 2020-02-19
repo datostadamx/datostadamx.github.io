@@ -1,0 +1,202 @@
+# Plugins
+gems:
+- jekyll-sitemap
+safe: false
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
+
+
+# Site Settings
+title: "Datostada: Where Science and Industry meet Data, in Mexico"
+email: "hola@datostada.mx"
+description: "Datostada: Where Science and Industry meet Data, in Mexico"
+baseurl: ""
+url: "https://datostada.mx"
+permalink: "/blog/:title"
+googleAnalyticsTrackingId: "UA-43643469-5"
+googleAnalyticsSiteUrl: "gdg-x.github.io"
+siteVerification: "b9imDOrFawXaBXCC4r3uJDdswSYcalD-wWpMYhFq-no"
+
+# Organizer Info
+organizerName: "Datostada"
+organizerAlternateName: "Where Science and Industry meet Data, in Mexico"
+organizerDescription: "A free international meeting for communities, academia, government and industry, about the role of data in several high-impact topics..."
+organizerEmail: "hola@datostada.mx"
+organizerLogo: "/img/seo/organizer-logo.png"
+organizerLink: "https://datostada.mx"
+
+# Head
+metaKeywords: "conference, meeting, data, mexico, science, industry, communities, google"
+twitterAccount: "@datostadamx"
+socialImageSrcTwitter: "/img/seo/sharing-twitter.png"
+socialImageSrcFacebook: "/img/seo/sharing-facebook.png"
+
+# Documents
+c4pUrl: "https://airtable.com/shrvxBwW5RexPGF7a"
+c4sponsorsUrl: "/assets/Datostada_Sponsor_Prospectus.pdf"
+
+
+# Navigation
+navigationLinks:
+ - {permalink: "/", text: "Home"}
+ - {permalink: "/blog/", text: "News"}
+ - {permalink: "/speakers/", text: "Speakers"}
+ - {permalink: "/schedule/", text: "Schedule"}
+ - {permalink: "/team/", text: "Organizers"}
+ - {permalink: "/logistics/", text: "FAQs"}
+bottomNavigationLinks:
+ - {link: "https://airtable.com/shrvxBwW5RexPGF7a", text: "Pre-Registration"}
+rightNavigationButtons:
+ - {link: "https://airtable.com/shrvxBwW5RexPGF7a", text: "Pre-Registration"}
+
+# Hero Block
+heroImage: "hero.jpg"
+heroTitle: "Where <typeout> meet Data, in Mexico"
+eventDate: "March 12 - 14, 2020"
+typeoutTextValues: '"", "Science", "Industry", "Society", "Government", "Rockstars"'
+typeoutFallback: "Science"
+heroButtons:
+ - {link: "https://airtable.com/shrvxBwW5RexPGF7a", text: "Pre-Registration"}
+
+# About Block
+aboutTitle: "About Datostada"
+aboutBlock:
+ - {title: "Conference", image: "conference.png", text: "The biggest Google related event in the country carefully crafted for you by GDG community! Awesome speakers and lots of fun!" }
+ - {title: "Workshops", image: "workshop.png", text: "Full-day of workshops, hands-on experience, hacking and debugging. Come and tame your favourite technology!" }
+
+# Statistic Block
+statisticBlockImage: "statistic.jpg"
+statisticBlock:
+ - {count: "200", specialCharacter: "+", info: "attendees", detail: "from nearby regions"}
+ - {count: "15", specialCharacter: "+", info: "talks & workshops", detail: "of pure data-related content"}
+ - {count: "10", specialCharacter: "+", info: "guests", detail: "from country and beyond"}
+ - {count: "24", specialCharacter: "+", info: "hours", detail: "of activities and networking"}
+
+# Latest News Block
+latestNewsTitle: "Stay tuned!"
+
+# Rockstar Speakers Block
+rockstarSpeakersImage: "rockstar-speakers.jpg"
+rockstarSpeakersCount: 4
+rockstarSpeakersTitle: "Guests Speakers & Instructors"
+rockstarSpeakersButtonText: "See all of them"
+
+# Location Block
+locationBlockTitle: "Location"
+eventLocationName: "Mérida, Yucatán"
+eventLocationLink: "https://www.google.com/maps/place/Universidad+Polit%C3%A9cnica+de+Yucat%C3%A1n/@20.987497,-89.73694,15z/data=!4m5!3m4!1s0x0:0xae0fad9b458e14dc!8m2!3d20.987497!4d-89.73694"
+eventStreetAddress: "Tablaje Catastral 7193, Carretera, Mérida-Tetiz Km. 4.5"
+eventAddressLocality: "Mérida"
+eventAddressLocalityRegion: "Yucatán"
+eventPostalCode: "97357"
+eventAddressCountry: "México"
+eventStartTime: "2020-03-12T10:00"
+eventDoorTime: "09:00"
+eventEndTime: "2020-03-14T18:00"
+eventPlaceCoordinates: "20.9875556, -89.73663888888889"
+mapCenterCoordinates: "20.9875556, -89.73663888888889"
+mapMobileCenterCoordinates: "20.9875556, -89.73663888888889"
+
+# Venue Block
+venueBlockTitle: "Venue"
+venueBigImage: "venue_0.jpg"
+venueSmallImage1: "venue_1.jpg"
+venueSmallImage2: "venue_2.jpg"
+venueSmallImage3: "venue_3.jpg"
+venueTitle: "Universidad Politécnica de Yucatán"
+venueFeatures: ["Yucatán is on the verge of becoming a place of scientific formation with technology at the forefront. The Universidad Politécnica de Yucatán is a public institution of higher education that offers high-level and specialization programs on Data, Embedded Systems, Robotics and Engineering."]
+
+# Tweets Feed Block
+tweetsFeedImage: "twitter-feed.jpg"
+tweetsFeedTitle: "¿Qué onda?"
+twitterHashTag: "datostada"
+twitterFeed: "https://twitter.com/intent/user?screen_name=datostadamx"
+
+# Partners Block
+organizersTitle: "Organizers"
+partnersTitle: "Partners"
+partnersC4sponsorsButton: "Become a Sponsor"
+
+# Subscribe Block
+subscribeImage: "subscribe.jpg"
+subscribeTitle: "Follow us for updates!"
+subscribeInfo: "Registration are open now! Number of tickets are limited."
+
+# Footer
+socialLinks:
+ - {link: "https://twitter.com/intent/user?screen_name=datostadamx", icon: "twitter"}
+ - {link: "https://facebook.com/datostadamx", icon: "facebook"}
+footerBlocks:
+ -
+  title: "Links"
+  links:
+   - {link: "https://futurelab.mx", text: "Future Lab"}
+   - {link: "https://ai.google", text: "Google AI"}
+ -
+  title: "Contacts"
+  links:
+   - {link: "mailto:hola@datostada.mx", text: "hola@datostada.mx"}
+ -
+  title: "Info"
+  links:
+   - {permalink: "/cod/", text: "Code of Conduct"}
+
+# Blog
+blogTitle: "Latest News"
+blogCommentsEnabled: true
+discusShortName: "datostada"
+
+# Speakers List Block
+showSessions: true
+
+# Team Block
+teamBlockTitle: "About Us"
+aboutUs: "We..."
+
+# Logistics Find Way Block
+findWayTitle: "Find your way here"
+findWayDistance: "Distance"
+findWayDriving: "Driving"
+findWayWalking: "Walking"
+findWayBicycling: "Bicycling"
+findWayTransit: "Transit"
+findWayFindFlight: "Find Flight"
+logisticsMapCenterCoordinates: "49.056728, 3.117289"
+logisticsMapMobileCenterCoordinates: "48.335365, 23.711648"
+logisticsMapAutoDirections: false
+
+# Logistics Direction Details Block
+directionDetailsImage: "direction-details.jpg"
+directionDetailsTitle: "Get around Mérida"
+directionDetailsCards:
+ - {title: "From the Airport", information: 'Airport is right at the city border. It is easily reachable by car, public transport or taxi. More information is available at <a href="http://lwo.aero/en/transport">airport website</a>.'}
+ - {title: "Public Transit", information: 'Google Transit is available in Lviv. So you can find your way in Google Maps. Moreover, you can download any of the offline public transit apps available for Lviv.'}
+ - {title: "Hotels", information: 'Lviv has lots of great hotels and hostels. More information will be available later.'}
+directionDetailsWideCards:
+ -
+  title: "Questions?"
+  subCards:
+   -
+    title: "Hotels"
+    links:
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "InterContinental"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "The Hotel Rex"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "Westin Market Street"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "Hotel Adagio"}
+   -
+    title: "Registration"
+    links:
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "InterContinental"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "The Hotel Rex"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "Westin Market Street"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "Hotel Adagio"}
+   -
+    title: "Attendance Details"
+    links:
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "InterContinental"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "The Hotel Rex"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "Westin Market Street"}
+     - {link: "https://plus.google.com/b/102444623953913144164", text: "Hotel Adagio"}
