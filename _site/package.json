@@ -1,0 +1,15 @@
+{
+  "name": "datostada.github.io",
+  "version": "1.0.0",
+  "description": "The Conference Website",
+  "main": "main.js",
+  "homepage": "https://datostada.mx",
+  "scripts": {
+    "deploy": "gh-pages -d main"
+  },
+  "author": "Datostada",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^1.2.0"
+  }
+}
