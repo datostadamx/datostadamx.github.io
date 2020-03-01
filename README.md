@@ -1,19 +1,15 @@
 # datostada.github.io
+
+[![GitHub license](https://img.shields.io/github/license/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/blob/master/LICENSE)
+[![GitHub last commit](https://img.shields.io/github/last-commit/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/commits/master)
+[![GitHub repo size](https://img.shields.io/github/repo-size/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io.git)
+[![GitHub issues](https://img.shields.io/github/issues/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/issues)
+
 The conference website at https://datostada.mx.
 
-TODO:
-- [x] Reemplazar imágenes por sus comprimidas
-- [x] Corregir bug del Wow.js
-- [x] Establecer HTML nada más para Index, Organizers, FAQ y Code of Conduct
-- [x] Slideshow Gallery de la sección de Speakers
-- [x] Back-end para redirecciones de DOM-HTML
-- [x] Corregir bug del Nav-Menu en Mobile (el logo se overlapea con el Nav-Menu)
-- [x] Incluir `href` al enlace del EventBrite al botón de Registro
-- [x] Poner el Código de Conducta
-- ~Crear Modal presentable de los Speakers Details~
-- ~Corregir bug del Modal para poder cerrarlo~
-- ~Incluir navegación entre Modals (como los Venobox de las imágenes del Venue)~
-- ~Verificar funcionamiento de los Modals en Mobile~
-- ~Integrar Jekyll~
-- [ ] Arreglar bug de los html de los speakers (`main.js`)
-- [ ] Poner las respuestas del FAQ
+
+### License
+
+[![CC](http://forthebadge.com/images/badges/cc-by.svg)](https://creativecommons.org/licenses/by/4.0 "CC BY 4.0")
+
+Created by Datostada, 2020. All content contained in this repository is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0 "CC BY 4.0"). The code is free and open source, released under [The MIT License](https://mit-license.org "The MIT License").
