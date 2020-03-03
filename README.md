@@ -1,8 +1,7 @@
 # datostada.github.io
 
 [![License](https://img.shields.io/github/license/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/blob/master/LICENSE "License")
-[![Last Commit](https://img.shields.io/github/last-commit/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/commits/master "Last Commit")
-[![Repo Size](https://img.shields.io/github/repo-size/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io.git "Repo Size")
+[![Website Status](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fdatostada.mx)](https://datostada.mx)
 [![Issues](https://img.shields.io/github/issues/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/issues "Issues")
 
 The conference website at https://datostada.mx.
