@@ -773,6 +773,22 @@
 
   <!--Main Javascript File-->
   <script src="js/main.js"></script>
+
+<!--SoldAI Chatbot-->
+<script src="https://comportia.soldai.com/widget/v1/hermes.plugin.js"></script>
+<script type="text/javascript">
+  $(function () {
+    $("#chatHermes").hermes({
+        key: "42dc38f742b3369443c163e383ccf4d889057cb4",
+        title: "Datostada",
+        voice: false,
+        init_message: "¡Hola!, Soy un agente virtual encargado de dar respuesta a tus preguntas, ¿Cuál es tu duda?",
+        attention_message: "¿Tienes alguna duda?",
+        timeout: "10000"
+      });
+    });
+</script>
+
 </body>
 
 </html>
