@@ -126,20 +126,20 @@ jQuery(document).ready(function( $ ) {
   // Carrusel de fotos con .owlCarousel
   $(".gallery-carousel").owlCarousel({
     loop: true,
-    nav: true,    
+    nav: true,
     dots: true,
     navText: ["Anterior", "Siguiente"],
     autoplay: true,
     autoplayHoverPause:true,
     responsiveClass:true,
-    responsive: { 
-      0: { 
+    responsive: {
+      0: {
         items: 1
-      }, 
-      768: { 
+      },
+      768: {
         items: 2
-      }, 
-      992: { 
+      },
+      992: {
         items: 4,
         loop:false
       }
@@ -167,6 +167,14 @@ app.get('/organizers/', (req, res) => {
 
 app.get('/faq/', (req, res) => {
   res.sendFile('./faq.html', { root: __dirname });
+});
+
+app.get('/online/', (req, res) => {
+  res.sendFile('./online.html', { root: __dirname });
+});
+
+app.get('/google/', (req, res) => {
+  res.sendFile('./online.html', { root: __dirname });
 });
 
 app.get('/code-of-conduct/', (req, res) => {
