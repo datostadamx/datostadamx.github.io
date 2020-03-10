@@ -186,6 +186,10 @@ app.get('/code-of-conduct/', (req, res) => {
 });
 
 // Speakers-Pointers
+app.get('/speakers', (req, res) => {
+  res.sendFile('./speakers.html', { root: __dirname });
+});
+
 app.get('/speakers/benjamin/', (req, res) => {
   res.sendFile('./speakers-benjamin.html', { root: __dirname });
 });
