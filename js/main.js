@@ -177,6 +177,10 @@ app.get('/google/', (req, res) => {
   res.sendFile('./google.html', { root: __dirname });
 });
 
+app.get('/tickets/', (req, res) => {
+  res.sendFile('./tickets.html', { root: __dirname });
+});
+
 app.get('/code-of-conduct/', (req, res) => {
   res.sendFile('./code-of-conduct.html', { root: __dirname });
 });
