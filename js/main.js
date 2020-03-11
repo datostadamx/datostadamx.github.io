@@ -161,6 +161,10 @@ app.get('/', (req, res) => {
   res.sendFile('./index.html', { root: __dirname });
 });
 
+app.get('/workshops/', (req, res) => {
+  res.sendFile('./workshops.html', { root: __dirname });
+});
+
 app.get('/organizers/', (req, res) => {
   res.sendFile('./organizers.html', { root: __dirname });
 });
@@ -174,7 +178,7 @@ app.get('/online/', (req, res) => {
 });
 
 app.get('/google/', (req, res) => {
-  res.sendFile('./google.html', { root: __dirname });
+  res.sendFile('./online.html', { root: __dirname });
 });
 
 app.get('/tickets/', (req, res) => {
