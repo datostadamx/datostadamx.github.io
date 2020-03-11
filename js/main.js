@@ -178,7 +178,7 @@ app.get('/online/', (req, res) => {
 });
 
 app.get('/google/', (req, res) => {
-  res.sendFile('./online.html', { root: __dirname });
+  res.sendFile('./google.html', { root: __dirname });
 });
 
 app.get('/tickets/', (req, res) => {
