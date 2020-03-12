@@ -788,8 +788,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 18px;
 }
 
-#speakers-details .details p {
+#speakers-details .details p, li {
   color: #112363;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#speakers-details .details a {
+  color: #d89f24;
   font-size: 20px;
   margin-bottom: 10px;
 }

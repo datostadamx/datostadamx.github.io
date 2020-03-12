@@ -161,6 +161,10 @@ app.get('/', (req, res) => {
   res.sendFile('./index.html', { root: __dirname });
 });
 
+app.get('/workshops/', (req, res) => {
+  res.sendFile('./workshops.html', { root: __dirname });
+});
+
 app.get('/organizers/', (req, res) => {
   res.sendFile('./organizers.html', { root: __dirname });
 });
@@ -186,6 +190,10 @@ app.get('/code-of-conduct/', (req, res) => {
 });
 
 // Speakers-Pointers
+app.get('/speakers', (req, res) => {
+  res.sendFile('./speakers.html', { root: __dirname });
+});
+
 app.get('/speakers/benjamin/', (req, res) => {
   res.sendFile('./speakers-benjamin.html', { root: __dirname });
 });
