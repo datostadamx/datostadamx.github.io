@@ -1,6 +1,5 @@
 # datostada.github.io
 
-[![CC-BY](https://img.shields.io/badge/CC-BY-lightgrey?style=popout-square)](https://creativecommons.org/licenses/by/4.0 "CC BY 4.0")
 [![License](https://img.shields.io/github/license/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/blob/master/LICENSE "License")
 [![Website Status](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fdatostada.mx)](https://datostada.mx "Website Status")
 [![Issues](https://img.shields.io/github/issues/datostadamx/datostadamx.github.io?style=popout-square)](https://github.com/datostadamx/datostadamx.github.io/issues "Issues")
