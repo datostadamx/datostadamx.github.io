@@ -6,6 +6,26 @@
 
 The conference website at https://datostada.mx.
 
+## Development
+
+The site is built with [Jekyll](https://jekyllrb.com) and published automatically by GitHub Pages on every push to `master` — there is no separate build/deploy step to run.
+
+To preview changes locally:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open http://localhost:4000.
+
+### Where things live
+
+- `_config.yml` — site-wide settings: event dates/location, social links, chatbot key.
+- `_data/speakers.yml`, `_data/organizers.yml`, `_data/faq.yml`, `_data/coc_contacts.yml` — editable lists rendered on the site. Add a new edition's speakers/organizers/FAQ by editing these files, no HTML needed.
+- `_speakers/*.md` — full speaker bio pages (only for speakers with a dedicated page). Add a new file here and reference its filename as `slug` in `_data/speakers.yml` to link it automatically.
+- `_layouts/`, `_includes/` — shared header, footer, and page scaffolding used by every page.
+- `index.html`, `organizers.html`, `faq.html`, etc. — one file per page's unique content.
 
 ## License
 

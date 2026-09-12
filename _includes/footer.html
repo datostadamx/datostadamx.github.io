@@ -1,0 +1,29 @@
+<!--Footer-->
+<div class="wow fadeIn">
+  <center>
+    <div class="social-links">
+      {% if site.social.facebook %}<a href="{{ site.social.facebook }}" class="facebook"><i class="fab fa-facebook-f"></i></a>{% endif %}
+      {% if site.social.twitter %}<a href="{{ site.social.twitter }}" class="twitter"><i class="fab fa-twitter"></i></a>{% endif %}
+      {% if site.social.instagram %}<a href="{{ site.social.instagram }}" class="instagram"><i class="fab fa-instagram"></i></a>{% endif %}
+      {% if site.social.telegram %}<a href="{{ site.social.telegram }}" class="telegram"><i class="fab fa-telegram-plane"></i></a>{% endif %}
+      {% if site.social.slack %}<a href="{{ site.social.slack }}" class="slack"><i class="fab fa-slack"></i></a>{% endif %}
+    </div>
+  </center>
+</div>
+<div class="wow fadeIn">
+  <center>
+    &copy; <b>Datostada {{ site.event.year }}</b><br>
+  </center>
+</div>
+<div class="wow fadeIn">
+  <center>
+    <div class="disclaimer">
+      <a href="{{ '/code-of-conduct/' | relative_url }}">Code of Conduct</a>
+      |
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </center>
+</div>
+<br>
+
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>

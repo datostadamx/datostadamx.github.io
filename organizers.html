@@ -1,193 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: "Organizers"
+permalink: /organizers/
+---
+<main id="main" class="main-page">
 
-<head>
-  <meta charset="utf-8">
-  <title>Organizers | Datostada</title>
-  <link rel="shortcut icon" href="img/isotipo.png">
-  <meta name="keywords" content="datostada, conference, data science, artificial intelligence, social good, open data, natural sciences">
-  <meta name="description" content="Datostada: Where Science and Industry meet Data, in Mexico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--GFonts-->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800">
-  <!--Bootstrap CSS File -->
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-  <!--CSS Dependencies-->
-  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="lib/animate/animate.min.css">
-  <link rel="stylesheet" href="lib/venobox/venobox.css">
-  <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/froala-design-blocks/2.0.1/css/froala_blocks.min.css">
-  <!--Main Stylesheet File-->
-  <link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body>
-
-  <!--Nav Menu-->
-  <header id="header" class="header-fixed">
+  <!--Team Block Section-->
+  <section id="speakers-details" class="wow fadeIn">
     <div class="container">
-
-      <div id="logo" class="pull-left">
-        <h1>
-			<a href="/">
-				<span>datos</span>tada
-			</a>
-		</h1>
+      <div class="section-header">
+        <h2>Organizing Committee</h2>
+        <p>Take a look at our core organizers.</p>
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#speakers">Speakers</a></li>
-          <li><a href="/#sponsors">Sponsors</a></li>
-          <li><a href="/#venue">Venue</a></li>
-          <li><a href="/#schedule">Schedule</a></li>
-          <li><a href="/organizers">Organizers</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li class="buy-tickets"><a href="#">Registration</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main" class="main-page">
-
-    <!--Team Block Section-->
-    <section id="speakers-details" class="wow fadeIn">
-      <div class="container">
-        <div class="section-header">
-          <h2>Organizing Committee</h2>
-          <p>Take a look at our core organizers.</p>
+      <div class="container wow fadeIn">
+        <div class="row text-center justify-content-center mb-5">
+          {% for person in site.data.organizers.organizing_committee %}
+          <div class="col-sm-2 m-sm-auto">
+            <img alt="{{ person.name }}" class="img-fluid rounded-circle" src="{{ person.photo | relative_url }}">
+            <h3><strong>{{ person.name }}</strong></h3>
+            <p><em>{{ person.role }}</em></p>
+          </div>
+          {% endfor %}
         </div>
+      </div>
 
-        <div class="container wow fadeIn">
-			<div class="row text-center justify-content-center mb-5">
+      <div class="section-header wow fadeIn">
+        <h2>Supporting Committee</h2>
+        <p>The ones who were always giving us advices.</p>
+      </div>
+      <div class="container">
+        <div class="row text-center justify-content-center mb-5">
+          {% for person in site.data.organizers.supporting_committee %}
+          <div class="col-sm-2 m-sm-auto">
+            <img alt="{{ person.name }}" class="img-fluid rounded-circle" src="{{ person.photo | relative_url }}">
+            <h3><strong>{{ person.name }}</strong></h3>
+            <p><em>{{ person.role }}</em></p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
 
-                <div class="col-sm-2 m-sm-auto">
-                    <img alt="Verónica Bañuelos" class="img-fluid rounded-circle" src="img/organizers/Vero.png">
-                    <h3><strong>Verónica Bañuelos</strong></h3>
-                    <p><em>General Coordination</em></p>
-                </div>
-
-				<div class="col-sm-2 m-sm-auto">
-					<img alt="Ricardo Mirón" class="img-fluid rounded-circle" src="img/organizers/Richard.png">
-					<h3><strong>Ricardo Mirón</strong></h3>
-					<p><em>General Coordination</em></p>
-				</div>
-
-
-                <div class="col-sm-2 m-sm-auto">
-                    <img alt="Rodolfo Ferro" class="img-fluid rounded-circle" src="img/organizers/Rodo.png">
-                    <h3><strong>Rodolfo Ferro</strong></h3>
-                    <p><em>Content Coordination</em></p>
-                </div>
-
-				<div class="col-sm-2 m-sm-auto">
-					<img alt="Jorge A. Flores" class="img-fluid rounded-circle" src="img/organizers/Jorge.png">
-					<h3><strong>Jorge A. Flores</strong></h3>
-					<p><em>Rels. & Pships. Coordination</em></p>
-				</div>
-
-                <div class="col-sm-2 m-sm-auto">
-                    <img alt="Ileana Cerón" class="img-fluid rounded-circle" src="img/organizers/Ileana.png">
-                    <h3><strong>Ileana Cerón</strong></h3>
-                    <p><em>Logistics Coordination</em></p>
-                </div>
-
-			</div>
-		  </div>
-
-		  <div class="section-header wow fadeIn">
-			  <h2>Supporting Committee</h2>
-			  <p>The ones who were always giving us advices.</p>
-		  </div>
-		  <div class="container">
-			<div class="row text-center justify-content-center mb-5">
-
-			  <div class="col-sm-2 m-sm-auto">
-				<img alt="Gustavo Hernández-Ábrego" class="img-fluid rounded-circle" src="img/organizers/Mario.png">
-				<h3><strong>Mario Guajardo-Céspedes</strong></h3>
-				<p><em>Advisory Committee</em></p>
-			  </div>
-
-			  <div class="col-sm-2 m-sm-auto">
-				<img alt="Carla Márquez-Luna" class="img-fluid rounded-circle" src="img/organizers/Carla.png">
-				<h3><strong>Carla Márquez-Luna</strong></h3>
-				<p><em>Advisory Committee</em></p>
-			  </div>
-
-			  <div class="col-sm-2 m-sm-auto">
-				<img alt="Mario Guajardo-Céspedes" class="img-fluid rounded-circle" src="img/organizers/Gustavo.png">
-				<h3><strong>Gustavo Hernández-Ábrego</strong></h3>
-				<p><em>Advisory Committee</em></p>
-			  </div>
-
-			</div>
-		  </div>
-		  <div class="wow fadeInUp">
-			  <h3>Credits and Special Thanks</h3>
-			  <div class="elementor">
-				  <ul>
-					  <li>
-						  <p>Datostada's logo created by Álvaro Carbajal</p>
-					  </li>
-				  </ul>
-				  <ul>
-					  <li>
-						  <p>Web media content by Gabriela Pérez</p>
-					  </li>
-				  </ul>
-			  </div>
-		  </div>
-		</section>
+      <div class="wow fadeInUp">
+        <h3>Credits and Special Thanks</h3>
+        <div class="elementor">
+          <ul>
+            <li>
+              <p>Datostada's logo created by Álvaro Carbajal</p>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <p>Web media content by Gabriela Pérez</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
-  </main>
-
-  <!--Footer-->
-  <div class="wow fadeIn">
-	  <center>
-		  <div class="social-links">
-			  <a href="https://facebook.com/datostada" class="facebook"><i class="fab fa-facebook-f"></i></a>
-			  <a href="https://t.me/joinchat/P00dSxNL2KD9bLkUFAziHg" class="telegram"><i class="fab fa-telegram-plane"></i></a>
-			  <a href="https://datostadawher-mwz6468.slack.com/archives/CT4528UAU" class="slack"><i class="fab fa-slack"></i></a>
-		  </div>
-	  </center>
-  </div>
-  <div class="wow fadeIn">
-	  <center>
-		  &copy; <b>Datostada 2020</b><br>
-	  </center>
-  </div>
-  <div class="wow fadeIn">
-	  <center>
-		  <div class="disclaimer">
-			  <a href="/code-of-conduct">Code of Conduct</a>
-			  |
-			  <a href="mailto:hola@datostada.mx">hola@datostada.mx</a>
-		  </div>
-	  </center>
-  </div>
-  <br>
-
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
-
-  <!--JavaScript Dependencies-->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/venobox/venobox.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-  <!--Main Javascript File-->
-  <script src="js/main.js"></script>
-</body>
-
-</html>
+  </section>
+</main>

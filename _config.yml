@@ -1,0 +1,56 @@
+# Site settings
+title: "Datostada"
+tagline: "Where Science and Industry meet Data, in Mexico"
+description: "Datostada: Where Science and Industry meet Data, in Mexico"
+keywords: "datostada, conference, data science, artificial intelligence, social good, open data, natural sciences"
+url: "https://datostada.mx"
+baseurl: ""
+email: "hola@datostada.mx"
+
+# SoldAI chatbot widget key — leave blank to disable the widget
+chatbot_key: "42dc38f742b3369443c163e383ccf4d889057cb4"
+
+# Current edition details — update these each year
+event:
+  year: 2020
+  dates: "March 12 - 14"
+  location: "Universidad Politécnica de Yucatán, Mérida, YUC"
+
+# Social links shown in the footer — remove a line to hide that icon
+social:
+  facebook: "https://facebook.com/datostada"
+  twitter: "https://twitter.com/futurelabmx"
+  instagram: "https://www.instagram.com/futurelabmx"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+collections:
+  speakers:
+    output: true
+    permalink: /speakers/:slug/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "speakers"
+    values:
+      layout: "speaker"
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - node_modules
+  - "*.pdf"

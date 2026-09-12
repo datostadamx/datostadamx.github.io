@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<main id="main" class="main-page">
+
+  <!--Details Section-->
+  <section id="speakers-details" class="wow fadeIn">
+    <div class="container">
+      <div class="section-header">
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.role }}</p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-5 m-sm-auto">
+          <img alt="{{ page.title }}" class="img-fluid rounded-circle" src="{{ page.photo | relative_url }}"><br><br>
+          <div class="text-center social">
+            {% if page.website %}<a href="{{ page.website }}"><i class="fas fa-globe-americas fa-2x"></i></a>&nbsp;{% endif %}
+            {% if page.linkedin %}<a href="{{ page.linkedin }}"><i class="fab fa-linkedin fa-2x"></i></a>{% endif %}
+            {% if page.twitter %}<a href="{{ page.twitter }}"><i class="fab fa-twitter fa-2x"></i></a>{% endif %}
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="details">
+            {{ content }}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</main>
