@@ -12,7 +12,7 @@
 <!--Main Javascript File-->
 <script src="{{ '/js/main.js' | relative_url }}"></script>
 
-{% if site.chatbot_key %}
+{% if site.chatbot_key != "" and site.chatbot_key %}
 <!--Chatbot-->
 <script src="https://comportia.soldai.com/widget/v1/hermes.plugin.js"></script>
 <script type="text/javascript">

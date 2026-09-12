@@ -8,13 +8,13 @@ baseurl: ""
 email: "hola@datostada.mx"
 
 # SoldAI chatbot widget key — leave blank to disable the widget
-chatbot_key: "42dc38f742b3369443c163e383ccf4d889057cb4"
+chatbot_key: ""
 
 # Current edition details — update these each year
 event:
-  year: 2020
-  dates: "March 12 - 14"
-  location: "Universidad Politécnica de Yucatán, Mérida, YUC"
+  year: 2026
+  dates: "November 13 - 15"
+  location: "Mérida, Yucatán"
 
 # Social links shown in the footer — remove a line to hide that icon
 social:

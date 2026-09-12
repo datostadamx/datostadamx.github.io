@@ -5,6 +5,7 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -1687,5 +1688,45 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 460px) {
   #subscribe button {
     margin-top: 10px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Under construction ribbon
+--------------------------------------------------------------*/
+.construction-ribbon {
+  position: fixed;
+  top: 26px;
+  right: -70px;
+  width: 280px;
+  padding: 9px 0;
+  background: #e63946;
+  color: #fff;
+  text-align: center;
+  transform: rotate(45deg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  pointer-events: none;
+}
+
+.construction-ribbon span {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .construction-ribbon {
+    top: 18px;
+    right: -76px;
+    width: 240px;
+  }
+
+  .construction-ribbon span {
+    font-size: 11px;
   }
 }
