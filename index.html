@@ -1,12 +1,21 @@
 ---
 layout: default
+hide_footer: true
 ---
 <!--Home Section-->
 <section id="intro">
-  <div class="construction-ribbon"><span>Sitio en construcción</span></div>
+  <div class="construction-ribbon">
+    <div class="construction-ribbon-track">
+      <span>Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+      <span>Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+    </div>
+  </div>
   <div class="intro-container wow fadeIn">
     <img src="{{ '/img/logotipo.png' | relative_url }}" style="max-width: 100%; height: auto;" width="400" height="400">
     <h1 class="mb-4 pb-0">Where <span>Science</span> and <span>Industry</span><br>meet <span>Data</span>, in Mexico</h1>
     <p class="mb-4 pb-0">{{ site.event.dates }}, {{ site.event.location }}</p>
+  </div>
+  <div class="hero-footer">
+    {% include footer.html %}
   </div>
 </section>

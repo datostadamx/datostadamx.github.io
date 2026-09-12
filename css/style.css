@@ -1696,37 +1696,102 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 .construction-ribbon {
   position: fixed;
-  top: 26px;
+  top: 70px;
   right: -70px;
   width: 280px;
+  overflow: hidden;
+  background: #8e44ad;
   padding: 9px 0;
-  background: #e63946;
-  color: #fff;
-  text-align: center;
   transform: rotate(45deg);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
   z-index: 999;
   pointer-events: none;
 }
 
-.construction-ribbon span {
-  display: block;
+.construction-ribbon-track {
+  display: flex;
+  width: max-content;
+  animation: construction-marquee 10s linear infinite;
+}
+
+.construction-ribbon-track span {
+  display: inline-block;
+  white-space: nowrap;
+  color: #fff;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  white-space: nowrap;
+}
+
+@keyframes construction-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .construction-ribbon-track {
+    animation: none;
+  }
 }
 
 @media (max-width: 576px) {
   .construction-ribbon {
-    top: 18px;
+    top: 46px;
     right: -76px;
     width: 240px;
   }
 
-  .construction-ribbon span {
+  .construction-ribbon-track span {
     font-size: 11px;
   }
+}
+
+/*--------------------------------------------------------------
+# Hero footer (homepage only)
+--------------------------------------------------------------*/
+
+/*
+  #intro is now the whole homepage, and on short/narrow screens the
+  heading can wrap to 3-4 lines. Let the hero grow with its content
+  (min-height instead of a hard height) so the footer below it never
+  overlaps the text — this also sidesteps the classic mobile "100vh
+  is taller than the visible screen" issue.
+*/
+#intro {
+  height: auto;
+  min-height: 100vh;
+  overflow: visible;
+}
+
+#intro .intro-container {
+  position: relative;
+  top: auto;
+  bottom: auto;
+  padding: 110px 20px 30px;
+}
+
+.hero-footer {
+  position: relative;
+  text-align: center;
+  padding-bottom: 30px;
+  z-index: 5;
+}
+
+.hero-footer center {
+  color: #f6e8a1;
+}
+
+.hero-footer .disclaimer a {
+  color: #f6e8a1;
+}
+
+.hero-footer .disclaimer a:hover {
+  color: #85deb2;
 }
