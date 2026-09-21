@@ -1,31 +1,42 @@
-<!--Footer-->
-<div class="wow fadeIn">
-  <center>
-    <div class="social-links">
-      {% if site.social.facebook %}<a href="{{ site.social.facebook }}" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>{% endif %}
-      {% if site.social.twitter %}<a href="{{ site.social.twitter }}" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>{% endif %}
-      {% if site.social.instagram %}<a href="{{ site.social.instagram }}" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>{% endif %}
-      {% if site.social.telegram %}<a href="{{ site.social.telegram }}" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>{% endif %}
-      {% if site.social.slack %}<a href="{{ site.social.slack }}" target="_blank" class="slack"><i class="fab fa-slack"></i></a>{% endif %}
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <img src="{{ '/assets/logo-datostada.png' | relative_url }}" alt="Logotipo {{ site.title }}">
+      <p class="lema">{{ site.tagline }}</p>
+      <p>{{ site.title }} {{ site.event.year }}<br>{{ site.event.dates }}<br>{{ site.event.venue }}<br>{{ site.event.location }}, México</p>
     </div>
-  </center>
-</div>
-<div class="wow fadeIn">
-  <center>
-    &copy; <b>Datostada {{ site.event.year }}</b><br>
-  </center>
-</div>
-<div class="wow fadeIn">
-  <center>
-    <div class="disclaimer">
-      <a href="{{ '/code-of-conduct/' | relative_url }}">Code of Conduct</a>
-      {% if site.social.telegram %}
-      |
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      {% endif %}
+    <div class="foot-col">
+      <h4>Contacto</h4>
+      <ul>
+        {% if site.email != "" and site.email %}<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
+        <li><a href="{{ '/' | relative_url }}#registro">Registro en Luma</a></li>
+      </ul>
     </div>
-  </center>
-</div>
-<br>
-
-<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <div class="foot-col">
+      <h4>Síguenos</h4>
+      <ul>
+        {% if site.social.instagram != "" and site.social.instagram %}<li><a href="{{ site.social.instagram }}" target="_blank" rel="noopener">Instagram</a></li>{% endif %}
+        {% if site.social.linkedin != "" and site.social.linkedin %}<li><a href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>{% endif %}
+        {% if site.social.facebook != "" and site.social.facebook %}<li><a href="{{ site.social.facebook }}" target="_blank" rel="noopener">Facebook</a></li>{% endif %}
+        {% if site.social.twitter != "" and site.social.twitter %}<li><a href="{{ site.social.twitter }}" target="_blank" rel="noopener">X</a></li>{% endif %}
+        {% if site.social.youtube != "" and site.social.youtube %}<li><a href="{{ site.social.youtube }}" target="_blank" rel="noopener">YouTube</a></li>{% endif %}
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h4>Información</h4>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}#evento">El evento</a></li>
+        <li><a href="{{ '/' | relative_url }}#programa">Programa</a></li>
+        <li><a href="{{ '/' | relative_url }}#patrocina">Patrocina</a></li>
+        <li><a href="{{ '/' | relative_url }}#sede">Sede</a></li>
+        <li><a href="{{ '/' | relative_url }}#faq">Preguntas frecuentes</a></li>
+        <li><a href="{{ '/code-of-conduct/' | relative_url }}">Código de Conducta</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© {{ site.event.year }} {{ site.title }}. Todos los derechos reservados.</span>
+    <span><a href="{{ '/code-of-conduct/' | relative_url }}" style="color:inherit;text-decoration:underline">Código de Conducta</a></span>
+  </div>
+</footer>

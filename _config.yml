@@ -1,46 +1,36 @@
 # Site settings
-title: "Datostada"
+title: "Datostada MX"
 tagline: "Where Science and Industry meet Data, in Mexico"
-description: "Datostada: Where Science and Industry meet Data, in Mexico"
+description: "Datostada MX 2026: encuentro gratuito y abierto de ciencia de datos, inteligencia artificial y tecnología. 13 y 14 de noviembre de 2026, Universidad Politécnica de Yucatán, Mérida."
 keywords: "datostada, conference, data science, artificial intelligence, social good, open data, natural sciences"
 url: "https://datostada.mx"
 baseurl: ""
-email: 
-
-# SoldAI chatbot widget key — leave blank to disable the widget
-chatbot_key: ""
+email: "datostadamx2026@gmail.com"
 
 # Current edition details — update these each year
 event:
   year: 2026
-  dates: "November 13 - 14"
+  dates: "13 y 14 de noviembre de 2026"
+  dates_short: "13–14 NOV 2026"
   location: "Mérida, Yucatán"
+  venue: "Universidad Politécnica de Yucatán"
+  venue_address: "Tablaje Catastral 4448, Carretera Mérida–Tetiz Km 4.5, C.P. 97357, Ucú, Yucatán, México"
 
-# Social links shown in the footer — remove a line to hide that icon
+# Luma event used for registration (id from the luma.com/<id> URL)
+registration:
+  luma_id: "1wiamjo1"
+
+# Social links shown in the nav/footer — leave a value blank to hide that icon
 social:
   facebook: "https://facebook.com/datostadamx"
-  twitter: 
+  twitter: ""
   instagram: "https://www.instagram.com/datostadamx"
+  linkedin: ""
+  youtube: ""
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-collections:
-  speakers:
-    output: true
-    permalink: /speakers/:slug/
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  - scope:
-      path: ""
-      type: "speakers"
-    values:
-      layout: "speaker"
 
 plugins:
   - jekyll-sitemap
@@ -50,7 +40,4 @@ exclude:
   - Gemfile.lock
   - README.md
   - LICENSE
-  - package.json
-  - package-lock.json
   - node_modules
-  - "*.pdf"

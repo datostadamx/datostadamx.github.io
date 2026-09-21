@@ -1,32 +1,28 @@
-- question: "What is Datostada and what are its aims?"
-  answer: |
-    <p><em>Datostada: Where Science and Industry meet Data, in Mexico</em> is an international meeting for academia, private companies and government, in order to prosecute and disrupt the scientific and technological potential in the southeast of the country and the neighboring regions, since such an event has been unprecedented.</p>
-    <p>We want to accomplish this goal by democratizing knowledge on Data Science and Artificial Intelligence and their role in social good and natural science.</p>
+# FAQ shown in the homepage FAQ section. Add/remove/edit items freely —
+# the layout loops over this list automatically.
+- question: "¿Datostada MX 2026 tiene costo?"
+  answer: "No. La entrada es gratuita y abierta a la comunidad. Es necesario registrarse previamente para asegurar tu lugar."
 
-- question: "When and where will Datostada take place?"
-  answer: |
-    <p>Datostada will take place on March 12 - 14, in Mérida, Yucatán (Mexico 🇲🇽).</p>
+- question: "¿Quiénes pueden asistir?"
+  answer: "Estudiantes, profesionales, personas investigadoras, docentes, emprendedoras, representantes de empresas, gobierno, comunidades tecnológicas y cualquier persona interesada en ciencia de datos, IA y tecnologías emergentes."
 
-- question: "Who can apply to Datostada? Is it open to all the neighboring communities in the region?"
-  answer: |
-    <p>We seek to create open spaces for people from various social groups, regardless of gender or ethnicity, the only two requirements we ask for are enthusiasm for the topic and basic knowledge in the field. That is, basic knowledge of programming, probability and statistics.</p>
+- question: "¿Necesito experiencia previa en ciencia de datos o inteligencia artificial?"
+  answer: "No. Habrá contenidos, conversaciones y espacios de conexión para distintos niveles de experiencia e intereses."
 
-- question: "Are there some kind of financial support for assistants coming from outside Yucatán?"
-  answer: |
-    <p>We work to ensure the quality of the event, including having first level speakers; so we do not have support for attendees at this time.</p>
+- question: "¿Puedo asistir sólo un día?"
+  answer: "Sí. Durante el registro podrás indicar los días en los que planeas asistir."
 
-- question: "Why should I apply to attend Datostada?"
-  answer: |
-    <p>The content will be designed and taught by professionals associated with Google and IBM, to name a few, in addition to having professors-researchers from across the continent, which makes it an unprecedented international event in the southeast of the country and a unique opportunity to meet with the great minds that today are leaders in the field of Data Science.</p>
+- question: "¿Habrá constancia de participación?"
+  answer: "La información sobre constancias y sus criterios de emisión se comunicará próximamente. Se recomienda registrar correctamente tu nombre y correo electrónico."
 
-- question: "When do applications for Datostada open and close?"
-  answer: |
-    <p>The applications are open and can be found in this site.</p>
+- question: "¿Habrá talleres?"
+  answer: "Sí. El programa contempla workshops técnicos y experiencias prácticas. Algunas actividades pueden requerir registro previo, por capacidad limitada."
 
-- question: "Should I bring my own laptop for the workshops & tutorials?"
-  answer: |
-    <p><strong>Yes!</strong> We expect each of the attendees bring their own material and requirements for the event.</p>
+- question: "¿Puedo presentar mi startup, proyecto o comunidad?"
+  answer: "Sí. El evento contará con espacios de networking, área expo y actividades de comunidad. Las convocatorias y mecanismos de participación se anunciarán próximamente."
 
-- question: "Your question is not here?"
-  answer: |
-    <p>Please write to us at <b>hola@datostada.mx</b>.</p>
+- question: "¿Puedo asistir si vengo de otro estado o país?"
+  answer: "Sí. Datostada MX es un evento abierto. Consulta la sección “Sede” para planear tu llegada a Mérida."
+
+- question: "¿Cómo puedo patrocinar o participar como aliado?"
+  answer: 'Escríbenos a <a href="mailto:datostadamx2026@gmail.com?subject=Patrocinio%20Datostada%20MX%202026" style="color:var(--mint)">datostadamx2026@gmail.com</a> con el asunto “Patrocinio Datostada MX 2026”.'

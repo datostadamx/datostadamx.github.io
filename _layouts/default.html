@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 {% include head.html %}
 </head>
 
 <body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
 
 {% include nav.html %}
 
 {{ content }}
 
-{% unless page.hide_footer %}
 {% include footer.html %}
-{% endunless %}
 {% include scripts.html %}
 
 </body>

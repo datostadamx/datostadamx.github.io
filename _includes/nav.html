@@ -1,8 +1,21 @@
-<!--Nav Menu-->
-<header id="header">
-  <div class="container">
-    <div id="logo" class="pull-left">
-      <a href="{{ '/' | relative_url }}" class="scrollto"><img src="{{ '/img/cactus.png' | relative_url }}" alt="" title=""></a>
-    </div>
-  </div>
-</header>
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav" aria-label="Navegación principal">
+  <a class="nav-brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} — inicio">
+    <img src="{{ '/assets/logo-datostada.png' | relative_url }}" alt="Logotipo {{ site.title }}">
+    datostada<span class="mx">.mx</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="{{ '/' | relative_url }}#evento">El evento</a></li>
+    <li><a href="{{ '/' | relative_url }}#ejes">Ejes</a></li>
+    <li><a href="{{ '/' | relative_url }}#programa">Programa</a></li>
+    <li><a href="{{ '/' | relative_url }}#ponentes">Ponentes</a></li>
+    <li><a href="{{ '/' | relative_url }}#patrocina">Patrocina</a></li>
+    <li><a href="{{ '/' | relative_url }}#sede">Sede</a></li>
+    <li><a href="{{ '/' | relative_url }}#faq">FAQ</a></li>
+  </ul>
+  <a class="btn btn-mint" href="{{ '/' | relative_url }}#registro">Regístrate gratis</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+  </button>
+</nav>
+<div class="mobile-cta"><a class="btn btn-mint" href="{{ '/' | relative_url }}#registro">Regístrate gratis</a></div>

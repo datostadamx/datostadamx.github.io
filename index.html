@@ -1,21 +1,326 @@
 ---
 layout: default
-hide_footer: true
 ---
-<!--Home Section-->
-<section id="intro">
-  <div class="construction-ribbon">
-    <div class="construction-ribbon-track">
-      <span>Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-      <span>Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;Sitio en construcción&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+<main id="main">
+<!-- ============ HERO ============ -->
+<header class="hero" id="inicio">
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="hero-kicker">{{ site.event.dates_short }} · {{ site.event.location }}</p>
+    <h1 class="hero-title">
+      <span class="row"><span>datos<span class="dot">·</span>tada</span></span>
+      <span class="row"><span class="alt">mx&nbsp;{{ site.event.year }}</span></span>
+    </h1>
+    <p class="hero-tag">
+      <strong>Where science and industry meet data, in Mexico.</strong><br>
+      El futuro de los datos se reúne en Yucatán. Dos días para conectar ciencia, industria,
+      inteligencia artificial y tecnología con personas que investigan, desarrollan, emprenden e innovan.
+    </p>
+    <div class="hero-pills">
+      <span class="pill solid"><i></i>{{ site.event.dates }}</span>
+      <span class="pill"><i></i>{{ site.event.venue }} · Mérida</span>
+      <span class="pill"><i></i>Evento gratuito y abierto</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-mint" href="#registro">Regístrate gratis ↗</a>
+      <a class="btn btn-ghost" href="#patrocina">Quiero patrocinar</a>
     </div>
   </div>
-  <div class="intro-container wow fadeIn">
-    <img src="{{ '/img/logotipo.png' | relative_url }}" style="max-width: 100%; height: auto;" width="400" height="400">
-    <h1 class="mb-4 pb-0">Where <span>Science</span> and <span>Industry</span><br>meet <span>Data</span>, in Mexico</h1>
-    <p class="mb-4 pb-0">{{ site.event.dates }}, {{ site.event.location }}</p>
+  <a class="hero-scroll" href="#evento">Conoce {{ site.title }} {{ site.event.year }}</a>
+</header>
+
+<!-- ============ STATS ============ -->
+<div class="stats" role="region" aria-label="Datos clave del evento">
+  <div class="stats-grid">
+    <div class="stat rv"><b>2 días</b><span>Programa presencial</span></div>
+    <div class="stat rv rv-d1"><b>+500</b><span>Asistentes · comunidad técnica diversa</span></div>
+    <div class="stat rv rv-d2"><b>100%</b><span>Gratuito · abierto al público</span></div>
+    <div class="stat rv rv-d3"><b>Sureste + Caribe</b><span>Alcance regional</span></div>
   </div>
-  <div class="hero-footer">
-    {% include footer.html %}
+</div>
+
+<!-- ============ EL EVENTO ============ -->
+<section id="evento">
+  <div class="wrap">
+    <p class="sec-label rv">01 · El evento</p>
+    <div class="evento-cols">
+      <div class="evento-body rv rv-d1">
+        <h2 class="sec-title">Ciencia, industria y datos se encuentran en el <em>sureste de México</em></h2>
+        <p>{{ site.title }} {{ site.event.year }} es un encuentro gratuito y abierto que reúne a la sociedad, la academia, el gobierno y la industria para explorar el papel de los datos en temas de alto impacto.</p>
+        <p>Durante dos días, Mérida será punto de encuentro para compartir conocimiento, descubrir aplicaciones reales de inteligencia artificial y ciencia de datos, construir conexiones profesionales y generar nuevas oportunidades de colaboración.</p>
+        <p>Datostada es un espacio para entender cómo los datos se convierten en conocimiento, innovación y mejores decisiones para las personas, las organizaciones y los territorios.</p>
+      </div>
+      <blockquote class="evento-quote rv rv-d2">
+        <p>Los datos se convierten en conocimiento, innovación y mejores decisiones.</p>
+        <footer>— Manifiesto {{ site.title }}</footer>
+      </blockquote>
+    </div>
   </div>
 </section>
+
+<div class="divider"></div>
+
+<!-- ============ PARA QUIÉN ES ============ -->
+<section id="perfiles">
+  <div class="wrap">
+    <p class="sec-label rv">02 · ¿Para quién es?</p>
+    <h2 class="sec-title rv rv-d1">Una comunidad técnica y <em>diversa</em></h2>
+    <p class="sec-lead rv rv-d2">{{ site.title }} está dirigido a personas interesadas en el mundo de los datos y su impacto en la ciencia, la industria y la sociedad.</p>
+    <div class="perfiles-grid">
+      <article class="perfil rv"><span class="ico" aria-hidden="true">💻</span><h3>Profesionales de tecnología y datos</h3><p>Desarrolladores, analistas, ingenieros, especialistas en IA y perfiles digitales.</p><span class="num">PERFIL / 01</span></article>
+      <article class="perfil rv rv-d1"><span class="ico" aria-hidden="true">🔬</span><h3>Ciencia e investigación</h3><p>Investigadores, docentes, estudiantes de posgrado y personas que aplican datos a nuevos descubrimientos.</p><span class="num">PERFIL / 02</span></article>
+      <article class="perfil rv rv-d2"><span class="ico" aria-hidden="true">🎓</span><h3>Estudiantes y comunidad universitaria</h3><p>Personas en formación que buscan aprender, construir portafolio y conocer oportunidades profesionales.</p><span class="num">PERFIL / 03</span></article>
+      <article class="perfil rv"><span class="ico" aria-hidden="true">🚀</span><h3>Emprendedores e innovadores</h3><p>Startups, creadores de producto, fundadores y personas que buscan validar ideas o construir alianzas.</p><span class="num">PERFIL / 04</span></article>
+      <article class="perfil rv rv-d1"><span class="ico" aria-hidden="true">🏭</span><h3>Industria y empresas</h3><p>Organizaciones interesadas en aplicar datos, automatización e IA en sus procesos, productos y servicios.</p><span class="num">PERFIL / 05</span></article>
+      <article class="perfil rv rv-d2"><span class="ico" aria-hidden="true">🌐</span><h3>Gobierno y comunidades</h3><p>Servidores públicos, organizaciones civiles y comunidades que impulsan tecnología, datos abiertos e innovación.</p><span class="num">PERFIL / 06</span></article>
+    </div>
+    <div class="hero-ctas rv" style="margin-top:2.4rem">
+      <a class="btn btn-mint" href="#registro">Quiero asistir</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ EJES ============ -->
+<section id="ejes">
+  <div class="wrap">
+    <p class="sec-label rv">03 · Ejes temáticos</p>
+    <h2 class="sec-title rv rv-d1">Tres ejes, un mismo <em>lenguaje</em></h2>
+    <p class="sec-lead rv rv-d2">La inteligencia artificial, los datos abiertos y la ciencia de datos están redefiniendo cómo investigamos, desarrollamos tecnología y tomamos decisiones.</p>
+    <div class="ejes">
+      <article class="eje rv">
+        <div class="idx">01
+          <svg viewBox="0 0 34 34" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="17" cy="17" r="4"/><circle cx="5" cy="6" r="2.4"/><circle cx="29" cy="8" r="2.4"/><circle cx="8" cy="28" r="2.4"/><circle cx="28" cy="27" r="2.4"/><path d="M7 7.5 14 14.5M27 9.5 20 14.5M9.5 26 14.5 19.5M26 25.5 20 19.5"/></svg>
+        </div>
+        <h3>Applied AI</h3>
+        <p class="sub">De la idea a producción.</p>
+        <p>Casos reales de inteligencia artificial, automatización, productos inteligentes, modelos aplicados y herramientas que transforman procesos y servicios.</p>
+      </article>
+      <article class="eje rv rv-d1">
+        <div class="idx">02
+          <svg viewBox="0 0 34 34" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><rect x="4" y="20" width="6" height="10" rx="1"/><rect x="14" y="12" width="6" height="18" rx="1"/><rect x="24" y="4" width="6" height="26" rx="1"/></svg>
+        </div>
+        <h3>Data for All</h3>
+        <p class="sub">Datos para mejores decisiones.</p>
+        <p>Datos abiertos, gobierno digital, ciudades inteligentes, bienestar social, innovación pública y soluciones con impacto medible.</p>
+      </article>
+      <article class="eje rv rv-d2">
+        <div class="idx">03
+          <svg viewBox="0 0 34 34" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><path d="M17 30C17 30 6 22 6 12a11 11 0 0 1 22 0c0 10-11 18-11 18Z"/><path d="M17 30V12M17 18l6-5M17 22l-6-5"/></svg>
+        </div>
+        <h3>Nature &amp; Data</h3>
+        <p class="sub">Ciencia, territorio y tecnología.</p>
+        <p>Biodiversidad, ambiente, biología, química, descubrimiento de materiales e investigación científica impulsada por datos.</p>
+      </article>
+    </div>
+    <div class="hero-ctas rv" style="margin-top:2.4rem">
+      <a class="btn btn-ghost" href="#programa">Ver programa</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ EXPERIENCIA ============ -->
+<section id="experiencia">
+  <div class="wrap">
+    <p class="sec-label rv">04 · La experiencia</p>
+    <h2 class="sec-title rv rv-d1">Aprende, conecta y construye <em>oportunidades</em></h2>
+    <p class="sec-lead rv rv-d2">{{ site.title }} no es sólo una serie de charlas. Es un espacio para conversar con personas que están construyendo el futuro de los datos desde distintos sectores y disciplinas.</p>
+    <div class="exp-list">
+      <div class="exp-row rv"><span class="tag">Keynotes</span><p>Ideas, casos y perspectivas de personas expertas.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d1"><span class="tag">Workshops</span><p>Sesiones prácticas para explorar herramientas, metodologías y aplicaciones.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d2"><span class="tag">Paneles</span><p>Conversaciones entre ciencia, industria, gobierno y comunidad.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d3"><span class="tag">Área expo</span><p>Conoce empresas, organizaciones, productos, proyectos y comunidades.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d4"><span class="tag">Networking</span><p>Encuentra colaboradores, talento, mentorías, aliados, oportunidades y nuevas conversaciones.</p><span class="arrow">→</span></div>
+    </div>
+    <div class="hero-ctas rv" style="margin-top:2.4rem">
+      <a class="btn btn-mint" href="#registro">Apartar mi lugar</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<!-- ============ PROGRAMA ============ -->
+<section id="programa">
+  <div class="wrap">
+    <p class="sec-label rv">05 · Programa</p>
+    <h2 class="sec-title rv rv-d1">Programa <em>{{ site.event.year }}</em></h2>
+    <p class="sec-lead rv rv-d2">Dos días de ideas, herramientas, conversaciones y conexiones alrededor del futuro de los datos.</p>
+    <div class="dias">
+      <article class="dia rv">
+        <header><h3>Viernes 13 de noviembre</h3><span>Día 01</span></header>
+        <ol>
+          <li>Registro y bienvenida</li>
+          <li>Conferencias magistrales</li>
+          <li>Talleres técnicos</li>
+          <li>Paneles y conversaciones abiertas</li>
+          <li>Área expo y networking</li>
+        </ol>
+      </article>
+      <article class="dia rv rv-d1">
+        <header><h3>Sábado 14 de noviembre</h3><span>Día 02</span></header>
+        <ol>
+          <li>Conferencias y casos de aplicación</li>
+          <li>Talleres y experiencias prácticas</li>
+          <li>Presentación de comunidades y startups</li>
+          <li>Open space</li>
+          <li>Networking de cierre</li>
+        </ol>
+      </article>
+    </div>
+    <div class="prog-note rv">
+      <p>El programa detallado, horarios, talleres y ponentes se anunciarán próximamente. Regístrate para recibir las actualizaciones primero.</p>
+      <a class="btn btn-mint" href="#registro">Recibe las actualizaciones del programa</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ PONENTES ============ -->
+<section id="ponentes">
+  <div class="wrap">
+    <p class="sec-label rv">06 · Ponentes</p>
+    <h2 class="sec-title rv rv-d1">Voces que se <em>anunciarán pronto</em></h2>
+    <p class="sec-lead rv rv-d2">Estamos confirmando a las personas que compartirán ideas, casos y herramientas en los tres ejes del evento. Regístrate para conocerlas primero.</p>
+    <div class="pon-grid">
+      <div class="pon rv">
+        <svg viewBox="0 0 44 44" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
+        <b>Keynote · Applied AI</b><span>Por anunciar</span>
+      </div>
+      <div class="pon rv rv-d1">
+        <svg viewBox="0 0 44 44" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
+        <b>Keynote · Data for All</b><span>Por anunciar</span>
+      </div>
+      <div class="pon rv rv-d2">
+        <svg viewBox="0 0 44 44" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
+        <b>Keynote · Nature &amp; Data</b><span>Por anunciar</span>
+      </div>
+      <div class="pon rv rv-d3">
+        <svg viewBox="0 0 44 44" fill="none" stroke="#f0d98c" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
+        <b>¿Propones una charla?</b><span>Convocatoria próximamente</span>
+      </div>
+    </div>
+    <div class="hero-ctas rv" style="margin-top:2.4rem">
+      <a class="btn btn-ghost" href="#programa">Ver agenda</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REGISTRO ============ -->
+<section id="registro" class="registro">
+  <div class="wrap">
+    <div class="registro-grid">
+      <div class="registro-info rv">
+        <p class="sec-label">07 · Registro</p>
+        <h2 class="sec-title">Asegura tu <em>lugar</em></h2>
+        <p>{{ site.title }} {{ site.event.year }} es gratuito y abierto a la comunidad. Regístrate para recibir:</p>
+        <ul class="registro-list">
+          <li>Información de acceso y logística</li>
+          <li>Agenda, talleres y actividades</li>
+          <li>Oportunidades de networking</li>
+          <li>Actualizaciones importantes del evento</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://luma.com/{{ site.registration.luma_id }}" target="_blank" rel="noopener">Regístrate gratis en Luma ↗</a>
+      </div>
+      <div class="rv rv-d1">
+        <iframe
+          src="https://lu.ma/embed/event/{{ site.registration.luma_id }}"
+          class="luma-frame"
+          frameborder="0"
+          allowfullscreen
+          aria-label="Registro a {{ site.title }} {{ site.event.year }}"
+          title="Formulario de registro — {{ site.title }} {{ site.event.year }}">
+        </iframe>
+        <p class="luma-fallback"><a class="btn btn-mint" href="https://luma.com/{{ site.registration.luma_id }}" target="_blank" rel="noopener">Abrir registro en Luma ↗</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PATROCINADORES ============ -->
+<section id="patrocina" class="patrocina">
+  <div class="wrap">
+    <p class="sec-label rv">08 · Patrocinadores</p>
+    <h2 class="sec-title rv rv-d1">Impulsa la comunidad que construye el futuro de los datos</h2>
+    <p class="sec-lead rv rv-d2">{{ site.title }} conecta a tu organización con una comunidad de estudiantes, investigadores, desarrolladores, analistas, emprendedores y líderes tecnológicos del sureste de México.</p>
+    <div class="pat-benefits">
+      <article class="pat-benefit rv">
+        <span class="tag">[ Marca ]</span>
+        <p>Da visibilidad a tu empresa frente a una audiencia técnica y diversa.</p>
+      </article>
+      <article class="pat-benefit rv rv-d1">
+        <span class="tag">[ Talento ]</span>
+        <p>Conecta con perfiles interesados en datos e inteligencia artificial. El acceso a perfiles y currículums sólo aplica para personas que otorguen autorización expresa.</p>
+      </article>
+      <article class="pat-benefit rv rv-d2">
+        <span class="tag">[ Liderazgo ]</span>
+        <p>Comparte casos, herramientas y conocimiento a través de keynotes, workshops, demostraciones o retos de datos.</p>
+      </article>
+    </div>
+    <div class="pat-ctas rv">
+      {% if site.email != "" and site.email %}
+      <a class="btn btn-wine" href="mailto:{{ site.email }}?subject=Patrocinio%20{{ site.title | url_encode }}%20{{ site.event.year }}">Conoce las opciones de patrocinio</a>
+      <a class="btn btn-wine" href="mailto:{{ site.email }}">Escríbenos</a>
+      {% endif %}
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Marca <i>◆</i> Talento <i>◆</i> Liderazgo <i>◆</i> Comunidad <i>◆</i> {{ site.title }} {{ site.event.year }} <i>◆</i></span>
+        <span>Marca <i>◆</i> Talento <i>◆</i> Liderazgo <i>◆</i> Comunidad <i>◆</i> {{ site.title }} {{ site.event.year }} <i>◆</i></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEDE ============ -->
+<section id="sede">
+  <div class="wrap">
+    <p class="sec-label rv">09 · Sede y logística</p>
+    <h2 class="sec-title rv rv-d1">Nos vemos en <em>Mérida</em></h2>
+    <div class="sede-grid">
+      <div class="rv rv-d1">
+        <iframe
+          class="map-frame"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-89.7574%2C20.9786%2C-89.7174%2C20.9986&amp;layer=mapnik&amp;marker=20.988586%2C-89.737393"
+          title="Mapa — {{ site.event.venue }}"
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="sede-info rv rv-d2">
+        <ul>
+          <li><span class="k">Sede</span><span><b>{{ site.event.venue }}</b><br>{{ site.event.venue_address }}</span></li>
+          <li><span class="k">Fecha</span><span>{{ site.event.dates }}</span></li>
+          <li><span class="k">Acceso</span><span>Entrada gratuita con registro previo</span></li>
+          <li><span class="k">Formato</span><span>Evento presencial</span></li>
+        </ul>
+        <a class="btn btn-mint" href="https://www.google.com/maps/dir/?api=1&amp;destination=20.988586,-89.737393" target="_blank" rel="noopener">Cómo llegar ↗</a>
+        <p class="sede-note">Información de estacionamiento, transporte público, accesibilidad y hospedaje sugerido se publicará una vez confirmada con la sede. Si requieres algún ajuste razonable para participar, indícalo durante el registro{% if site.email != "" and site.email %} o escríbenos a <a href="mailto:{{ site.email }}" style="color:var(--mint)">{{ site.email }}</a>{% endif %}.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <p class="sec-label rv">10 · Preguntas frecuentes</p>
+    <h2 class="sec-title rv rv-d1">Resolvemos tus <em>dudas</em></h2>
+    <div class="faq-list">
+      {% for item in site.data.faq %}
+      <div class="faq-item rv">
+        <button class="faq-q" aria-expanded="false">{{ item.question }}<span class="ic" aria-hidden="true">+</span></button>
+        <div class="faq-a"><p>{{ item.answer }}</p></div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="faq-cta rv">
+      <a class="btn btn-mint" href="#registro">Registrarme ahora</a>
+    </div>
+  </div>
+</section>
+</main>
