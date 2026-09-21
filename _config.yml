@@ -16,9 +16,9 @@ event:
   venue: "Universidad Politécnica de Yucatán"
   venue_address: "Tablaje Catastral 4448, Carretera Mérida–Tetiz Km 4.5, C.P. 97357, Ucú, Yucatán, México"
 
-# Luma event used for registration (id from the luma.com/<id> URL)
+# Luma event used for registration (the "evt-..." id from the event's Luma dashboard)
 registration:
-  luma_id: "1wiamjo1"
+  luma_id: "evt-NohgzL3HOuT9Fw5"
 
 # Social links shown in the nav/footer — leave a value blank to hide that icon
 social:

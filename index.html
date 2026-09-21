@@ -223,18 +223,18 @@ layout: default
           <li>Oportunidades de networking</li>
           <li>Actualizaciones importantes del evento</li>
         </ul>
-        <a class="btn btn-ghost" href="https://luma.com/{{ site.registration.luma_id }}" target="_blank" rel="noopener">Regístrate gratis en Luma ↗</a>
+        <a class="btn btn-ghost" href="https://luma.com/event/{{ site.registration.luma_id }}" target="_blank" rel="noopener">Regístrate gratis en Luma ↗</a>
       </div>
       <div class="rv rv-d1">
         <iframe
-          src="https://lu.ma/embed/event/{{ site.registration.luma_id }}"
+          src="https://luma.com/embed/event/{{ site.registration.luma_id }}/simple"
           class="luma-frame"
           frameborder="0"
-          allowfullscreen
+          allow="fullscreen; payment"
           aria-label="Registro a {{ site.title }} {{ site.event.year }}"
           title="Formulario de registro — {{ site.title }} {{ site.event.year }}">
         </iframe>
-        <p class="luma-fallback"><a class="btn btn-mint" href="https://luma.com/{{ site.registration.luma_id }}" target="_blank" rel="noopener">Abrir registro en Luma ↗</a></p>
+        <p class="luma-fallback"><a class="btn btn-mint" href="https://luma.com/event/{{ site.registration.luma_id }}" target="_blank" rel="noopener">Abrir registro en Luma ↗</a></p>
       </div>
     </div>
   </div>
