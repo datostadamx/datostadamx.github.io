@@ -20,6 +20,10 @@ event:
 registration:
   luma_id: "evt-NohgzL3HOuT9Fw5"
 
+# External forms linked from the site
+forms:
+  speaker_url: "https://forms.gle/xvfasS9JrbPWLmsXA"
+
 # Social links shown in the nav/footer — leave a value blank to hide that icon
 social:
   facebook: "https://facebook.com/datostadamx"
