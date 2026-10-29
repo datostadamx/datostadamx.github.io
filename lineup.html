@@ -1,0 +1,109 @@
+---
+layout: default
+title: "Programa preliminar"
+description: "Vista previa del programa de Datostada MX 2026 para revisión interna."
+permalink: /lineup/
+# Página sin enlazar: no aparece en nav, footer ni sitemap, y pide a buscadores no indexarla.
+sitemap: false
+noindex: true
+---
+{% assign lineup = site.data.lineup %}
+<main id="main">
+<section id="lineup">
+  <div class="wrap">
+    <p class="sec-label">Vista previa · Borrador</p>
+    <h1 class="sec-title">Programa <em>{{ site.event.year }}</em></h1>
+    <p class="sec-lead">Propuesta de programa para revisión del equipo. Horarios, salas y sesiones pueden cambiar antes de la versión final.</p>
+
+    <div class="lu-filters" aria-label="Filtrar sesiones">
+      <div class="lu-filter-group">
+        <span class="lu-filter-label">Nivel</span>
+        {% for l in lineup.levels %}
+        <button type="button" class="lu-chip lvl lvl-{{ l[0] }}" data-filter="level" data-value="{{ l[0] }}" aria-pressed="false">{{ l[1] }}</button>
+        {% endfor %}
+      </div>
+      <div class="lu-filter-group">
+        <span class="lu-filter-label">Audiencia</span>
+        {% for a in lineup.audiences %}
+        <button type="button" class="lu-chip aud aud-{{ a[0] }}" data-filter="aud" data-value="{{ a[0] }}" aria-pressed="false">{{ a[1] }}</button>
+        {% endfor %}
+      </div>
+      <button type="button" class="lu-clear" hidden>Limpiar filtros</button>
+    </div>
+
+    {% for day in lineup.days %}
+    <div class="lu-day" id="{{ day.id }}">
+      <header class="lu-day-head"><h2>{{ day.date }}</h2><span>{{ day.label }}</span></header>
+      <div class="lu-grid">
+        <div class="lu-room-head lu-time-head">Hora</div>
+        {% for room in lineup.rooms %}<div class="lu-room-head">{{ room.name }}</div>{% endfor %}
+
+        {% for slot in day.slots %}
+        {% assign row = forloop.index | plus: 1 %}
+        {% assign slot_index = forloop.index0 %}
+        <div class="lu-time" style="grid-row:{{ row }}">{{ slot.start }}{% if slot.end != "" %}<span>–{{ slot.end }}</span>{% endif %}</div>
+
+        {% for s in slot.sessions %}
+        {% assign span = s.span | default: 1 %}
+        {% assign last = slot_index | plus: span | minus: 1 %}
+        {% assign end = day.slots[last].end %}
+        {% assign room = lineup.rooms | where: "id", s.room | first %}
+        {% assign sp = lineup.speakers[s.speaker] %}
+        <article class="ses ses-{{ s.kind }} r-{{ s.room }}" style="grid-row:{{ row }} / span {{ span }}"{% if sp %} data-level="{{ sp.level }}" data-aud="{{ sp.audience | join: ' ' }}"{% endif %}>
+          {% if s.kind == "libre" %}
+          <p class="ses-meta"><span>{{ slot.start }}–{{ end }}{% if room %} · {{ room.name }}{% endif %}</span></p>
+          <p class="ses-free">Espacio no disponible</p>
+          {% else %}
+          <p class="ses-meta">
+            {% if s.code %}<span class="ses-code">{{ s.code }}{% if s.kind == "conferencia" %} · Conferencia{% elsif s.kind == "taller" %} · Taller{% endif %}</span>{% endif %}
+            <span>{{ slot.start }}{% if end != "" %}–{{ end }}{% endif %}{% if room %} · {{ room.name }}{% endif %}</span>
+          </p>
+          <h3 class="ses-title">{{ s.title | escape }}</h3>
+          {% if sp %}
+          <p class="ses-who"><b>{{ sp.name }}</b><span>{{ sp.org }}</span></p>
+          <div class="ses-tags">
+            <span class="lvl lvl-{{ sp.level }}">{{ lineup.levels[sp.level] }}</span>
+            {% for a in sp.audience %}<span class="aud aud-{{ a }}">{{ lineup.audiences[a] }}</span>{% endfor %}
+          </div>
+          {% elsif s.speaker_text %}
+          <p class="ses-who"><b>{{ s.speaker_text }}</b></p>
+          {% endif %}
+          {% endif %}
+        </article>
+        {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  const chips = document.querySelectorAll('.lu-chip');
+  const clear = document.querySelector('.lu-clear');
+  const cards = document.querySelectorAll('.ses[data-level]');
+
+  function apply(){
+    const pick = f => [...chips].filter(c => c.dataset.filter === f && c.getAttribute('aria-pressed') === 'true').map(c => c.dataset.value);
+    const levels = pick('level'), auds = pick('aud');
+    cards.forEach(card => {
+      const okLevel = !levels.length || levels.includes(card.dataset.level);
+      const cardAuds = card.dataset.aud.split(' ');
+      const okAud = !auds.length || auds.some(a => cardAuds.includes(a));
+      card.classList.toggle('dim', !(okLevel && okAud));
+    });
+    clear.hidden = !levels.length && !auds.length;
+  }
+
+  chips.forEach(c => c.addEventListener('click', () => {
+    c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') !== 'true');
+    apply();
+  }));
+  clear.addEventListener('click', () => {
+    chips.forEach(c => c.setAttribute('aria-pressed', 'false'));
+    apply();
+  });
+})();
+</script>

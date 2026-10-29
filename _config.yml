@@ -46,3 +46,6 @@ exclude:
   - README.md
   - LICENSE
   - node_modules
+  # Material interno de trabajo (registros con datos personales, propuestas en PDF)
+  - "*.csv"
+  - "*.pdf"

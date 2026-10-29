@@ -1,0 +1,237 @@
+# Programa preliminar (vista previa para el equipo) — basado en "Propuesta de Programa.pdf"
+# y en el registro de speakers/talleristas. Solo datos públicos: nada de correos ni teléfonos.
+#
+# Cada slot es una fila del horario. Cada sesión indica su sala (room) y cuántos slots
+# ocupa (span, 1 por defecto). room "all" ocupa todas las salas.
+# kind: conferencia | taller | general | libre (sala sin actividad: "Espacio no disponible")
+
+rooms:
+  - id: s1
+    name: "Escenario 1"
+  - id: s2
+    name: "Escenario 2"
+  - id: w1
+    name: "Sala de talleres 1"
+  - id: w2
+    name: "Sala de talleres 2"
+
+# Etiquetas y colores de las pills (las claves se usan en speakers[].audience / level)
+levels:
+  ninguno: "Sin conocimientos previos"
+  principiante: "Principiante"
+  intermedio: "Intermedio"
+
+audiences:
+  general: "Público general"
+  estudiantes: "Estudiantes"
+  tecnicos: "Perfiles técnicos"
+  profesionistas: "Profesionistas"
+  academia: "Investigación / Academia"
+  empresas: "Empresas"
+  emprendedores: "Emprendedores"
+  sector-publico: "Sector público"
+  comunidad: "Comunidad tecnológica"
+
+speakers:
+  hector-monroy:
+    name: "Héctor Gabriel Monroy Cáceres"
+    org: "UADY / Monroy Seguros / OptipySolutions"
+    level: ninguno
+    audience: [general, estudiantes, tecnicos, emprendedores, academia, sector-publico, comunidad]
+  augusto-canul:
+    name: "José Augusto Canul Chi"
+    org: "UPY"
+    level: intermedio
+    audience: [general, estudiantes, profesionistas, academia, comunidad]
+  alejandro-gonzalez:
+    name: "Alejandro Mauricio González"
+    org: "Universidad Autónoma de Zacatecas"
+    level: principiante
+    audience: [estudiantes, tecnicos, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
+  mauricio-carrillo:
+    name: "Mauricio Carrillo"
+    org: "Danil AI"
+    level: ninguno
+    audience: [estudiantes, profesionistas, academia]
+  brian-romero:
+    name: "Brian Romero Rojas"
+    org: "Nyvia"
+    level: ninguno
+    audience: [estudiantes, emprendedores, empresas, profesionistas]
+  ulises-hoil:
+    name: "Ulises Hoil"
+    org: "Ecodata"
+    level: principiante
+    audience: [general, estudiantes, tecnicos, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
+  david-garcia:
+    name: "David García Zamora"
+    org: "Pass Your TOEFL"
+    level: ninguno
+    audience: [general, estudiantes, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
+  jaim-coba:
+    name: "Jaim Rajamin Cobá Canto"
+    org: "IMSS, Clínica Bioclinic"
+    level: ninguno
+    audience: [general]
+  joel-suro:
+    name: "Joel Suro Villalobos"
+    org: "OMNA"
+    level: principiante
+    audience: [general, estudiantes, tecnicos, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
+  mario-campos:
+    name: "Mario Alejandro Campos Soberanis"
+    org: "Neuraan"
+    level: intermedio
+    audience: [estudiantes, tecnicos, emprendedores]
+  jonathan-castillo:
+    name: "Jonathan Castillo"
+    org: "OZ Digital"
+    level: intermedio
+    audience: [general, estudiantes, tecnicos, empresas, comunidad]
+  mary-falcon:
+    name: "Mary Liliana Falcón López"
+    org: "Everforth Apex Systems"
+    level: principiante
+    audience: [estudiantes, tecnicos, profesionistas, comunidad]
+  fatima-miranda:
+    name: "Fátima Miranda"
+    org: "UPY, CentroGeo"
+    level: intermedio
+    audience: [estudiantes, tecnicos, academia, comunidad]
+  alberto-lopez:
+    name: "Alberto López Cardoza"
+    org: "STXNext"
+    level: principiante
+    audience: [estudiantes, tecnicos, profesionistas, comunidad]
+  mario-canche:
+    name: "Mario Xavier Canche Uc"
+    org: "AI Factory · BBVA México"
+    level: principiante
+    audience: [general, estudiantes, tecnicos, academia, comunidad]
+  irma-pacheco:
+    name: "Irma Pacheco Vázquez"
+    org: "GANT"
+    level: intermedio
+    audience: [empresas, profesionistas, comunidad]
+  roberto-escobar:
+    name: "Roberto Carlos Escobar Iglesias"
+    org: "Universidad Anáhuac Mayab"
+    level: intermedio
+    audience: [estudiantes, emprendedores, empresas, profesionistas]
+  manuel-haro:
+    name: "Manuel Haro Márquez"
+    org: "Fundación DEDICA"
+    level: intermedio
+    audience: [tecnicos, empresas, academia, sector-publico]
+  juan-gomez:
+    name: "Juan Iván Gómez Peralta"
+    org: "CINVESTAV Mérida"
+    level: principiante
+    audience: [general]
+  alberto-garcia:
+    name: "Alberto García Chávez"
+    org: "Cloud Ascend"
+    level: ninguno
+    audience: [general, estudiantes, tecnicos, empresas, profesionistas, academia, comunidad]
+  alejandro-espinosa:
+    name: "Alejandro Daniel Espinosa Chim"
+    org: "Techmaleon"
+    level: principiante
+    audience: [general, estudiantes, academia, comunidad]
+
+days:
+  - id: dia-1
+    label: "Día 01"
+    date: "Viernes 13 de noviembre"
+    slots:
+      - start: "09:30"
+        end: "10:20"
+        sessions:
+          - { room: all, kind: general, title: "Registro de asistentes" }
+      - start: "10:30"
+        end: "10:50"
+        sessions:
+          - { room: all, kind: general, title: "Bienvenida e inauguración" }
+      - start: "11:00"
+        end: "11:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C1", speaker: hector-monroy, title: "Modelar sin miedo: bases de datos NoSQL (MongoDB) para sistemas de IA y CRMs en producción" }
+          - { room: s2, kind: conferencia, code: "C2", speaker: augusto-canul, title: "Datos y mediciones sobre internet" }
+          - { room: w1, kind: libre }
+          - { room: w2, kind: libre }
+      - start: "12:00"
+        end: "12:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C3", speaker: ulises-hoil, title: "Geointeligencia y ecosistemas" }
+          - { room: s2, kind: conferencia, code: "C4", speaker: david-garcia, title: "¿Cuánto oro estás dejando ir con tus datos? Cómo encontrar información valiosa antes de que se pierda en el río de datos" }
+          - { room: w1, kind: taller, code: "T1", span: 2, speaker: mauricio-carrillo, title: "Trabaja con agentes de IA en Terminus: tu primer proyecto, paso a paso" }
+          - { room: w2, kind: taller, code: "T2", span: 2, speaker: brian-romero, title: "De usar IA a generar impacto: cómo convertir la adopción de IA en resultados medibles" }
+      - start: "13:00"
+        end: "13:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C5", speaker: jaim-coba, title: "Epidemiología basada en datos: cómo convertir números en decisiones de salud" }
+          - { room: s2, kind: conferencia, code: "C6", speaker: alejandro-gonzalez, title: "Potencia los LLM con tus propios datos usando RAG" }
+      - start: "14:00"
+        end: "16:00"
+        sessions:
+          - { room: all, kind: general, title: "Comida" }
+      - start: "16:00"
+        end: "16:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C7", speaker: joel-suro, title: "¿Puede una simulación reemplazar la prueba en el mundo real?" }
+          - { room: s2, kind: conferencia, code: "C8", speaker: mario-campos, title: "De corregir fonemas a corregir pensamientos: seis años de evolución, sin gradiente, de un bot que vendía cerveza solo a los LLMs de hoy" }
+          - { room: w1, kind: taller, code: "T3", span: 2, speaker: jonathan-castillo, title: "Los números no cuadran: diagnostica discrepancias con SQL y Python" }
+          - { room: w2, kind: taller, code: "T4", span: 2, speaker: mary-falcon, title: "Mapas que cuentan historias: tu primer análisis geoespacial con datos abiertos" }
+      - start: "17:00"
+        end: "17:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C9", speaker: fatima-miranda, title: "Ciencia de datos y machine learning en la investigación: lo que ya es posible y lo que viene" }
+          - { room: s2, kind: conferencia, code: "C10", speaker: alberto-lopez, title: "AI-Driven Delivery: cómo la inteligencia artificial está transformando la ingeniería de software" }
+      - start: "18:00"
+        end: ""
+        sessions:
+          - { room: all, kind: general, title: "Cierre del primer día" }
+
+  - id: dia-2
+    label: "Día 02"
+    date: "Sábado 14 de noviembre"
+    slots:
+      - start: "09:30"
+        end: "09:55"
+        sessions:
+          - { room: all, kind: general, title: "Llegada de asistentes" }
+      - start: "10:00"
+        end: "10:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C11", speaker: mario-canche, title: "IA aplicada a la banca" }
+          - { room: s2, kind: conferencia, code: "C12", speaker: irma-pacheco, title: "Velocidad de información: el activo invisible de tu empresa" }
+          - { room: w1, kind: taller, code: "T5", span: 2, speaker: roberto-escobar, title: "De la planta al Excel: análisis de datos y control estadístico de procesos (SPC)" }
+          - { room: w2, kind: taller, code: "T6", span: 2, speaker: manuel-haro, title: "Implementación de .Stat Suite en gobiernos para estandarizar datos críticos" }
+      - start: "11:00"
+        end: "11:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C13", speaker_text: "AWS", title: "Por definir" }
+          - { room: s2, kind: conferencia, code: "C14", speaker: juan-gomez, title: "Aplicaciones de redes neuronales profundas en el análisis de materiales cristalinos" }
+      - start: "12:00"
+        end: "12:55"
+        sessions:
+          - { room: s1, kind: conferencia, code: "C15", speaker: alberto-garcia, title: "Protege tu propiedad intelectual con IA agéntica" }
+          - { room: s2, kind: conferencia, code: "C16", speaker: alejandro-espinosa, title: "Besos que matan: cómo la IA aprende a detectar a los vectores del Chagas en Yucatán" }
+          - { room: w1, kind: libre }
+          - { room: w2, kind: libre }
+      - start: "13:00"
+        end: "15:00"
+        sessions:
+          - { room: all, kind: general, title: "Comida" }
+      - start: "15:00"
+        end: "15:25"
+        sessions:
+          - { room: all, kind: general, title: "Clausura del evento" }
+      - start: "15:30"
+        end: "16:30"
+        sessions:
+          - { room: all, kind: general, code: "Open space", title: "Presentación de comunidades y startups" }
+      - start: "16:30"
+        end: "18:00"
+        sessions:
+          - { room: all, kind: general, code: "Open space", title: "Networking + tostadas" }
