@@ -1,0 +1,16 @@
+{% comment %}Grupo de logos. Uso: include logos.html label="Powered by" lead="..." logos=site.data.logos.powered_by{% endcomment %}
+{% if include.logos.size > 0 %}
+<div class="logos-group">
+  <p class="sec-label rv">{{ include.label }}</p>
+  <p class="logos-lead rv rv-d1">{{ include.lead }}</p>
+  <ul class="logos-grid">
+    {% for logo in include.logos %}
+    <li class="logo-tile rv">
+      {% if logo.url %}<a href="{{ logo.url }}" target="_blank" rel="noopener">{% endif %}
+      <img src="{{ '/assets/logos/' | append: logo.file | relative_url }}" alt="{{ logo.name }}" loading="lazy">
+      {% if logo.url %}</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

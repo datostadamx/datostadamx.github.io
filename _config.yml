@@ -49,3 +49,4 @@ exclude:
   # Material interno de trabajo (registros con datos personales, propuestas en PDF)
   - "*.csv"
   - "*.pdf"
+  - "*.zip"

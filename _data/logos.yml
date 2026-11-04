@@ -1,0 +1,21 @@
+# Logos de la sección "Powered by" / "Supported by" del homepage.
+# Archivos en assets/logos/<grupo>/. Agrega `url:` a cualquier logo para volverlo un enlace.
+
+powered_by:   # patrocinadores
+  - { name: "Everforth Apex Systems", file: "patrocinadores/everforth-apex-systems.webp" }
+  - { name: "Cloud Ascend", file: "patrocinadores/cloud-ascend.webp" }
+  - { name: "Optipy Solutions", file: "patrocinadores/optipy-solutions.webp" }
+  - { name: "Monroy Seguros", file: "patrocinadores/monroy-seguros.webp" }
+  - { name: "Laion Technology", file: "patrocinadores/laion-technology.webp" }
+  - { name: "Teraservicio", file: "patrocinadores/teraservicio.webp" }
+  - { name: "PCNET MX", file: "patrocinadores/pcnet-mx.webp" }
+  - { name: "SEPRACOM", file: "patrocinadores/sepracom.webp" }
+  - { name: "ANADIC Yucatán", file: "patrocinadores/anadic-yucatan.webp" }
+
+supported_by: # equipo / aliados
+  - { name: "Universidad Politécnica de Yucatán", file: "equipo/upy.webp" }
+  - { name: "SECIHTI · Gobierno del Estado de Yucatán", file: "equipo/secihti-yucatan.webp" }
+  - { name: "IYEM · Instituto Yucateco de Emprendedores", file: "equipo/iyem-yucatan.webp" }
+  - { name: "CANACO SERVYTUR Mérida", file: "equipo/canaco-servytur-merida.webp" }
+  - { name: "AS Consultoría Integral", file: "equipo/as-consultoria-integral.webp" }
+  - { name: "Stockify", file: "equipo/stockify.webp" }
