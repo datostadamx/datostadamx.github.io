@@ -465,6 +465,8 @@ footer.site{border-top:1px solid var(--wine-line);background:var(--wine-2)}
 }
 .ses-speaker:hover{color:var(--mint)}
 .ses-tags{display:flex;flex-wrap:wrap;gap:.3rem;padding-top:.3rem}
+.ses-register{align-self:flex-start;font-family:var(--font-m);font-size:.72rem;color:var(--mint);text-decoration:underline;text-underline-offset:3px}
+.ses-register:hover{color:var(--cream)}
 .ses-general{background:none;border-style:dashed;align-items:center;justify-content:center;text-align:center;padding:.7rem 1rem}
 .ses-general .ses-meta{justify-content:center}
 .ses-general .ses-title{font-family:var(--font-m);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
@@ -493,6 +495,8 @@ html:has(.sp-modal[open]){overflow:hidden}
 .sp-sessions li{display:flex;flex-direction:column;gap:.2rem}
 .sp-sessions b{font-weight:600;line-height:1.3}
 .sp-sessions span{font-family:var(--font-m);font-size:.7rem;letter-spacing:.03em;color:var(--cream-45)}
+.sp-desc{margin-top:.5rem;color:var(--cream-70);font-size:.94rem}
+.sp-register{align-self:flex-start;margin-top:.8rem}
 
 @media (max-width:1020px){
   .lu-grid{display:flex;flex-direction:column}

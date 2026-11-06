@@ -69,6 +69,8 @@ noindex: true
           {% elsif s.speaker_text %}
           <p class="ses-who"><b>{{ s.speaker_text }}</b></p>
           {% endif %}
+          {% assign info = lineup.session_info[s.code] %}
+          {% if info.luma_url %}<a class="ses-register" href="{{ info.luma_url }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
           {% endif %}
         </article>
         {% endfor %}
@@ -102,9 +104,12 @@ noindex: true
     {% assign span = s.span | default: 1 %}
     {% assign last = slot_index | plus: span | minus: 1 %}
     {% assign room = lineup.rooms | where: "id", s.room | first %}
+    {% assign info = lineup.session_info[s.code] %}
     <li>
       <b>{{ s.title | escape }}</b>
       <span>{{ s.code }} · {{ day.date }} · {{ slot.start }}–{{ day.slots[last].end }} · {{ room.name }}</span>
+      {% if info.description %}<p class="sp-desc">{{ info.description | escape }}</p>{% endif %}
+      {% if info.luma_url %}<a class="btn btn-mint sp-register" href="{{ info.luma_url }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
     </li>
     {% endif %}
     {% endfor %}
