@@ -61,6 +61,7 @@ noindex: true
           <h3 class="ses-title">{{ s.title | escape }}</h3>
           {% if sp %}
           <p class="ses-who"><b>{{ sp.name }}</b><span>{{ sp.org }}</span></p>
+          {% for co in s.co_speakers %}{% assign cs = lineup.speakers[co] %}<p class="ses-who"><b>{{ cs.name }}</b><span>{{ cs.org }}</span></p>{% endfor %}
           <div class="ses-tags">
             <span class="lvl lvl-{{ sp.level }}">{{ lineup.levels[sp.level] }}</span>
             {% for a in sp.audience %}<span class="aud aud-{{ a }}">{{ lineup.audiences[a] }}</span>{% endfor %}

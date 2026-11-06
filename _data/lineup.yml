@@ -3,6 +3,7 @@
 #
 # Cada slot es una fila del horario. Cada sesión indica su sala (room) y cuántos slots
 # ocupa (span, 1 por defecto). room "all" ocupa todas las salas.
+# co_speakers agrega más personas a la sesión; las pills salen de speaker.
 # kind: conferencia | taller | general | libre (sala sin actividad: "Espacio no disponible")
 
 rooms:
@@ -43,21 +44,14 @@ speakers:
     org: "UPY"
     level: intermedio
     audience: [general, estudiantes, profesionistas, academia, comunidad]
-  alejandro-gonzalez:
-    name: "Alejandro Mauricio González"
-    org: "Universidad Autónoma de Zacatecas"
-    level: principiante
-    audience: [estudiantes, tecnicos, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
   mauricio-carrillo:
     name: "Mauricio Carrillo"
     org: "Danil AI"
     level: ninguno
     audience: [estudiantes, profesionistas, academia]
-  brian-romero:
-    name: "Brian Romero Rojas"
-    org: "Nyvia"
-    level: ninguno
-    audience: [estudiantes, emprendedores, empresas, profesionistas]
+  alberto-ceballos:
+    name: "Alberto Ceballos"
+    org: "Danil AI"
   ulises-hoil:
     name: "Ulises Hoil"
     org: "Ecodata"
@@ -68,11 +62,6 @@ speakers:
     org: "Pass Your TOEFL"
     level: ninguno
     audience: [general, estudiantes, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
-  jaim-coba:
-    name: "Jaim Rajamin Cobá Canto"
-    org: "IMSS, Clínica Bioclinic"
-    level: ninguno
-    audience: [general]
   joel-suro:
     name: "Joel Suro Villalobos"
     org: "OMNA"
@@ -164,13 +153,13 @@ days:
         sessions:
           - { room: s1, kind: conferencia, code: "C3", speaker: ulises-hoil, title: "Geointeligencia y ecosistemas" }
           - { room: s2, kind: conferencia, code: "C4", speaker: david-garcia, title: "¿Cuánto oro estás dejando ir con tus datos? Cómo encontrar información valiosa antes de que se pierda en el río de datos" }
-          - { room: w1, kind: taller, code: "T1", span: 2, speaker: mauricio-carrillo, title: "Trabaja con agentes de IA en Terminus: tu primer proyecto, paso a paso" }
-          - { room: w2, kind: taller, code: "T2", span: 2, speaker: brian-romero, title: "De usar IA a generar impacto: cómo convertir la adopción de IA en resultados medibles" }
+          - { room: w1, kind: taller, code: "T1", span: 2, speaker: mauricio-carrillo, co_speakers: [alberto-ceballos], title: "Trabaja con agentes de IA en Terminus: tu primer proyecto, paso a paso" }
+          - { room: w2, kind: taller, code: "T2", span: 2, speaker_text: "Por definir", title: "Por definir" }
       - start: "13:00"
         end: "13:55"
         sessions:
-          - { room: s1, kind: conferencia, code: "C5", speaker: jaim-coba, title: "Epidemiología basada en datos: cómo convertir números en decisiones de salud" }
-          - { room: s2, kind: conferencia, code: "C6", speaker: alejandro-gonzalez, title: "Potencia los LLM con tus propios datos usando RAG" }
+          - { room: s1, kind: conferencia, code: "C5", speaker_text: "Por definir", title: "Por definir" }
+          - { room: s2, kind: conferencia, code: "C6", speaker_text: "Por definir", title: "Por definir" }
       - start: "14:00"
         end: "16:00"
         sessions:
