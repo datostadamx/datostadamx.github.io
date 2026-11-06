@@ -11,6 +11,7 @@ powered_by:   # patrocinadores
   - { name: "PCNET MX", file: "patrocinadores/pcnet-mx.webp" }
   - { name: "SEPRACOM", file: "patrocinadores/sepracom.webp" }
   - { name: "ANADIC Yucatán", file: "patrocinadores/anadic-yucatan.webp" }
+  - { name: "CSDOCS", file: "patrocinadores/csdocs.webp" }
 
 supported_by: # equipo / aliados
   - { name: "Universidad Politécnica de Yucatán", file: "equipo/upy.webp" }
