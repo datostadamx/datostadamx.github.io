@@ -165,6 +165,13 @@ speakers:
     bio: "Alejandro Daniel Espinosa Chim es científico de datos e investigador en IA, especializado en aprendizaje profundo y visión por computadora. Autor del libro Pensando en IA como primates, tiene publicaciones en Scopus sobre explicabilidad y visión artificial aplicada a la salud pública. Ha sido instructor de redes neuronales para la Universidad Nacional de Colombia, ponente en el COMIA y líder de divisiones en ACM y AAAIMX. Reconocido por la Complutense de Madrid y el NASA Space Apps Challenge."
     level: principiante
     audience: [general, estudiantes, academia, comunidad]
+  eligio-chan:
+    name: "Eligio Andrés Chan España"
+    org: "Ezzquad"
+    photo: "eligio-chan.webp"
+    bio: "Eligio Chan es Ingeniero en Sistemas Computacionales con 20 años de experiencia como Arquitecto de Datos e IT Project Manager, y Maestro en Data Science & Big Data con especialización en Machine Learning. Fundador y CEO de Ezzquad, consultora de transformación digital, desarrollo de software e IA. Es profesor en la Universidad Anáhuac Mayab, Vicepresidente de Transformación Digital de CANIETI Sureste y conferencista en tecnología, datos e inteligencia artificial."
+    level: principiante
+    audience: [general, emprendedores, empresas]
 
 days:
   - id: dia-1
@@ -197,7 +204,7 @@ days:
         end: "13:55"
         sessions:
           - { room: s1, kind: conferencia, code: "C5", speaker_text: "Por definir", title: "Por definir" }
-          - { room: s2, kind: conferencia, code: "C6", speaker_text: "Por definir", title: "Por definir" }
+          - { room: s2, kind: conferencia, code: "C6", speaker: eligio-chan, title: "Antes del prompt, el dato: el elefante en la sala" }
       - start: "14:00"
         end: "16:00"
         sessions:
