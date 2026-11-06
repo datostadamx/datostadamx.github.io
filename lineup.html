@@ -60,8 +60,8 @@ noindex: true
           </p>
           <h3 class="ses-title">{{ s.title | escape }}</h3>
           {% if sp %}
-          <p class="ses-who"><b>{{ sp.name }}</b><span>{{ sp.org }}</span></p>
-          {% for co in s.co_speakers %}{% assign cs = lineup.speakers[co] %}<p class="ses-who"><b>{{ cs.name }}</b><span>{{ cs.org }}</span></p>{% endfor %}
+          <p class="ses-who">{% if sp.bio %}<button type="button" class="ses-speaker" data-speaker="{{ s.speaker }}" aria-haspopup="dialog">{{ sp.name }}</button>{% else %}<b>{{ sp.name }}</b>{% endif %}<span>{{ sp.org }}</span></p>
+          {% for co in s.co_speakers %}{% assign cs = lineup.speakers[co] %}<p class="ses-who">{% if cs.bio %}<button type="button" class="ses-speaker" data-speaker="{{ co }}" aria-haspopup="dialog">{{ cs.name }}</button>{% else %}<b>{{ cs.name }}</b>{% endif %}<span>{{ cs.org }}</span></p>{% endfor %}
           <div class="ses-tags">
             <span class="lvl lvl-{{ sp.level }}">{{ lineup.levels[sp.level] }}</span>
             {% for a in sp.audience %}<span class="aud aud-{{ a }}">{{ lineup.audiences[a] }}</span>{% endfor %}
@@ -78,6 +78,42 @@ noindex: true
     {% endfor %}
   </div>
 </section>
+
+{% for entry in lineup.speakers %}
+{% assign key = entry[0] %}
+{% assign person = entry[1] %}
+{% if person.bio %}
+<dialog class="sp-modal" id="{{ key }}" aria-labelledby="{{ key }}-name">
+  <form method="dialog"><button class="sp-close" aria-label="Cerrar">×</button></form>
+  <div class="sp-head">
+    {% if person.photo %}<img class="sp-photo" src="{{ '/assets/speakers/' | append: person.photo | relative_url }}" alt="Fotografía de {{ person.name }}" width="140" height="140" loading="lazy">{% endif %}
+    <div>
+      <h2 id="{{ key }}-name">{{ person.name }}</h2>
+      <p class="sp-org">{{ person.org }}</p>
+    </div>
+  </div>
+  <p class="sp-bio">{{ person.bio | escape }}</p>
+  <ul class="sp-sessions">
+    {% for day in lineup.days %}
+    {% for slot in day.slots %}
+    {% assign slot_index = forloop.index0 %}
+    {% for s in slot.sessions %}
+    {% if s.speaker == key or s.co_speakers contains key %}
+    {% assign span = s.span | default: 1 %}
+    {% assign last = slot_index | plus: span | minus: 1 %}
+    {% assign room = lineup.rooms | where: "id", s.room | first %}
+    <li>
+      <b>{{ s.title | escape }}</b>
+      <span>{{ s.code }} · {{ day.date }} · {{ slot.start }}–{{ day.slots[last].end }} · {{ room.name }}</span>
+    </li>
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+  </ul>
+</dialog>
+{% endif %}
+{% endfor %}
 </main>
 
 <script>
@@ -106,5 +142,20 @@ noindex: true
     chips.forEach(c => c.setAttribute('aria-pressed', 'false'));
     apply();
   });
+
+  /* Modales de speakers: cada uno tiene su liga directa, p. ej. /lineup/#joel-suro */
+  function openSpeaker(id){
+    const modal = id && document.getElementById(id);
+    if (modal && modal.matches('dialog.sp-modal') && !modal.open) modal.showModal();
+  }
+  document.querySelectorAll('.ses-speaker').forEach(b => b.addEventListener('click', () => {
+    openSpeaker(b.dataset.speaker);
+    history.replaceState(null, '', '#' + b.dataset.speaker);
+  }));
+  document.querySelectorAll('.sp-modal').forEach(modal => {
+    modal.addEventListener('click', e => { if (e.target === modal) modal.close(); });
+    modal.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  openSpeaker(decodeURIComponent(location.hash.slice(1)));
 })();
 </script>

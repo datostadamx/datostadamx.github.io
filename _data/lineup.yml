@@ -4,6 +4,8 @@
 # Cada slot es una fila del horario. Cada sesión indica su sala (room) y cuántos slots
 # ocupa (span, 1 por defecto). room "all" ocupa todas las salas.
 # co_speakers agrega más personas a la sesión; las pills salen de speaker.
+# Con bio, el nombre abre un modal; photo es un archivo de assets/speakers/. Sin
+# autorización de la persona no se agregan bio ni photo.
 # kind: conferencia | taller | general | libre (sala sin actividad: "Espacio no disponible")
 
 rooms:
@@ -37,84 +39,118 @@ speakers:
   hector-monroy:
     name: "Héctor Gabriel Monroy Cáceres"
     org: "UADY / Monroy Seguros / OptipySolutions"
+    photo: "hector-monroy.webp"
+    bio: "Actuario por la UADY, cursa la Maestría en Finanzas en la misma institución. Es AI Solutions Engineer en DataSphereIX (arquitecturas de IA con LLMs sobre Azure) y co-fundador de OptiPy Solutions, firma de software e IA para empresas. Tiene experiencia en pricing y suscripción en Lockton y Zurich, y es co-fundador de Monroy Seguros. Profesor en la Facultad de Matemáticas, UADY, donde imparte Herramientas Computacionales y Gestión de Datos Aplicados."
     level: ninguno
     audience: [general, estudiantes, tecnicos, emprendedores, academia, sector-publico, comunidad]
   augusto-canul:
     name: "José Augusto Canul Chi"
     org: "UPY"
+    photo: "augusto-canul.webp"
+    bio: "José Augusto Canul Chi es profesional en Ingeniería de Datos, con experiencia en tecnologías de información y redes. Participa en IXSY (Internet Exchange Services Yucatán), contribuyendo al desarrollo del ecosistema de Internet en la región. Es Embajador de Investigación y Desarrollo de LACNIC, donde participa en iniciativas de innovación tecnológica para América Latina y el Caribe. También se desempeña como docente universitario."
     level: intermedio
     audience: [general, estudiantes, profesionistas, academia, comunidad]
   mauricio-carrillo:
     name: "Mauricio Carrillo"
     org: "Danil AI"
+    photo: "mauricio-carrillo.webp"
+    bio: "Mauricio Carrillo es ingeniero físico y desarrollador de software, y trabaja en Danil. Está convencido de que la inteligencia artificial también tiene que aprender a escuchar: ha trabajado en reconocimiento de voz y procesamiento de lenguaje natural para lenguas indígenas. Se mueve entre la ciencia de datos, la IA y el código, con una curiosidad que viene de la física: entender cómo funcionan las cosas para construir mejores herramientas."
     level: ninguno
     audience: [estudiantes, profesionistas, academia]
   alberto-ceballos:
     name: "Alberto Ceballos"
     org: "Danil AI"
+    photo: "alberto-ceballos.webp"
+    bio: "Alberto Ceballos es Founder & CEO de Danil, empresa mexicana que construye Terminus, una app gratuita cuya interfaz es de código abierto, para trabajar con agentes de IA. Trabaja con organizaciones que ya usan IA y necesitan gobernarla: decidir qué conocimiento tiene, qué capacidades se le dan y qué permisos requieren autorización humana. Presentó «IA confiable con gobierno corporativo» en Yucatán Tech Week 2026, en la Universidad Marista de Mérida."
   ulises-hoil:
     name: "Ulises Hoil"
     org: "Ecodata"
+    photo: "ulises-hoil.webp"
+    bio: "Aarón Ulises Poot Hoil: cuenta con experiencia en levantamiento y análisis de información, así como en estandarización de variables y bases de datos, elaboración de reportes y desarrollo de tableros interactivos. Su manejo de R y Python aporta capacidades para organizar y analizar los registros de los indicadores y comunicar sus resultados."
     level: principiante
     audience: [general, estudiantes, tecnicos, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
   david-garcia:
     name: "David García Zamora"
     org: "Pass Your TOEFL"
+    photo: "david-garcia.webp"
+    bio: "Fundador y CEO de Pass Your TOEFL desde 1997. Egresado del Tec de Mty en 1998. Poseedor del primer perfect score de TOEFL obtenido en la historia de Latinoamérica (1996). Único autor hispanohablante de libros TOEFL. Autor del libro El Emprendedor Latinoamericano en Ciudades Medianas y Pequeñas (2014), entre otros títulos. Ferviente partidario de los datos en la Educación desde 2010."
     level: ninguno
     audience: [general, estudiantes, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
   joel-suro:
     name: "Joel Suro Villalobos"
     org: "OMNA"
+    photo: "joel-suro.webp"
+    bio: "Soy CTO de OMNA. Construimos agentes de IA que se hacen cargo del trabajo manual en la operación de fabricantes y distribuidores — capturar pedidos, conciliar facturas, optimizar tu planta, desarrollar las ingenierias, revisar inventario, armar cotizaciones — y lo hacen 24/7. Tu equipo deja de teclear y pasa a decidir: atiende excepciones, vende y resuelve lo que sí requiere criterio. Mismo equipo, dos o tres veces el volumen."
     level: principiante
     audience: [general, estudiantes, tecnicos, emprendedores, empresas, profesionistas, academia, sector-publico, comunidad]
   mario-campos:
     name: "Mario Alejandro Campos Soberanis"
     org: "Neuraan"
+    photo: "mario-campos.webp"
+    bio: "Mario Campos Soberanis es Maestro en Ciencias de la Computación (UADY), CTO y cofundador de Neuraan. Fue Director de Tecnología de SoldAI, donde desarrolló publicaciones científicas arbitradas y una patente ante el IMPI. Fue Líder técnico de Tech4Nature México y es Profesor Asociado en la Universidad Politécnica de Yucatán, donde imparte NLP y sistemas predictivos."
     level: intermedio
     audience: [estudiantes, tecnicos, emprendedores]
   jonathan-castillo:
     name: "Jonathan Castillo"
     org: "OZ Digital"
+    photo: "jonathan-castillo.webp"
+    bio: "Jonathan Castillo es consultor de IA y Microsoft MVP. Desarrolla proyectos de datos e inteligencia artificial en la nube y participa activamente en comunidades tecnológicas, donde impulsa la democratización de la tecnología."
     level: intermedio
     audience: [general, estudiantes, tecnicos, empresas, comunidad]
   mary-falcon:
     name: "Mary Liliana Falcón López"
     org: "Everforth Apex Systems"
+    photo: "mary-falcon.webp"
+    bio: "Mary Falcon es Senior Tech Lead e Ingeniera en Sistemas con +15 años de trayectoria. Especializada en datos en la nube (AWS, GCP, Databricks) e IA Generativa (Agentic Workflows), ha liderado proyectos para empresas Fortune 500. Destaca como speaker en GDG y DevTalks, ex mentora y maestrante en Inteligencia Artificial. Su gran propósito es usar la innovación tecnológica para crear soluciones de alto impacto que mejoren la calidad de vida y generen un cambio positivo en la comunidad."
     level: principiante
     audience: [estudiantes, tecnicos, profesionistas, comunidad]
   fatima-miranda:
     name: "Fátima Miranda"
     org: "UPY, CentroGeo"
+    photo: "fatima-miranda.webp"
+    bio: "Ingeniera en datos egresada de la Universidad Politécnica de Yucatán, con una base sólida en ciencia de datos, ML y NLP. Actualmente cursa estudios de posgrado en ciencias de la información geoespacial y cuenta con experiencia aplicada en el área en CentroGeo Yucatán. Ha diseñado flujos de datos reproducibles, pipelines de machine learning y soluciones escalables. Su tesis de posgrado explora el uso de técnicas computacionales para caracterizar acústicamente las variantes del maya yucateco."
     level: intermedio
     audience: [estudiantes, tecnicos, academia, comunidad]
   alberto-lopez:
     name: "Alberto López Cardoza"
     org: "STXNext"
+    photo: "alberto-lopez.webp"
+    bio: "Alberto López Cardoza es Head of Delivery LATAM en STX Next, con amplia experiencia en ingeniería de software, datos e inteligencia artificial. Ha liderado proyectos tecnológicos internacionales para empresas Fortune 500. Combina su experiencia en liderazgo tecnológico con la docencia universitaria, impulsando la adopción de IA en el desarrollo de software y la formación de talento competitivo a escala global."
     level: principiante
     audience: [estudiantes, tecnicos, profesionistas, comunidad]
   mario-canche:
     name: "Mario Xavier Canche Uc"
     org: "AI Factory · BBVA México"
+    photo: "mario-canche.webp"
+    bio: "Licenciado en Matemáticas por la UADY. Estudió el Doctorado y Maestría en Ciencias en el CIMAT, especializándose en visión computacional, NLP e IA en general. Ha laborado en instituciones públicas y privadas, tales como el Banxico, HEBA Ideas y Undercurrency. Ha formado parte de la planta docente del TEC MTY, de la Anáhuac y UVEG. Actualmente es DS Senior Expert de la AI Factory - BBVA y coordina equipos de Data Scientist para la innovación, optimización de los productos y servicios de BBVA."
     level: principiante
     audience: [general, estudiantes, tecnicos, academia, comunidad]
   irma-pacheco:
     name: "Irma Pacheco Vázquez"
     org: "GANT"
+    photo: "irma-pacheco.webp"
+    bio: "Irma Cristina Pacheco Vázquez es empresaria y directiva con experiencia en tecnología, gestión de información y desarrollo de soluciones para optimizar procesos y fortalecer la toma de decisiones. Su trabajo integra datos, software y estrategia para generar mayor control, eficiencia y crecimiento. Participa activamente en el ecosistema empresarial como integrante del consejo de AMMEYUC, así como de Coparmex Jóvenes y MEY Península, impulsando liderazgo, innovación y competitividad."
     level: intermedio
     audience: [empresas, profesionistas, comunidad]
   roberto-escobar:
     name: "Roberto Carlos Escobar Iglesias"
     org: "Universidad Anáhuac Mayab"
+    photo: "roberto-escobar.webp"
+    bio: "Roberto Carlos Escobar Iglesias es estudiante de Ingeniería Industrial para la Dirección en la Universidad Anáhuac Mayab y practicante en la planta de manufactura MATPREO. Se especializa en la aplicación de metodologías Six Sigma (DMAIC) y Control Estadístico de Procesos (SPC) orientados a la optimización de producción y reducción de mermas. Ha liderado la implementación de sistemas estandarizados de captura de datos y dashboards analíticos para la toma de decisiones en planta."
     level: intermedio
     audience: [estudiantes, emprendedores, empresas, profesionistas]
   manuel-haro:
     name: "Manuel Haro Márquez"
     org: "Fundación DEDICA"
+    photo: "manuel-haro.webp"
+    bio: "Apasionado impulsor de la innovación tecnológica y de las tecnologías Open Source, Docente / Investigador en la UAZ, Fundador del Laboratorio de Software Libre de Zacatecas, Creador del Modelo de Innovación Colaborativa y la Catalización del Talento, Fundador y Presidente de la Fundación para el Desarrollo Digital y el Conocimiento Abierto así como líder de la Red de Laboratorios Open Source Innovation Labs; desde hace más de 1 lustro fuerte impulsor del desarrollo tecnológico Web3."
     level: intermedio
     audience: [tecnicos, empresas, academia, sector-publico]
   juan-gomez:
     name: "Juan Iván Gómez Peralta"
     org: "CINVESTAV Mérida"
+    photo: "juan-gomez.webp"
+    bio: "Juan Iván Gómez Peralta hizo su licenciatura, maestría, y doctorado en la UNAM, en los tres grados con mención honorífica. Ha publicado nueve artículos en revistas indizadas, seis de ellos sobre inteligencia artificial aplicada a ciencia de materiales. Su línea de investigación actual se enfoca en el uso de redes neuronales profundas para ampliar las capacidades de la caracterización de materiales por difracción de rayos X de polvos. Es Candidato a Investigador Nacional (SNII)."
     level: principiante
     audience: [general]
   alberto-garcia:
@@ -125,6 +161,8 @@ speakers:
   alejandro-espinosa:
     name: "Alejandro Daniel Espinosa Chim"
     org: "Techmaleon"
+    photo: "alejandro-espinosa.webp"
+    bio: "Alejandro Daniel Espinosa Chim es científico de datos e investigador en IA, especializado en aprendizaje profundo y visión por computadora. Autor del libro Pensando en IA como primates, tiene publicaciones en Scopus sobre explicabilidad y visión artificial aplicada a la salud pública. Ha sido instructor de redes neuronales para la Universidad Nacional de Colombia, ponente en el COMIA y líder de divisiones en ACM y AAAIMX. Reconocido por la Complutense de Madrid y el NASA Space Apps Challenge."
     level: principiante
     audience: [general, estudiantes, academia, comunidad]
 
