@@ -172,6 +172,13 @@ speakers:
     bio: "Eligio Chan es Ingeniero en Sistemas Computacionales con 20 años de experiencia como Arquitecto de Datos e IT Project Manager, y Maestro en Data Science & Big Data con especialización en Machine Learning. Fundador y CEO de Ezzquad, consultora de transformación digital, desarrollo de software e IA. Es profesor en la Universidad Anáhuac Mayab, Vicepresidente de Transformación Digital de CANIETI Sureste y conferencista en tecnología, datos e inteligencia artificial."
     level: principiante
     audience: [general, emprendedores, empresas]
+  emmanuel-perez:
+    name: "Emmanuel de Atocha Pérez Ojeda"
+    org: "Universidad Tecnológica del Centro"
+    photo: "emmanuel-perez.webp"
+    bio: "Profesional de Tecnologías de la Información y docente universitario con más de siete años de experiencia en educación superior. Profesor de Tiempo Completo en la Universidad Tecnológica del Centro, donde participa en la formación de profesionales en tecnologías y desarrollo de aplicaciones, además de la coordinación académica. Cursa una Maestría en Inteligencia Artificial y desarrolla proyectos de IA aplicada a la educación, con especial interés en las nuevas competencias profesionales."
+    level: ninguno
+    audience: [general, estudiantes, academia, comunidad]
 
 # Información por sesión, por su code. luma_url (opcional) muestra el botón "Regístrate"
 # en la tarjeta y en el modal. Ejemplo:
@@ -189,6 +196,8 @@ session_info:
     description: "Los datos son un río que arrastra fango y pepitas de oro; el reto es buscar, capturar y convertirlas en valor antes de que la corriente las lleve. Nuestra plataforma de preparación online desde 2011 ha ayudado a 25,000+ alumnos a estudiar en el extranjero. Quiero compartir cómo los datos del primer año nos mostraron una ventana cerebral de segundos donde los errores aún pueden corregirse permanentemente, lo cual transformó nuestro producto a un 97% de efectividad (40% es el estándar del giro)."
   T1:
     description: "Taller práctico e individual: cada persona avanza en una tarea real suya (una clase, un reporte, un proyecto de la escuela, del trabajo o de su comunidad) con ayuda de IA. Mauricio Carrillo te guía desde usar bien un servicio de IA hasta coordinar varios agentes en Terminus, una app gratuita cuya interfaz es de código abierto. Sales con tu tarea avanzada y un flujo que puedes repetir. No necesitas programar."
+  C5:
+    description: "La IA ya puede investigar, programar, escribir y resolver problemas en segundos. Entonces, ¿qué estamos certificando realmente? Esta ponencia cuestiona la forma en que la universidad demuestra que alguien aprendió. Si una máquina puede hacer una tarea, resolver un examen o construir un proyecto, ¿qué demuestra realmente el estudiante? Una conversación provocadora sobre el futuro de la educación y una pregunta inevitable: ¿qué significa aprender cuando la IA ya puede hacerlo? ¿Qué certificamos?"
   C6:
     description: "Todos hablamos de modelos, agentes y prompts, pero en la mayoría de las PyMEs mexicanas la inteligencia artificial no se atora en la tecnología. Se atora en los datos: clientes duplicados en el ERP, campos que nadie sabe qué significan, procesos sin dueño y decisiones tomadas en Excel. En esta charla compartimos lo que hemos aprendido implementando ERP, CRM e IA en empresas del sureste."
   C7:
@@ -248,7 +257,7 @@ days:
       - start: "13:00"
         end: "13:55"
         sessions:
-          - { room: s1, kind: conferencia, code: "C5", speaker_text: "Por definir", title: "Por definir" }
+          - { room: s1, kind: conferencia, code: "C5", speaker: emmanuel-perez, title: "¿Para qué estudiar si la IA ya puede hacerlo? La universidad frente a la era de los agentes de inteligencia artificial" }
           - { room: s2, kind: conferencia, code: "C6", speaker: eligio-chan, title: "Antes del prompt, el dato: el elefante en la sala" }
       - start: "14:00"
         end: "16:00"
