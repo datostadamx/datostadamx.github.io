@@ -1,19 +1,16 @@
 ---
 layout: default
-title: "Programa preliminar"
-description: "Vista previa del programa de Datostada MX 2026 para revisión interna."
+title: "Programa"
+description: "Programa de Datostada MX 2026: conferencias y talleres, horarios, salas y perfiles de ponentes."
 permalink: /lineup/
-# Página sin enlazar: no aparece en nav, footer ni sitemap, y pide a buscadores no indexarla.
-sitemap: false
-noindex: true
 ---
 {% assign lineup = site.data.lineup %}
 <main id="main">
 <section id="lineup">
   <div class="wrap">
-    <p class="sec-label">Vista previa · Borrador</p>
+    <p class="sec-label">{{ site.event.dates }} · {{ site.event.venue }}</p>
     <h1 class="sec-title">Programa <em>{{ site.event.year }}</em></h1>
-    <p class="sec-lead">Propuesta de programa para revisión del equipo. Horarios, salas y sesiones pueden cambiar antes de la versión final.</p>
+    <p class="sec-lead">Conferencias y talleres en dos escenarios y dos salas. Haz clic en el nombre de cada ponente para conocer su perfil y la descripción de su sesión.</p>
 
     <div class="lu-filters" aria-label="Filtrar sesiones">
       <div class="lu-filter-group">

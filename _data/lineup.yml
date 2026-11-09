@@ -179,6 +179,13 @@ speakers:
     bio: "Profesional de Tecnologías de la Información y docente universitario con más de siete años de experiencia en educación superior. Profesor de Tiempo Completo en la Universidad Tecnológica del Centro, donde participa en la formación de profesionales en tecnologías y desarrollo de aplicaciones, además de la coordinación académica. Cursa una Maestría en Inteligencia Artificial y desarrolla proyectos de IA aplicada a la educación, con especial interés en las nuevas competencias profesionales."
     level: ninguno
     audience: [general, estudiantes, academia, comunidad]
+  rodolfo-ferro:
+    name: "Rodolfo Ferro"
+    org: "Vira Doctores"
+    photo: "rodolfo-ferro.webp"
+    bio: "Rodolfo Ferro es Head of AI en Vira Doctores y docente de IA en EdgeHub y en el Diplomado en Ciencia de Datos de la ENES UNAM León. Es especialista en Métodos Estadísticos por el CIMAT y cursa la Maestría en Inteligencia Artificial Aplicada en el Tec de Monterrey. Ha trabajado como ingeniero de machine learning y visión por computadora para México, España y EE. UU. También fue Community & Tech Lead en Codeando México y Sherpa Digital de IA para Microsoft México. Fue summer intern en la Universidad de Harvard y ha dado charlas en PyCon Colombia, Talent Land y TEDxUNAMLeón, entre otros. Premio Estatal a la Juventud Guanajuato 2018."
+    level: intermedio
+    audience: [estudiantes, tecnicos, academia, comunidad]
 
 # Información por sesión, por su code. luma_url (opcional) muestra el botón "Regístrate"
 # en la tarjeta y en el modal. Ejemplo:
@@ -196,6 +203,8 @@ session_info:
     description: "Los datos son un río que arrastra fango y pepitas de oro; el reto es buscar, capturar y convertirlas en valor antes de que la corriente las lleve. Nuestra plataforma de preparación online desde 2011 ha ayudado a 25,000+ alumnos a estudiar en el extranjero. Quiero compartir cómo los datos del primer año nos mostraron una ventana cerebral de segundos donde los errores aún pueden corregirse permanentemente, lo cual transformó nuestro producto a un 97% de efectividad (40% es el estándar del giro)."
   T1:
     description: "Taller práctico e individual: cada persona avanza en una tarea real suya (una clase, un reporte, un proyecto de la escuela, del trabajo o de su comunidad) con ayuda de IA. Mauricio Carrillo te guía desde usar bien un servicio de IA hasta coordinar varios agentes en Terminus, una app gratuita cuya interfaz es de código abierto. Sales con tu tarea avanzada y un flujo que puedes repetir. No necesitas programar."
+  T2:
+    description: "En este taller construiremos, paso a paso, un buscador de imágenes satelitales y un clasificador de uso de suelo. Usaremos CLIP, un modelo preentrenado que convierte imágenes y texto en vectores (embeddings), y el dataset EuroSAT de imágenes Sentinel-2. Con ellos exploraremos cómo la IA \"entiende\" una imagen. Visualizaremos el dataset con PCA y UMAP, buscaremos imágenes similares, clasificaremos con solo describir las clases en texto (zero-shot) y veremos cómo un puñado de ejemplos etiquetados lleva la exactitud de 45% a 86%. Al final, quienes participen sabrán cuándo basta un modelo general y cuándo vale la pena usar sus propios datos."
   C5:
     description: "La IA ya puede investigar, programar, escribir y resolver problemas en segundos. Entonces, ¿qué estamos certificando realmente? Esta ponencia cuestiona la forma en que la universidad demuestra que alguien aprendió. Si una máquina puede hacer una tarea, resolver un examen o construir un proyecto, ¿qué demuestra realmente el estudiante? Una conversación provocadora sobre el futuro de la educación y una pregunta inevitable: ¿qué significa aprender cuando la IA ya puede hacerlo? ¿Qué certificamos?"
   C6:
@@ -253,7 +262,7 @@ days:
           - { room: s1, kind: conferencia, code: "C3", speaker: ulises-hoil, title: "Geointeligencia y ecosistemas" }
           - { room: s2, kind: conferencia, code: "C4", speaker: david-garcia, title: "¿Cuánto oro estás dejando ir con tus datos? Cómo encontrar información valiosa antes de que se pierda en el río de datos" }
           - { room: w1, kind: taller, code: "T1", span: 2, speaker: mauricio-carrillo, co_speakers: [alberto-ceballos], title: "Trabaja con agentes de IA en Terminus: tu primer proyecto, paso a paso" }
-          - { room: w2, kind: taller, code: "T2", span: 2, speaker_text: "Por definir", title: "Por definir" }
+          - { room: w2, kind: taller, code: "T2", span: 2, speaker: rodolfo-ferro, title: "Un buscador de imágenes con IA: embeddings, imágenes satelitales y clasificación con pocos datos" }
       - start: "13:00"
         end: "13:55"
         sessions:

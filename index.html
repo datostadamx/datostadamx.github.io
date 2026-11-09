@@ -144,36 +144,49 @@ layout: default
 
 <div class="divider"></div>
 <!-- ============ PROGRAMA ============ -->
+{% assign lineup = site.data.lineup %}
+{% assign n_conf = 0 %}{% assign n_talleres = 0 %}{% assign speaker_keys = "" %}
+{% for day in lineup.days %}{% for slot in day.slots %}{% for s in slot.sessions %}
+  {% if s.kind == "conferencia" %}{% assign n_conf = n_conf | plus: 1 %}{% elsif s.kind == "taller" %}{% assign n_talleres = n_talleres | plus: 1 %}{% endif %}
+  {% if s.speaker %}{% assign speaker_keys = speaker_keys | append: s.speaker | append: "," %}{% endif %}
+  {% for co in s.co_speakers %}{% assign speaker_keys = speaker_keys | append: co | append: "," %}{% endfor %}
+{% endfor %}{% endfor %}{% endfor %}
+{% assign speaker_keys = speaker_keys | split: "," | uniq %}
 <section id="programa">
   <div class="wrap">
     <p class="sec-label rv">05 · Programa</p>
     <h2 class="sec-title rv rv-d1">Programa <em>{{ site.event.year }}</em></h2>
-    <p class="sec-lead rv rv-d2">Dos días de ideas, herramientas, conversaciones y conexiones alrededor del futuro de los datos.</p>
+    <p class="sec-lead rv rv-d2">Dos días con {{ n_conf }} conferencias y {{ n_talleres }} talleres prácticos sobre datos, inteligencia artificial y tecnología, en dos escenarios y dos salas de talleres.</p>
     <div class="dias">
-      <article class="dia rv">
-        <header><h3>Viernes 13 de noviembre</h3><span>Día 01</span></header>
-        <ol>
-          <li>Registro y bienvenida</li>
-          <li>Conferencias magistrales</li>
-          <li>Talleres técnicos</li>
-          <li>Paneles y conversaciones abiertas</li>
-          <li>Área expo y networking</li>
+      {% for day in lineup.days %}
+      <article class="dia rv{% if forloop.index0 > 0 %} rv-d1{% endif %}">
+        <header><h3>{{ day.date }}</h3><span>{{ day.label }}</span></header>
+        <ol class="dia-agenda">
+          {% assign g_start = "" %}{% assign g_conf = 0 %}{% assign g_talleres = 0 %}
+          {% for slot in day.slots %}
+          {% assign first = slot.sessions | first %}
+          {% if first.room == "all" %}
+            {% if g_start != "" %}
+              {% include programa-bloque.html start=g_start end=g_end conf=g_conf talleres=g_talleres %}
+              {% assign g_start = "" %}{% assign g_conf = 0 %}{% assign g_talleres = 0 %}
+            {% endif %}
+          <li><time>{{ slot.start }}</time><span>{% if first.code %}{{ first.code }}: {% endif %}{{ first.title }}</span></li>
+          {% else %}
+            {% if g_start == "" %}{% assign g_start = slot.start %}{% endif %}
+            {% assign g_end = slot.end %}
+            {% for s in slot.sessions %}
+              {% if s.kind == "conferencia" %}{% assign g_conf = g_conf | plus: 1 %}{% elsif s.kind == "taller" %}{% assign g_talleres = g_talleres | plus: 1 %}{% endif %}
+            {% endfor %}
+          {% endif %}
+          {% endfor %}
+          {% if g_start != "" %}{% include programa-bloque.html start=g_start end=g_end conf=g_conf talleres=g_talleres %}{% endif %}
         </ol>
       </article>
-      <article class="dia rv rv-d1">
-        <header><h3>Sábado 14 de noviembre</h3><span>Día 02</span></header>
-        <ol>
-          <li>Conferencias y casos de aplicación</li>
-          <li>Talleres y experiencias prácticas</li>
-          <li>Presentación de comunidades y startups</li>
-          <li>Open space</li>
-          <li>Networking de cierre</li>
-        </ol>
-      </article>
+      {% endfor %}
     </div>
     <div class="prog-note rv">
-      <p>El programa detallado, horarios, talleres y ponentes se anunciarán próximamente. Regístrate para recibir las actualizaciones primero.</p>
-      <a class="btn btn-mint" href="#registro">Recibe las actualizaciones del programa</a>
+      <p>Consulta horarios, salas, descripciones de cada sesión y perfiles de ponentes. Puedes filtrar por nivel de conocimiento y tipo de audiencia.</p>
+      <a class="btn btn-mint" href="{{ '/lineup/' | relative_url }}">Ver programa completo →</a>
     </div>
   </div>
 </section>
@@ -184,28 +197,22 @@ layout: default
 <section id="ponentes">
   <div class="wrap">
     <p class="sec-label rv">06 · Ponentes</p>
-    <h2 class="sec-title rv rv-d1">Voces que se <em>anunciarán pronto</em></h2>
-    <p class="sec-lead rv rv-d2">Estamos confirmando a las personas que compartirán ideas, casos y herramientas en los tres ejes del evento. Regístrate para conocerlas primero.</p>
-    <div class="pon-grid">
-      <div class="pon rv">
-        <svg viewBox="0 0 44 44" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
-        <b>Keynote · Applied AI</b><span>Por anunciar</span>
-      </div>
-      <div class="pon rv rv-d1">
-        <svg viewBox="0 0 44 44" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
-        <b>Keynote · Data for All</b><span>Por anunciar</span>
-      </div>
-      <div class="pon rv rv-d2">
-        <svg viewBox="0 0 44 44" fill="none" stroke="#85dcb1" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
-        <b>Keynote · Nature &amp; Data</b><span>Por anunciar</span>
-      </div>
-      <a class="pon rv rv-d3" href="{{ site.forms.speaker_url }}" target="_blank" rel="noopener">
-        <svg viewBox="0 0 44 44" fill="none" stroke="#f0d98c" stroke-width="1.4" aria-hidden="true"><circle cx="22" cy="16" r="8"/><path d="M6 40c2-9 8-13 16-13s14 4 16 13"/></svg>
-        <b>¿Propones una charla?</b><span>Postúlate aquí ↗</span>
-      </a>
-    </div>
+    <h2 class="sec-title rv rv-d1">Las voces de <em>{{ site.title }} {{ site.event.year }}</em></h2>
+    <p class="sec-lead rv rv-d2">{{ speaker_keys.size }} personas de la academia, la industria y el sector público compartirán casos, herramientas e investigación. Conoce su perfil y su sesión.</p>
+    <ul class="pon-grid">
+      {% for key in speaker_keys %}
+      {% assign p = lineup.speakers[key] %}
+      <li class="rv">
+        <a class="pon" href="{{ '/lineup/' | relative_url }}#{{ key }}">
+          {% if p.photo %}<img src="{{ '/assets/speakers/' | append: p.photo | relative_url }}" alt="" width="96" height="96" loading="lazy">{% else %}{% assign w = p.name | split: " " %}<span class="pon-initials" aria-hidden="true">{{ w[0] | slice: 0 }}{{ w[1] | slice: 0 }}</span>{% endif %}
+          <b>{{ p.name }}</b>
+          <span>{{ p.org }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
     <div class="hero-ctas rv" style="margin-top:2.4rem">
-      <a class="btn btn-ghost" href="#programa">Ver agenda</a>
+      <a class="btn btn-ghost" href="{{ '/lineup/' | relative_url }}">Ver programa completo →</a>
     </div>
   </div>
 </section>

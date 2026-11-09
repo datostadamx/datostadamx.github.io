@@ -23,13 +23,16 @@ Then open http://localhost:4000.
 
 - `_config.yml` — site-wide settings: event year/dates/location/venue, Luma registration id, social links, contact email.
 - `_data/faq.yml` — the FAQ list rendered on the homepage. Add/edit/remove questions here, no HTML needed.
+- `_data/lineup.yml` — the program: rooms, speakers (bio, photo, level, audience), session descriptions and the schedule. It feeds `/lineup/`, the homepage program summary and the speakers grid.
+- `_data/logos.yml` — sponsor (Powered by) and partner (Supported by) logos shown on the homepage.
 - `_layouts/`, `_includes/` — shared head, nav, footer, and scripts used by every page.
-- `index.html` — the one-page site (hero, evento, ejes, programa, ponentes, registro, patrocina, sede, FAQ).
-- `code-of-conduct.html` — the only other standalone page.
+- `index.html` — the one-page site (hero, evento, ejes, programa, ponentes, registro, patrocina, aliados, sede, FAQ).
+- `lineup.html` — the full program at `/lineup/`, with filters and speaker modals (e.g. `/lineup/#joel-suro`).
+- `code-of-conduct.html` — the code of conduct page.
 - `css/style.css`, `js/site.js` — all styling and behavior (particle-network hero, scroll reveal, FAQ accordion, mobile nav). No external frameworks.
-- `assets/` — logo/favicon. Speaker photos, sponsor logos, etc. can go here once confirmed.
+- `assets/` — logo/favicon, `assets/speakers/` (speaker photos) and `assets/logos/` (sponsor and partner logos), all as optimized `.webp`.
 
-The current design is based on a template supplied directly with 2026 edition copy. The "Ponentes" (speakers) and sponsor sections still show placeholders ("Por anunciar") — once those are confirmed, that's a good time to reintroduce a `_data/speakers.yml`-style file rather than hardcoding names into `index.html`.
+The current design is based on a template supplied directly with 2026 edition copy.
 
 ## License
 

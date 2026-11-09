@@ -256,7 +256,12 @@ section{position:relative}
   border-bottom:1px dashed var(--wine-line);font-size:.98rem;
 }
 .dia li:last-child{border-bottom:none}
+.dia-agenda time{font-family:var(--font-m);font-size:.8rem;color:var(--cream-45);flex:0 0 6.6rem}
+.dia-agenda li.is-block time{color:var(--mint)}
+.dia-agenda li.is-block span{color:var(--cream);font-weight:600;display:flex;flex-direction:column}
+.dia-agenda small{font-weight:400;font-size:.82rem;color:var(--cream-45)}
 .dia li::before{content:"◆";color:var(--mint);font-size:.6rem;flex:0 0 auto;transform:translateY(-2px)}
+.dia-agenda li::before{content:none}
 .prog-note{
   margin-top:2rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.4rem;justify-content:space-between;
   border:1px dashed var(--cream-45);border-radius:var(--radius);padding:1.5rem 1.8rem;
@@ -264,15 +269,17 @@ section{position:relative}
 .prog-note p{color:var(--cream-70);font-size:.95rem;max-width:52ch}
 
 /* ============ PONENTES ============ */
-.pon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;margin-top:3rem}
+.pon-grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem;margin-top:3rem}
 .pon{
-  border:1px dashed var(--cream-45);border-radius:var(--radius);padding:2rem 1.6rem;
-  min-height:250px;display:flex;flex-direction:column;justify-content:flex-end;gap:.4rem;
-  position:relative;overflow:hidden;
+  height:100%;border:1px solid var(--wine-line);border-radius:var(--radius);padding:1.4rem 1rem 1.3rem;
+  display:flex;flex-direction:column;align-items:center;text-align:center;gap:.3rem;
+  transition:border-color .3s,transform .3s var(--ease),background .3s;
 }
-.pon svg{position:absolute;top:1.4rem;left:1.6rem;width:44px;height:44px;opacity:.8}
-.pon b{font-size:1.05rem;font-weight:600}
-.pon span{font-family:var(--font-m);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cream-45)}
+.pon:hover{border-color:var(--mint);background:var(--wine-2);transform:translateY(-4px)}
+.pon img,.pon-initials{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid var(--mint);margin-bottom:.6rem}
+.pon-initials{display:flex;align-items:center;justify-content:center;background:var(--wine-3);color:var(--mint);font-weight:700;font-size:1.6rem}
+.pon b{font-size:.98rem;font-weight:600;line-height:1.25}
+.pon span{font-family:var(--font-m);font-size:.68rem;letter-spacing:.04em;color:var(--cream-45);line-height:1.35}
 
 /* ============ REGISTRO ============ */
 .registro{background:var(--wine-2);border-top:1px solid var(--wine-line);border-bottom:1px solid var(--wine-line)}
@@ -515,7 +522,6 @@ html:has(.sp-modal[open]){overflow:hidden}
   .perfiles-grid{grid-template-columns:repeat(2,1fr)}
   .ejes{grid-template-columns:1fr}
   .eje{min-height:0}
-  .pon-grid{grid-template-columns:repeat(2,1fr)}
   .evento-cols,.registro-grid,.sede-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
   .luma-frame{height:560px}
@@ -532,10 +538,10 @@ html:has(.sp-modal[open]){overflow:hidden}
   .stats-grid{grid-template-columns:repeat(2,1fr)}
   .perfiles-grid{grid-template-columns:1fr}
   .dias{grid-template-columns:1fr}
-  .pon-grid{grid-template-columns:1fr}
   .exp-row{grid-template-columns:1fr;gap:.5rem}
   .exp-row .arrow{display:none}
   .pat-benefits{grid-template-columns:1fr}
+  .pon-grid{grid-template-columns:repeat(2,1fr)}
   .foot-grid{grid-template-columns:1fr}
   .hero-scroll{display:none}
   body{padding-bottom:64px}
