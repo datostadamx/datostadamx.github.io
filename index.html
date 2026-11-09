@@ -123,18 +123,26 @@ layout: default
 
 <div class="divider"></div>
 
+{% assign lineup = site.data.lineup %}
+{% assign n_conf = 0 %}{% assign n_talleres = 0 %}{% assign speaker_keys = "" %}
+{% for day in lineup.days %}{% for slot in day.slots %}{% for s in slot.sessions %}
+  {% if s.kind == "conferencia" %}{% assign n_conf = n_conf | plus: 1 %}{% elsif s.kind == "taller" %}{% assign n_talleres = n_talleres | plus: 1 %}{% endif %}
+  {% if s.speaker %}{% assign speaker_keys = speaker_keys | append: s.speaker | append: "," %}{% endif %}
+  {% for co in s.co_speakers %}{% assign speaker_keys = speaker_keys | append: co | append: "," %}{% endfor %}
+{% endfor %}{% endfor %}{% endfor %}
+{% assign speaker_keys = speaker_keys | split: "," | uniq %}
 <!-- ============ EXPERIENCIA ============ -->
 <section id="experiencia">
   <div class="wrap">
     <p class="sec-label rv">04 · La experiencia</p>
     <h2 class="sec-title rv rv-d1">Aprende, conecta y construye <em>oportunidades</em></h2>
-    <p class="sec-lead rv rv-d2">{{ site.title }} no es sólo una serie de charlas. Es un espacio para conversar con personas que están construyendo el futuro de los datos desde distintos sectores y disciplinas.</p>
+    <p class="sec-lead rv rv-d2">{{ site.title }} no es sólo una serie de charlas. Es un espacio para aprender de quienes trabajan con datos en la academia, la industria y el sector público, practicar con herramientas reales y conectar con la comunidad.</p>
     <div class="exp-list">
-      <div class="exp-row rv"><span class="tag">Keynotes</span><p>Ideas, casos y perspectivas de personas expertas.</p><span class="arrow">→</span></div>
-      <div class="exp-row rv rv-d1"><span class="tag">Workshops</span><p>Sesiones prácticas para explorar herramientas, metodologías y aplicaciones.</p><span class="arrow">→</span></div>
-      <div class="exp-row rv rv-d2"><span class="tag">Paneles</span><p>Conversaciones entre ciencia, industria, gobierno y comunidad.</p><span class="arrow">→</span></div>
-      <div class="exp-row rv rv-d3"><span class="tag">Área expo</span><p>Conoce empresas, organizaciones, productos, proyectos y comunidades.</p><span class="arrow">→</span></div>
-      <div class="exp-row rv rv-d4"><span class="tag">Networking</span><p>Encuentra colaboradores, talento, mentorías, aliados, oportunidades y nuevas conversaciones.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv"><span class="tag">Conferencias</span><p>{{ n_conf }} charlas en dos escenarios con casos, investigación y aprendizajes de quienes aplican datos e IA en su día a día.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d1"><span class="tag">Talleres</span><p>{{ n_talleres }} sesiones prácticas de dos horas: agentes de IA, SQL y Python, análisis geoespacial, búsqueda de imágenes con embeddings y más.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d2"><span class="tag">Open space</span><p>Comunidades y startups presentan sus proyectos y lo que están construyendo en la región.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d3"><span class="tag">Stands</span><p>Conoce empresas, organizaciones, proyectos y comunidades que trabajan con datos y tecnología.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d4"><span class="tag">Networking</span><p>Cerramos con tostadas: encuentra colaboradores, talento, aliados y nuevas oportunidades.</p><span class="arrow">→</span></div>
     </div>
     <div class="hero-ctas rv" style="margin-top:2.4rem">
       <a class="btn btn-mint" href="#registro">Apartar mi lugar</a>
@@ -144,14 +152,6 @@ layout: default
 
 <div class="divider"></div>
 <!-- ============ PROGRAMA ============ -->
-{% assign lineup = site.data.lineup %}
-{% assign n_conf = 0 %}{% assign n_talleres = 0 %}{% assign speaker_keys = "" %}
-{% for day in lineup.days %}{% for slot in day.slots %}{% for s in slot.sessions %}
-  {% if s.kind == "conferencia" %}{% assign n_conf = n_conf | plus: 1 %}{% elsif s.kind == "taller" %}{% assign n_talleres = n_talleres | plus: 1 %}{% endif %}
-  {% if s.speaker %}{% assign speaker_keys = speaker_keys | append: s.speaker | append: "," %}{% endif %}
-  {% for co in s.co_speakers %}{% assign speaker_keys = speaker_keys | append: co | append: "," %}{% endfor %}
-{% endfor %}{% endfor %}{% endfor %}
-{% assign speaker_keys = speaker_keys | split: "," | uniq %}
 <section id="programa">
   <div class="wrap">
     <p class="sec-label rv">05 · Programa</p>
@@ -265,7 +265,7 @@ layout: default
       </article>
       <article class="pat-benefit rv rv-d2">
         <span class="tag">[ Liderazgo ]</span>
-        <p>Comparte casos, herramientas y conocimiento a través de keynotes, workshops, demostraciones o retos de datos.</p>
+        <p>Comparte casos, herramientas y conocimiento a través de conferencias, talleres, demostraciones o retos de datos.</p>
       </article>
     </div>
     <div class="pat-ctas rv">

@@ -16,10 +16,10 @@
   answer: "La información sobre constancias y sus criterios de emisión se comunicará próximamente. Se recomienda registrar correctamente tu nombre y correo electrónico."
 
 - question: "¿Habrá talleres?"
-  answer: "Sí. El programa contempla workshops técnicos y experiencias prácticas. Algunas actividades pueden requerir registro previo, por capacidad limitada."
+  answer: 'Sí. Habrá 6 talleres prácticos de dos horas sobre agentes de IA, SQL y Python, análisis geoespacial, búsqueda de imágenes con embeddings y más. Consulta horarios y salas en el <a href="/lineup/" style="color:var(--mint)">programa completo</a>. Algunos talleres podrían requerir registro previo por capacidad limitada.'
 
 - question: "¿Puedo presentar mi startup, proyecto o comunidad?"
-  answer: "Sí. El evento contará con espacios de networking, área expo y actividades de comunidad. Las convocatorias y mecanismos de participación se anunciarán próximamente."
+  answer: 'Sí. Puedes registrar un stand en <a href="https://docs.google.com/forms/d/e/1FAIpQLScgNJorygllLtsUI4qxS292HsxZyayhB4aAOK--3VwhZqt98Q/viewform" target="_blank" rel="noopener" style="color:var(--mint)">este formulario</a>. Además, el sábado 14 tendremos un open space para que comunidades y startups presenten sus proyectos; si te interesa participar, escríbenos a <a href="mailto:datostadamx2026@gmail.com?subject=Open%20space%20Datostada%20MX%202026" style="color:var(--mint)">datostadamx2026@gmail.com</a>.'
 
 - question: "¿Puedo asistir si vengo de otro estado o país?"
   answer: "Sí. Datostada MX es un evento abierto. Consulta la sección “Sede” para planear tu llegada a Mérida."
