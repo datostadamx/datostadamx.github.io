@@ -194,9 +194,9 @@ speakers:
 #     luma_url: "https://luma.com/..."
 session_info:
   C1:
-    description: "Cuando una IA conversacional necesita guardar sesiones cambiantes, un CRM de seguros necesita datos distintos por aseguradora y un ERP jurídico necesita evolucionar sin detener el sistema, el modelo relacional se vuelve una camisa de fuerza. En esta conferencia modelamos datos de sistemas reales que he construido (CRMs de seguros, automatización con LLMs) usando MongoDB: cuándo sí conviene NoSQL, cómo diseñar esquemas flexibles y los errores más comunes al migrar desde SQL."
+    description: "En Cloud Ascend, protegemos la propiedad intelectual de nuestros clientes, tanto los aplicativos de misión crítica que fueron desarrollados entre las décadas de los 60 y los 90, así como los procesos de negocio que han permitido que nuestros clientes lleguen a donde están hoy. Analizando cómo a través de la tecnología se les puede mejorar significativamente cuando se trabaja desde las especificaciones que sus clientes (internos y externos) necesitan en el mundo contemporáneo."
   C2:
-    description: "En esta conferencia exploraremos los datasets disponibles para hacer investigaciones sobre la infraestructura crítica que le da soporte a la tecnología y a internet, así como una herramienta de medición activa que se conoce como RIPE Atlas."
+    description: "Cuando una IA conversacional necesita guardar sesiones cambiantes, un CRM de seguros necesita datos distintos por aseguradora y un ERP jurídico necesita evolucionar sin detener el sistema, el modelo relacional se vuelve una camisa de fuerza. En esta conferencia modelamos datos de sistemas reales que he construido (CRMs de seguros, automatización con LLMs) usando MongoDB: cuándo sí conviene NoSQL, cómo diseñar esquemas flexibles y los errores más comunes al migrar desde SQL."
   C3:
     description: "EcoData integra ciencia, tecnología geoespacial y conocimiento local para monitorear, gestionar y restaurar ecosistemas de la Península de Yucatán. Desarrollamos soluciones que ayudan a identificar dónde conservar, cómo restaurar y de qué manera orientar el desarrollo, evaluando los resultados para contribuir a ecosistemas saludables y al bienestar de las comunidades. Trabajando desde las ciudades hasta las costas."
   C4:
@@ -232,7 +232,7 @@ session_info:
   C14:
     description: "En esta plática se presentarán los avances y logros de un proyecto de investigación postdoctoral cuyo principal objetivo es extender el alcance de una técnica en el análisis de materiales cristalinos, conocida como difracción de rayos X de polvos (DRXP). En esta plática se presentarán algunos modelos basados en redes neuronales profundas para regresión y cómo se pueden destilar nuevos modelos a partir de los ya entrenados."
   C15:
-    description: "En Cloud Ascend, protegemos la propiedad intelectual de nuestros clientes, tanto los aplicativos de misión crítica que fueron desarrollados entre las décadas de los 60 y los 90, así como los procesos de negocio que han permitido que nuestros clientes lleguen a donde están hoy. Analizando cómo a través de la tecnología se les puede mejorar significativamente cuando se trabaja desde las especificaciones que sus clientes (internos y externos) necesitan en el mundo contemporáneo."
+    description: "En esta conferencia exploraremos los datasets disponibles para hacer investigaciones sobre la infraestructura crítica que le da soporte a la tecnología y a internet, así como una herramienta de medición activa que se conoce como RIPE Atlas."
   C16:
     description: "Yucatán es uno de los estados con más casos de Chagas en México, una enfermedad silenciosa que puede causar daño cardíaco grave e incluso la muerte. Su principal vector es la chinche besucona, conocida localmente como pik. En esta charla recorreremos, sin fórmulas que asusten, el flujo completo de visión por computadora: captura y etiquetado de imágenes, preprocesamiento, entrenamiento de una red neuronal, evaluación y detección de la chinche en fotografías. Con datos reales y demo en vivo."
 
@@ -252,8 +252,8 @@ days:
       - start: "11:00"
         end: "11:55"
         sessions:
-          - { room: s1, kind: conferencia, code: "C1", speaker: hector-monroy, title: "Modelar sin miedo: bases de datos NoSQL (MongoDB) para sistemas de IA y CRMs en producción" }
-          - { room: s2, kind: conferencia, code: "C2", speaker: augusto-canul, title: "Datos y mediciones sobre internet" }
+          - { room: s1, kind: conferencia, code: "C1", speaker: alberto-garcia, title: "Protege tu propiedad intelectual con IA agéntica" }
+          - { room: s2, kind: conferencia, code: "C2", speaker: hector-monroy, title: "Modelar sin miedo: bases de datos NoSQL (MongoDB) para sistemas de IA y CRMs en producción" }
           - { room: w1, kind: libre }
           - { room: w2, kind: libre }
       - start: "12:00"
@@ -312,7 +312,7 @@ days:
       - start: "12:00"
         end: "12:55"
         sessions:
-          - { room: s1, kind: conferencia, code: "C15", speaker: alberto-garcia, title: "Protege tu propiedad intelectual con IA agéntica" }
+          - { room: s1, kind: conferencia, code: "C15", speaker: augusto-canul, title: "Datos y mediciones sobre internet" }
           - { room: s2, kind: conferencia, code: "C16", speaker: alejandro-espinosa, title: "Besos que matan: cómo la IA aprende a detectar a los vectores del Chagas en Yucatán" }
           - { room: w1, kind: libre }
           - { room: w2, kind: libre }
