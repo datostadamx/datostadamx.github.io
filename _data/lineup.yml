@@ -317,18 +317,6 @@ days:
           - { room: w1, kind: libre }
           - { room: w2, kind: libre }
       - start: "13:00"
-        end: "15:00"
+        end: "16:00"
         sessions:
-          - { room: all, kind: general, title: "Comida" }
-      - start: "15:00"
-        end: "15:25"
-        sessions:
-          - { room: all, kind: general, title: "Clausura del evento" }
-      - start: "15:30"
-        end: "16:30"
-        sessions:
-          - { room: all, kind: general, code: "Open space", title: "Presentación de comunidades y startups" }
-      - start: "16:30"
-        end: "18:00"
-        sessions:
-          - { room: all, kind: general, code: "Open space", title: "Networking + tostadas" }
+          - { room: all, kind: general, code: "Open space", title: "Presentación de comunidades y startups · Networking + tostadas" }
