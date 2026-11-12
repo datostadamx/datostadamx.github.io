@@ -11,12 +11,6 @@ permalink: /lineup/
     <p class="sec-label">{{ site.event.dates }} · {{ site.event.venue }}</p>
     <h1 class="sec-title">Programa <em>{{ site.event.year }}</em></h1>
     <p class="sec-lead">Conferencias y talleres en dos escenarios y dos salas. Haz clic en el nombre de cada ponente para conocer su perfil y la descripción de su sesión.</p>
-    {% if site.forms.workshops_url %}
-    <div class="lu-note">
-      <p><b>Los talleres tienen cupo limitado.</b> Regístrate a cada taller al que quieras asistir; los talleres de la misma hora se imparten en paralelo.</p>
-      <a class="btn btn-mint" href="{{ site.forms.workshops_url }}" target="_blank" rel="noopener">Registrarme a un taller ↗</a>
-    </div>
-    {% endif %}
 
     <div class="lu-filters" aria-label="Filtrar sesiones">
       <div class="lu-filter-group">
@@ -73,8 +67,7 @@ permalink: /lineup/
           <p class="ses-who"><b>{{ s.speaker_text }}</b></p>
           {% endif %}
           {% assign info = lineup.session_info[s.code] %}
-          {% assign reg = info.registration_url %}{% if s.kind == "taller" and reg == nil %}{% assign reg = site.forms.workshops_url %}{% endif %}
-          {% if reg %}<a class="ses-register" href="{{ reg }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
+          {% if info.registration_url %}<a class="ses-register" href="{{ info.registration_url }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
           {% endif %}
         </article>
         {% endfor %}
@@ -113,8 +106,7 @@ permalink: /lineup/
       <b>{{ s.title | escape }}</b>
       <span>{{ s.code }} · {{ day.date }} · {{ slot.start }}–{{ day.slots[last].end }} · {{ room.name }}</span>
       {% if info.description %}<p class="sp-desc">{{ info.description | escape }}</p>{% endif %}
-      {% assign reg = info.registration_url %}{% if s.kind == "taller" and reg == nil %}{% assign reg = site.forms.workshops_url %}{% endif %}
-      {% if reg %}<a class="btn btn-mint sp-register" href="{{ reg }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
+      {% if info.registration_url %}<a class="btn btn-mint sp-register" href="{{ info.registration_url }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
     </li>
     {% endif %}
     {% endfor %}

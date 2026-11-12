@@ -195,8 +195,7 @@ speakers:
     audience: [general, empresas, profesionistas, emprendedores]
 
 # Información por sesión, por su code. registration_url (opcional) muestra el botón
-# "Regístrate" en la tarjeta y en el modal; los talleres usan forms.workshops_url de
-# _config.yml si no tienen una propia. Ejemplo:
+# "Regístrate" en la tarjeta y en el modal. Ejemplo:
 #   C1:
 #     description: "..."
 #     registration_url: "https://..."
