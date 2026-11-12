@@ -186,6 +186,13 @@ speakers:
     bio: "Rodolfo Ferro es Head of AI en Vira Doctores y docente de IA en EdgeHub y en el Diplomado en Ciencia de Datos de la ENES UNAM León. Es especialista en Métodos Estadísticos por el CIMAT y cursa la Maestría en Inteligencia Artificial Aplicada en el Tec de Monterrey. Ha trabajado como ingeniero de machine learning y visión por computadora para México, España y EE. UU. También fue Community & Tech Lead en Codeando México y Sherpa Digital de IA para Microsoft México. Fue summer intern en la Universidad de Harvard y ha dado charlas en PyCon Colombia, Talent Land y TEDxUNAMLeón, entre otros. Premio Estatal a la Juventud Guanajuato 2018."
     level: intermedio
     audience: [estudiantes, tecnicos, academia, comunidad]
+  melva-sangri:
+    name: "Melva Sangri"
+    org: "SBS Facilitadores"
+    photo: "melva-sangri.webp"
+    bio: "Melva Sangri es Coach Ejecutiva PCC certificada por la International Coaching Federation (ICF), Team Coach, conferencista y facilitadora máster, especializada en desarrollo de liderazgo, transformación cultural y aprendizaje organizacional. Ha acompañado a líderes y equipos de organizaciones nacionales e internacionales en el desarrollo de competencias, liderazgo e influencia. Es fundadora de Mamá Digital, forma parte de SBS Facilitadores y recibió un Doctorado Honoris Causa por su contribución al liderazgo de las mujeres en la tecnología."
+    level: ninguno
+    audience: [general, empresas, profesionistas, emprendedores]
 
 # Información por sesión, por su code. luma_url (opcional) muestra el botón "Regístrate"
 # en la tarjeta y en el modal. Ejemplo:
@@ -229,6 +236,8 @@ session_info:
     description: "Taller práctico sobre la aplicación de Control Estadístico de Procesos (SPC) y DMAIC (Six Sigma) para reducir mermas en manufactura. Los asistentes aprenderán a transformar datos operativos diarios en bases estructuradas, calcular indicadores de variabilidad (CV) y capacidad de proceso (Cp), y construir un dashboard en Excel para la toma de decisiones basada en datos en tiempo real."
   T6:
     description: "Presentar la arquitectura de la plataforma .Stat Suite y el modelo integral de implementación en instancias públicas para la estandarización de datos y preparación de información para intercambio con entidades globales."
+  C13:
+    description: "Las organizaciones miden ventas, productividad y resultados, pero ¿qué tanto conocen las competencias, los comportamientos y el potencial de las personas que los hacen posibles? Así como un GPS necesita datos precisos para llevarnos a nuestro destino, las personas y las organizaciones necesitamos información confiable para saber dónde estamos y cómo avanzar. En esta conferencia veremos cómo la ciencia de datos y la retroalimentación ayudan a tomar mejores decisiones, desarrollar talento y convertir información en resultados. Conoceremos también TechSBS, un ecosistema que integra evaluación, analítica de datos y desarrollo humano y organizacional."
   C14:
     description: "En esta plática se presentarán los avances y logros de un proyecto de investigación postdoctoral cuyo principal objetivo es extender el alcance de una técnica en el análisis de materiales cristalinos, conocida como difracción de rayos X de polvos (DRXP). En esta plática se presentarán algunos modelos basados en redes neuronales profundas para regresión y cómo se pueden destilar nuevos modelos a partir de los ya entrenados."
   C15:
@@ -307,7 +316,7 @@ days:
       - start: "11:00"
         end: "11:55"
         sessions:
-          - { room: s1, kind: conferencia, code: "C13", speaker_text: "AWS", title: "Por definir" }
+          - { room: s1, kind: conferencia, code: "C13", speaker: melva-sangri, title: "¿Sabemos cómo llegar a nuestra mejor versión? El poder de los datos y la inteligencia artificial para transformar personas, equipos y organizaciones" }
           - { room: s2, kind: conferencia, code: "C14", speaker: juan-gomez, title: "Aplicaciones de redes neuronales profundas en el análisis de materiales cristalinos" }
       - start: "12:00"
         end: "12:55"

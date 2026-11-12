@@ -13,6 +13,7 @@ powered_by:   # patrocinadores
   - { name: "ANADIC Yucatán", file: "patrocinadores/anadic-yucatan.webp" }
   - { name: "CSDOCS", file: "patrocinadores/csdocs.webp" }
   - { name: "Servicio Nacional de Empleo", file: "patrocinadores/sne.webp" }
+  - { name: "Kuxtal Labs", file: "patrocinadores/kuxtal-labs.webp" }
 
 supported_by: # equipo / aliados
   - { name: "Universidad Politécnica de Yucatán", file: "equipo/upy.webp" }
