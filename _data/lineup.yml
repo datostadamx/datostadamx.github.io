@@ -194,11 +194,12 @@ speakers:
     level: ninguno
     audience: [general, empresas, profesionistas, emprendedores]
 
-# Información por sesión, por su code. luma_url (opcional) muestra el botón "Regístrate"
-# en la tarjeta y en el modal. Ejemplo:
+# Información por sesión, por su code. registration_url (opcional) muestra el botón
+# "Regístrate" en la tarjeta y en el modal; los talleres usan forms.workshops_url de
+# _config.yml si no tienen una propia. Ejemplo:
 #   C1:
 #     description: "..."
-#     luma_url: "https://luma.com/..."
+#     registration_url: "https://..."
 session_info:
   C1:
     description: "En Cloud Ascend, protegemos la propiedad intelectual de nuestros clientes, tanto los aplicativos de misión crítica que fueron desarrollados entre las décadas de los 60 y los 90, así como los procesos de negocio que han permitido que nuestros clientes lleguen a donde están hoy. Analizando cómo a través de la tecnología se les puede mejorar significativamente cuando se trabaja desde las especificaciones que sus clientes (internos y externos) necesitan en el mundo contemporáneo."

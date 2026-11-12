@@ -24,6 +24,8 @@ registration:
 forms:
   speaker_url: "https://forms.gle/xvfasS9JrbPWLmsXA"
   stands_url: "https://docs.google.com/forms/d/e/1FAIpQLScgNJorygllLtsUI4qxS292HsxZyayhB4aAOK--3VwhZqt98Q/viewform"
+  # Registro a talleres (cupo limitado): botón en cada taller de /lineup/ y en el programa del homepage
+  workshops_url: "https://airtable.com/appnfCDZzPSmiqi5I/pagCiZPWAZ7dBxGa8/form"
 
 # Social links shown in the nav/footer — leave a value blank to hide that icon
 social:

@@ -267,6 +267,7 @@ section{position:relative}
   border:1px dashed var(--cream-45);border-radius:var(--radius);padding:1.5rem 1.8rem;
 }
 .prog-note p{color:var(--cream-70);font-size:.95rem;max-width:52ch}
+.prog-ctas{display:flex;flex-wrap:wrap;gap:.8rem}
 
 /* ============ PONENTES ============ */
 .pon-grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:1rem;margin-top:3rem}
@@ -474,6 +475,12 @@ footer.site{border-top:1px solid var(--wine-line);background:var(--wine-2)}
 .ses-tags{display:flex;flex-wrap:wrap;gap:.3rem;padding-top:.3rem}
 .ses-register{align-self:flex-start;font-family:var(--font-m);font-size:.72rem;color:var(--mint);text-decoration:underline;text-underline-offset:3px}
 .ses-register:hover{color:var(--cream)}
+.lu-note{
+  margin-top:1.6rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 1.4rem;
+  border:1px dashed var(--yellow);border-radius:var(--radius);padding:1.1rem 1.4rem;
+}
+.lu-note p{color:var(--cream-70);font-size:.95rem;max-width:60ch}
+.lu-note b{color:var(--yellow);font-weight:600}
 .ses-general{background:none;border-style:dashed;align-items:center;justify-content:center;text-align:center;padding:.7rem 1rem}
 .ses-general .ses-meta{justify-content:center}
 .ses-general .ses-title{font-family:var(--font-m);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
