@@ -11,6 +11,12 @@ permalink: /lineup/
     <p class="sec-label">{{ site.event.dates }} · {{ site.event.venue }}</p>
     <h1 class="sec-title">Programa <em>{{ site.event.year }}</em></h1>
     <p class="sec-lead">Conferencias y talleres en dos escenarios y dos salas. Haz clic en el nombre de cada ponente para conocer su perfil y la descripción de su sesión.</p>
+    {% if site.registration.calendar_url %}
+    <div class="lu-note">
+      <p><b>Regístrate a cada sesión en Luma.</b> Los talleres tienen cupo limitado y las sesiones de la misma hora se imparten en paralelo.</p>
+      <a class="btn btn-mint" href="{{ site.registration.calendar_url }}" target="_blank" rel="noopener">Ver todas las sesiones en Luma ↗</a>
+    </div>
+    {% endif %}
 
     <div class="lu-filters" aria-label="Filtrar sesiones">
       <div class="lu-filter-group">

@@ -342,6 +342,18 @@ section{position:relative}
 .sede-info li{display:flex;gap:.9rem;padding:.7rem 0;border-bottom:1px dashed var(--wine-line);color:var(--cream-70);align-items:baseline}
 .sede-info li b{color:var(--cream);font-weight:600}
 .sede-info li .k{font-family:var(--font-m);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);flex:0 0 110px}
+/* ============ DATATÓN ============ */
+.dataton-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);margin-top:2.4rem;align-items:start}
+.dataton-ejes{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.8rem}
+.dataton-ejes li{
+  font-family:var(--font-m);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--mint);color:var(--mint);border-radius:999px;padding:.5rem 1rem;
+}
+.dataton-talleres{margin-top:1.4rem;color:var(--cream-70);font-size:.96rem}
+.dataton-info ul{margin-top:0}
+.dataton-status{color:var(--cream-70);font-size:.92rem;margin-bottom:1.2rem}
+.dataton-status b{color:var(--yellow);font-weight:600}
+
 .sede-note{font-size:.88rem;color:var(--cream-45);margin-top:1.4rem;max-width:52ch}
 
 /* ============ FAQ ============ */
@@ -474,8 +486,15 @@ footer.site{border-top:1px solid var(--wine-line);background:var(--wine-2)}
 .ses-tags{display:flex;flex-wrap:wrap;gap:.3rem;padding-top:.3rem}
 .ses-register{align-self:flex-start;font-family:var(--font-m);font-size:.72rem;color:var(--mint);text-decoration:underline;text-underline-offset:3px}
 .ses-register:hover{color:var(--cream)}
+.lu-note{
+  margin-top:1.6rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem 1.4rem;
+  border:1px dashed var(--yellow);border-radius:var(--radius);padding:1.1rem 1.4rem;
+}
+.lu-note p{color:var(--cream-70);font-size:.95rem;max-width:60ch}
+.lu-note b{color:var(--yellow);font-weight:600}
 .ses-general{background:none;border-style:dashed;align-items:center;justify-content:center;text-align:center;padding:.7rem 1rem}
 .ses-general .ses-meta{justify-content:center}
+.ses-general .ses-register{align-self:center}
 .ses-general .ses-title{font-family:var(--font-m);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
 .ses-libre{background:repeating-linear-gradient(135deg,rgba(240,217,140,.06) 0 8px,transparent 8px 16px);border:1px dashed rgba(240,217,140,.45);justify-content:center;align-items:center}
 .ses-free{font-family:var(--font-m);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow)}
@@ -522,7 +541,7 @@ html:has(.sp-modal[open]){overflow:hidden}
   .perfiles-grid{grid-template-columns:repeat(2,1fr)}
   .ejes{grid-template-columns:1fr}
   .eje{min-height:0}
-  .evento-cols,.registro-grid,.sede-grid{grid-template-columns:1fr}
+  .evento-cols,.registro-grid,.sede-grid,.dataton-grid{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr 1fr}
   .luma-frame{height:560px}
 }

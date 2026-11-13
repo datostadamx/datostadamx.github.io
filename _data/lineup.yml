@@ -202,48 +202,72 @@ speakers:
 session_info:
   C1:
     description: "En Cloud Ascend, protegemos la propiedad intelectual de nuestros clientes, tanto los aplicativos de misión crítica que fueron desarrollados entre las décadas de los 60 y los 90, así como los procesos de negocio que han permitido que nuestros clientes lleguen a donde están hoy. Analizando cómo a través de la tecnología se les puede mejorar significativamente cuando se trabaja desde las especificaciones que sus clientes (internos y externos) necesitan en el mundo contemporáneo."
+    registration_url: "https://luma.com/2ao596bj"
   C2:
     description: "Cuando una IA conversacional necesita guardar sesiones cambiantes, un CRM de seguros necesita datos distintos por aseguradora y un ERP jurídico necesita evolucionar sin detener el sistema, el modelo relacional se vuelve una camisa de fuerza. En esta conferencia modelamos datos de sistemas reales que he construido (CRMs de seguros, automatización con LLMs) usando MongoDB: cuándo sí conviene NoSQL, cómo diseñar esquemas flexibles y los errores más comunes al migrar desde SQL."
+    registration_url: "https://luma.com/mo6fyo35"
   C3:
     description: "EcoData integra ciencia, tecnología geoespacial y conocimiento local para monitorear, gestionar y restaurar ecosistemas de la Península de Yucatán. Desarrollamos soluciones que ayudan a identificar dónde conservar, cómo restaurar y de qué manera orientar el desarrollo, evaluando los resultados para contribuir a ecosistemas saludables y al bienestar de las comunidades. Trabajando desde las ciudades hasta las costas."
+    registration_url: "https://luma.com/giu155u9"
   C4:
     description: "Los datos son un río que arrastra fango y pepitas de oro; el reto es buscar, capturar y convertirlas en valor antes de que la corriente las lleve. Nuestra plataforma de preparación online desde 2011 ha ayudado a 25,000+ alumnos a estudiar en el extranjero. Quiero compartir cómo los datos del primer año nos mostraron una ventana cerebral de segundos donde los errores aún pueden corregirse permanentemente, lo cual transformó nuestro producto a un 97% de efectividad (40% es el estándar del giro)."
+    registration_url: "https://luma.com/a5pdf5fh"
   T1:
     description: "Taller práctico e individual: cada persona avanza en una tarea real suya (una clase, un reporte, un proyecto de la escuela, del trabajo o de su comunidad) con ayuda de IA. Mauricio Carrillo te guía desde usar bien un servicio de IA hasta coordinar varios agentes en Terminus, una app gratuita cuya interfaz es de código abierto. Sales con tu tarea avanzada y un flujo que puedes repetir. No necesitas programar."
+    registration_url: "https://luma.com/qmk31d22"
   T2:
     description: "En este taller construiremos, paso a paso, un buscador de imágenes satelitales y un clasificador de uso de suelo. Usaremos CLIP, un modelo preentrenado que convierte imágenes y texto en vectores (embeddings), y el dataset EuroSAT de imágenes Sentinel-2. Con ellos exploraremos cómo la IA \"entiende\" una imagen. Visualizaremos el dataset con PCA y UMAP, buscaremos imágenes similares, clasificaremos con solo describir las clases en texto (zero-shot) y veremos cómo un puñado de ejemplos etiquetados lleva la exactitud de 45% a 86%. Al final, quienes participen sabrán cuándo basta un modelo general y cuándo vale la pena usar sus propios datos."
+    registration_url: "https://luma.com/96250dfe"
   C5:
     description: "La IA ya puede investigar, programar, escribir y resolver problemas en segundos. Entonces, ¿qué estamos certificando realmente? Esta ponencia cuestiona la forma en que la universidad demuestra que alguien aprendió. Si una máquina puede hacer una tarea, resolver un examen o construir un proyecto, ¿qué demuestra realmente el estudiante? Una conversación provocadora sobre el futuro de la educación y una pregunta inevitable: ¿qué significa aprender cuando la IA ya puede hacerlo? ¿Qué certificamos?"
+    registration_url: "https://luma.com/bc4i7q2i"
   C6:
     description: "Todos hablamos de modelos, agentes y prompts, pero en la mayoría de las PyMEs mexicanas la inteligencia artificial no se atora en la tecnología. Se atora en los datos: clientes duplicados en el ERP, campos que nadie sabe qué significan, procesos sin dueño y decisiones tomadas en Excel. En esta charla compartimos lo que hemos aprendido implementando ERP, CRM e IA en empresas del sureste."
+    registration_url: "https://luma.com/21r17s1z"
   C7:
     description: "Para saber si una política funcionó necesitamos ver el mundo que no ocurrió: qué habría pasado sin ella. ¿Puede construirlo una máquina? En esta conferencia simulamos en vivo partidas de Catan y Monopoly, donde ese mundo se calcula con exactitud, y luego saltamos a casos abiertos: una guerra simulada por el Pentágono, encuestas electorales respondidas por IA y el descontento ante una crisis hídrica. ¿Qué decisiones ya podemos probar en una computadora y cuáles siguen necesitando el mundo real?"
+    registration_url: "https://luma.com/t4oiej62"
   C8:
     description: "En 2018, un bot que vendía cerveza sin supervisión humana me enseñó a corregir fonemas con algoritmos genéticos. Seis años después, en Neuraan, uso la misma evolución, sin gradiente, para corregir el razonamiento de los LLMs. Un recorrido técnico de ASR a agentes de IA en producción, pasando por Mendel: mi investigación actual sobre lógica estricta (VSA) evolucionada sobre un LLM congelado. Rigor técnico con resultados reales, no solo teoría."
+    registration_url: "https://luma.com/nu62r2jb"
   T3:
     description: "Dos reportes que deberían coincidir y no: un problema cotidiano del trabajo con datos. En este taller práctico aprenderás un método para diagnosticar discrepancias (definiciones, grano, joins que multiplican filas, zonas horarias, datos tardíos). Resolverás casos con SQL y Python, compararás tu diagnóstico con el de un agente de IA y convertirás cada hallazgo en una prueba automática."
+    registration_url: "https://luma.com/tpqy4dqd"
   T4:
     description: "Frecuentemente, el análisis de datos se restringe a entornos estáticos, omitiendo su valor espacial. En este workshop, los asistentes implementarán metodologías geoespaciales para explotar datos abiertos. Transicionarán del procesamiento de coordenadas en bruto al despliegue de visualizaciones cartográficas interactivas. Al concluir, validarán que el Data Storytelling de alto impacto es viable usando librerías de código abierto, sin requerir infraestructuras complejas."
+    registration_url: "https://luma.com/hrxy4cvw"
   C9:
     description: "Un recorrido por cómo la ciencia de datos y el machine learning están transformando la investigación: desde proyectos internacionales que han acelerado descubrimientos hasta aplicaciones en nuestra región. Revisaremos qué problemas se resuelven mejor con estas técnicas, sus alcances y límites, y cerraré con un caso particular, que es parte de mi investigación de tesis: el análisis acústico automatizado de variantes del maya yucateco."
+    registration_url: "https://luma.com/fi1kkslc"
   C10:
     description: "La inteligencia artificial está redefiniendo la forma en que diseñamos, desarrollamos y entregamos soluciones tecnológicas. Esta conferencia explora cómo la IA transforma el ciclo de vida del software, optimiza la productividad de los equipos y redefine el liderazgo tecnológico. Desde una perspectiva de Global Delivery, analizaremos los desafíos, oportunidades y competencias que los futuros ingenieros necesitan para competir en una industria cada vez más impulsada por la IA."
+    registration_url: "https://luma.com/ot2dfguf"
   C11:
     description: "En esta charla exploraremos cómo se utiliza la IA para resolver problemas reales en el sector financiero, desde entender mejor a los clientes y personalizar su experiencia hasta anticipar riesgos, detectar oportunidades y apoyar la toma de decisiones. A través de ejemplos prácticos, veremos cómo es el día a día de un Data Scientist, qué tipo de problemas enfrenta, qué herramientas y conocimientos utiliza y cómo se transforma una gran cantidad de datos en soluciones que generan valor."
+    registration_url: "https://luma.com/i7dgyd6x"
   C12:
     description: "Conferencia sobre cómo reducir el tiempo entre lo que sucede en una empresa y el momento en que la dirección puede verlo, entenderlo y actuar. A través de una mejor gestión de datos, software y herramientas tecnológicas, se abordará cómo tener información más clara y oportuna para detectar desviaciones, identificar oportunidades y tomar decisiones con mayor velocidad y sustento. Podremos dar testimonios reales, al tener 9 años de experiencia."
+    registration_url: "https://luma.com/sqt3abx7"
   T5:
     description: "Taller práctico sobre la aplicación de Control Estadístico de Procesos (SPC) y DMAIC (Six Sigma) para reducir mermas en manufactura. Los asistentes aprenderán a transformar datos operativos diarios en bases estructuradas, calcular indicadores de variabilidad (CV) y capacidad de proceso (Cp), y construir un dashboard en Excel para la toma de decisiones basada en datos en tiempo real."
+    registration_url: "https://luma.com/kbww169w"
   T6:
     description: "Presentar la arquitectura de la plataforma .Stat Suite y el modelo integral de implementación en instancias públicas para la estandarización de datos y preparación de información para intercambio con entidades globales."
+    registration_url: "https://luma.com/srrv2ug8"
   C13:
     description: "Las organizaciones miden ventas, productividad y resultados, pero ¿qué tanto conocen las competencias, los comportamientos y el potencial de las personas que los hacen posibles? Así como un GPS necesita datos precisos para llevarnos a nuestro destino, las personas y las organizaciones necesitamos información confiable para saber dónde estamos y cómo avanzar. En esta conferencia veremos cómo la ciencia de datos y la retroalimentación ayudan a tomar mejores decisiones, desarrollar talento y convertir información en resultados. Conoceremos también TechSBS, un ecosistema que integra evaluación, analítica de datos y desarrollo humano y organizacional."
   C14:
     description: "En esta plática se presentarán los avances y logros de un proyecto de investigación postdoctoral cuyo principal objetivo es extender el alcance de una técnica en el análisis de materiales cristalinos, conocida como difracción de rayos X de polvos (DRXP). En esta plática se presentarán algunos modelos basados en redes neuronales profundas para regresión y cómo se pueden destilar nuevos modelos a partir de los ya entrenados."
+    registration_url: "https://luma.com/8jdfk7dt"
   C15:
     description: "En esta conferencia exploraremos los datasets disponibles para hacer investigaciones sobre la infraestructura crítica que le da soporte a la tecnología y a internet, así como una herramienta de medición activa que se conoce como RIPE Atlas."
+    registration_url: "https://luma.com/ak6i9pfe"
   C16:
     description: "Yucatán es uno de los estados con más casos de Chagas en México, una enfermedad silenciosa que puede causar daño cardíaco grave e incluso la muerte. Su principal vector es la chinche besucona, conocida localmente como pik. En esta charla recorreremos, sin fórmulas que asusten, el flujo completo de visión por computadora: captura y etiquetado de imágenes, preprocesamiento, entrenamiento de una red neuronal, evaluación y detección de la chinche en fotografías. Con datos reales y demo en vivo."
+    registration_url: "https://luma.com/8ugfp3tp"
+  # Bloque de open space del sábado: en Luma es el evento "Encuentro de comunidades"
+  "Open space":
+    registration_url: "https://luma.com/cxutqzqm"
 
 days:
   - id: dia-1

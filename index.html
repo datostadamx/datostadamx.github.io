@@ -142,7 +142,8 @@ layout: default
       <div class="exp-row rv rv-d1"><span class="tag">Talleres</span><p>{{ n_talleres }} sesiones prácticas de dos horas: agentes de IA, SQL y Python, análisis geoespacial, búsqueda de imágenes con embeddings y más.</p><span class="arrow">→</span></div>
       <div class="exp-row rv rv-d2"><span class="tag">Open space</span><p>Comunidades y startups presentan sus proyectos y lo que están construyendo en la región.</p><span class="arrow">→</span></div>
       <div class="exp-row rv rv-d3"><span class="tag">Stands</span><p>Conoce empresas, organizaciones, proyectos y comunidades que trabajan con datos y tecnología.</p><span class="arrow">→</span></div>
-      <div class="exp-row rv rv-d4"><span class="tag">Networking</span><p>Cerramos con tostadas: encuentra colaboradores, talento, aliados y nuevas oportunidades.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d4"><span class="tag">Datatón</span><p>Diez equipos exploran datos de Yucatán durante los dos días, con talleres y acompañamiento de mentores.</p><span class="arrow">→</span></div>
+      <div class="exp-row rv rv-d5"><span class="tag">Networking</span><p>Cerramos con tostadas: encuentra colaboradores, talento, aliados y nuevas oportunidades.</p><span class="arrow">→</span></div>
     </div>
     <div class="hero-ctas rv" style="margin-top:2.4rem">
       <a class="btn btn-mint" href="#registro">Apartar mi lugar</a>
@@ -217,12 +218,43 @@ layout: default
   </div>
 </section>
 
+<!-- ============ DATATÓN ============ -->
+<section id="dataton">
+  <div class="wrap">
+    <p class="sec-label rv">07 · Datatón</p>
+    <h2 class="sec-title rv rv-d1">Yucatán a través de los <em>datos</em></h2>
+    <div class="dataton-grid">
+      <div class="dataton-body rv rv-d1">
+        <p class="sec-lead">Dos equipos pueden mirar los mismos datos y encontrar historias distintas. En el datatón, cada equipo elige qué preguntar, explora la evidencia y cuenta lo que descubre sobre Yucatán, con talleres y mentores que lo acompañan desde la primera pregunta hasta la presentación final.</p>
+        <ul class="dataton-ejes" aria-label="Ejes del datatón">
+          <li>Yucatán Vivo</li>
+          <li>Yucatán Productivo</li>
+          <li>Yucatán Digital</li>
+        </ul>
+        <p class="dataton-talleres">Talleres de metodología de la investigación, Tableau, Cursor y elevator pitch.</p>
+      </div>
+      <div class="sede-info dataton-info rv rv-d2">
+        <ul>
+          <li><span class="k">Fechas</span><span>12 de noviembre: sesión informativa en línea<br>13 y 14 de noviembre: actividades presenciales</span></li>
+          <li><span class="k">Sede</span><span>Hyperlab, {{ site.event.venue }}</span></li>
+          <li><span class="k">Equipos</span><span>10 equipos de 5 integrantes</span></li>
+          <li><span class="k">Premio</span><span><b>$3,000 MXN</b> en efectivo para el primer lugar</span></li>
+        </ul>
+        <p class="dataton-status"><b>Cupo completo.</b> El registro de equipos y mentores cerró el 10 de noviembre.</p>
+        <a class="btn btn-ghost" href="{{ site.registration.dataton_url }}" target="_blank" rel="noopener">Ver el datatón en Luma ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- ============ REGISTRO ============ -->
 <section id="registro" class="registro">
   <div class="wrap">
     <div class="registro-grid">
       <div class="registro-info rv">
-        <p class="sec-label">07 · Registro</p>
+        <p class="sec-label">08 · Registro</p>
         <h2 class="sec-title">Asegura tu <em>lugar</em></h2>
         <p>{{ site.title }} {{ site.event.year }} es gratuito y abierto a la comunidad. Regístrate para recibir:</p>
         <ul class="registro-list">
@@ -251,7 +283,7 @@ layout: default
 <!-- ============ PATROCINADORES ============ -->
 <section id="patrocina" class="patrocina">
   <div class="wrap">
-    <p class="sec-label rv">08 · Patrocinadores</p>
+    <p class="sec-label rv">09 · Patrocinadores</p>
     <h2 class="sec-title rv rv-d1">Impulsa la comunidad que construye el futuro de los datos</h2>
     <p class="sec-lead rv rv-d2">{{ site.title }} conecta a tu organización con una comunidad de estudiantes, investigadores, desarrolladores, analistas, emprendedores y líderes tecnológicos del sureste de México.</p>
     <div class="pat-benefits">
@@ -294,7 +326,7 @@ layout: default
 <!-- ============ SEDE ============ -->
 <section id="sede">
   <div class="wrap">
-    <p class="sec-label rv">09 · Sede y logística</p>
+    <p class="sec-label rv">10 · Sede y logística</p>
     <h2 class="sec-title rv rv-d1">Nos vemos en <em>Mérida</em></h2>
     <div class="sede-grid">
       <div class="rv rv-d1">
@@ -324,7 +356,7 @@ layout: default
 <!-- ============ FAQ ============ -->
 <section id="faq">
   <div class="wrap">
-    <p class="sec-label rv">10 · Preguntas frecuentes</p>
+    <p class="sec-label rv">11 · Preguntas frecuentes</p>
     <h2 class="sec-title rv rv-d1">Resolvemos tus <em>dudas</em></h2>
     <div class="faq-list">
       {% for item in site.data.faq %}

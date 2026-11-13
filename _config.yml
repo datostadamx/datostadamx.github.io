@@ -19,6 +19,9 @@ event:
 # Luma event used for registration (the "evt-..." id from the event's Luma dashboard)
 registration:
   luma_id: "evt-NohgzL3HOuT9Fw5"
+  # Calendario con un evento de Luma por sesión (cada liga va en session_info de _data/lineup.yml)
+  calendar_url: "https://luma.com/datostadamx"
+  dataton_url: "https://luma.com/k7bbttlz"
 
 # External forms linked from the site
 forms:
