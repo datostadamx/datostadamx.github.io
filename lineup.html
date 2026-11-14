@@ -37,9 +37,10 @@ permalink: /lineup/
     {% for day in lineup.days %}
     <div class="lu-day" id="{{ day.id }}">
       <header class="lu-day-head"><h2>{{ day.date }}</h2><span>{{ day.label }}</span></header>
-      <div class="lu-grid">
+      {% assign n_rooms = day.rooms.size | default: lineup.rooms.size %}
+      <div class="lu-grid" style="--cols:{{ n_rooms }}">
         <div class="lu-room-head lu-time-head">Hora</div>
-        {% for room in lineup.rooms %}<div class="lu-room-head">{{ room.name }}</div>{% endfor %}
+        {% for room in lineup.rooms %}{% if day.rooms == nil or day.rooms contains room.id %}<div class="lu-room-head">{{ day.room_names[room.id] | default: room.name }}</div>{% endif %}{% endfor %}
 
         {% for slot in day.slots %}
         {% assign row = forloop.index | plus: 1 %}
@@ -51,15 +52,16 @@ permalink: /lineup/
         {% assign last = slot_index | plus: span | minus: 1 %}
         {% assign end = day.slots[last].end %}
         {% assign room = lineup.rooms | where: "id", s.room | first %}
+        {% assign room_name = day.room_names[s.room] | default: room.name %}
         {% assign sp = lineup.speakers[s.speaker] %}
         <article class="ses ses-{{ s.kind }} r-{{ s.room }}" style="grid-row:{{ row }} / span {{ span }}"{% if sp %} data-level="{{ sp.level }}" data-aud="{{ sp.audience | join: ' ' }}"{% endif %}>
           {% if s.kind == "libre" %}
-          <p class="ses-meta"><span>{{ slot.start }}–{{ end }}{% if room %} · {{ room.name }}{% endif %}</span></p>
+          <p class="ses-meta"><span>{{ slot.start }}–{{ end }}{% if room %} · {{ room_name }}{% endif %}</span></p>
           <p class="ses-free">Espacio no disponible</p>
           {% else %}
           <p class="ses-meta">
             {% if s.code %}<span class="ses-code">{{ s.code }}{% if s.kind == "conferencia" %} · Conferencia{% elsif s.kind == "taller" %} · Taller{% endif %}</span>{% endif %}
-            <span>{{ slot.start }}{% if end != "" %}–{{ end }}{% endif %}{% if room %} · {{ room.name }}{% endif %}</span>
+            <span>{{ slot.start }}{% if end != "" %}–{{ end }}{% endif %}{% if room %} · {{ room_name }}{% endif %}</span>
           </p>
           <h3 class="ses-title">{{ s.title | escape }}</h3>
           {% if sp %}
@@ -107,10 +109,11 @@ permalink: /lineup/
     {% assign span = s.span | default: 1 %}
     {% assign last = slot_index | plus: span | minus: 1 %}
     {% assign room = lineup.rooms | where: "id", s.room | first %}
+    {% assign room_name = day.room_names[s.room] | default: room.name %}
     {% assign info = lineup.session_info[s.code] %}
     <li>
       <b>{{ s.title | escape }}</b>
-      <span>{{ s.code }} · {{ day.date }} · {{ slot.start }}–{{ day.slots[last].end }} · {{ room.name }}</span>
+      <span>{{ s.code }} · {{ day.date }} · {{ slot.start }}–{{ day.slots[last].end }} · {{ room_name }}</span>
       {% if info.description %}<p class="sp-desc">{{ info.description | escape }}</p>{% endif %}
       {% if info.registration_url %}<a class="btn btn-mint sp-register" href="{{ info.registration_url }}" target="_blank" rel="noopener">Regístrate ↗</a>{% endif %}
     </li>

@@ -1,5 +1,5 @@
 {% comment %}Fila de bloque de sesiones simultáneas en el resumen del programa del homepage.{% endcomment %}
 <li class="is-block">
   <time>{{ include.start }}–{{ include.end }}</time>
-  <span>{% if include.conf > 0 %}{{ include.conf }} conferencia{% if include.conf > 1 %}s{% endif %}{% endif %}{% if include.conf > 0 and include.talleres > 0 %} · {% endif %}{% if include.talleres > 0 %}{{ include.talleres }} taller{% if include.talleres > 1 %}es{% endif %}{% endif %}<small>En paralelo en escenarios y salas de talleres</small></span>
+  <span>{% if include.conf > 0 %}{{ include.conf }} conferencia{% if include.conf > 1 %}s{% endif %}{% endif %}{% if include.conf > 0 and include.talleres > 0 %} · {% endif %}{% if include.talleres > 0 %}{{ include.talleres }} taller{% if include.talleres > 1 %}es{% endif %}{% endif %}<small>Sesiones en paralelo</small></span>
 </li>

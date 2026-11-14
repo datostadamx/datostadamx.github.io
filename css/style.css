@@ -452,7 +452,7 @@ footer.site{border-top:1px solid var(--wine-line);background:var(--wine-2)}
 .lu-day-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.2rem}
 .lu-day-head h2{font-size:clamp(1.4rem,2.6vw,1.9rem);letter-spacing:-.02em}
 .lu-day-head span{font-family:var(--font-m);font-size:.72rem;letter-spacing:.16em;color:var(--mint);text-transform:uppercase}
-.lu-grid{display:grid;grid-template-columns:5.5rem repeat(4,1fr);gap:.6rem}
+.lu-grid{display:grid;grid-template-columns:5.5rem repeat(var(--cols,4),1fr);gap:.6rem}
 .lu-room-head{
   grid-row:1;font-family:var(--font-m);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
   color:var(--wine);background:var(--mint);border-radius:10px;padding:.6rem .8rem;font-weight:600;

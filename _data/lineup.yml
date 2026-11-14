@@ -325,30 +325,36 @@ days:
   - id: dia-2
     label: "Día 02"
     date: "Sábado 14 de noviembre"
+    # Salas en uso este día (por defecto, todas las de rooms) y nombres propios de este día
+    rooms: [s1, s2]
+    room_names:
+      s1: "Escenario 1 · Google"
+      s2: "Escenario 2 · Visualización de datos"
     slots:
       - start: "09:30"
         end: "09:55"
         sessions:
           - { room: all, kind: general, title: "Llegada de asistentes" }
       - start: "10:00"
-        end: "10:55"
+        end: "10:45"
         sessions:
           - { room: s1, kind: conferencia, code: "C11", speaker: mario-canche, title: "IA aplicada a la banca" }
           - { room: s2, kind: conferencia, code: "C12", speaker: irma-pacheco, title: "Velocidad de información: el activo invisible de tu empresa" }
-          - { room: w1, kind: taller, code: "T5", span: 2, speaker: roberto-escobar, title: "De la planta al Excel: análisis de datos y control estadístico de procesos (SPC)" }
-          - { room: w2, kind: taller, code: "T6", span: 2, speaker: manuel-haro, title: "Implementación de .Stat Suite en gobiernos para estandarizar datos críticos" }
-      - start: "11:00"
-        end: "11:55"
+      - start: "10:45"
+        end: "11:30"
+        sessions:
+          - { room: s1, kind: taller, code: "T6", speaker: manuel-haro, title: "Implementación de .Stat Suite en gobiernos para estandarizar datos críticos" }
+          - { room: s2, kind: taller, code: "T5", speaker: roberto-escobar, title: "De la planta al Excel: análisis de datos y control estadístico de procesos (SPC)" }
+      - start: "11:30"
+        end: "12:15"
         sessions:
           - { room: s1, kind: conferencia, code: "C13", speaker: melva-sangri, title: "¿Sabemos cómo llegar a nuestra mejor versión? El poder de los datos y la inteligencia artificial para transformar personas, equipos y organizaciones" }
           - { room: s2, kind: conferencia, code: "C14", speaker: juan-gomez, title: "Aplicaciones de redes neuronales profundas en el análisis de materiales cristalinos" }
-      - start: "12:00"
-        end: "12:55"
+      - start: "12:15"
+        end: "13:00"
         sessions:
           - { room: s1, kind: conferencia, code: "C15", speaker: augusto-canul, title: "Datos y mediciones sobre internet" }
           - { room: s2, kind: conferencia, code: "C16", speaker: alejandro-espinosa, title: "Besos que matan: cómo la IA aprende a detectar a los vectores del Chagas en Yucatán" }
-          - { room: w1, kind: libre }
-          - { room: w2, kind: libre }
       - start: "13:00"
         end: "16:00"
         sessions:
